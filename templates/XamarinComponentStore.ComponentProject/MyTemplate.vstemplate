@@ -47,7 +47,7 @@
           <ProjectItem ReplaceParameters="true" TargetFileName="ComponentName.iOS.sln">ComponentName.iOS.sln</ProjectItem>
         </Folder>
       </Folder>
-      <ProjectItem ReplaceParameters="true" TargetFileName="how-to.txt">how-to.txt</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="readme.md">readme.md</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       </Folder>

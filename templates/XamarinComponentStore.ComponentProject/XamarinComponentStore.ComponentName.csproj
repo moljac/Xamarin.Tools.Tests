@@ -61,6 +61,7 @@
     <None Include="content\README.md" />
     <None Include="component-create.sh" />
     <None Include="compile.bat" />
+    <None Include="readme.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin.apps\xpkg\ICSharpCode.SharpZipLib.dll" />
@@ -74,7 +75,6 @@
     <Content Include="content\icons\ComponentName_512x512.png" />
     <Content Include="content\samples\ComponentName.Android.sln" />
     <Content Include="content\samples\ComponentName.iOS.sln" />
-    <Content Include="how-to.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="content\bin\" />
