@@ -1,0 +1,56 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>XamarinComponentStore.ComponentProject</Name>
+    <Description>Project template for Xamarin Component Store</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>XamarinComponentStore.ComponentProject</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="XamarinComponentStore.ComponentName.csproj" File="XamarinComponentStore.ComponentName.csproj" ReplaceParameters="true">
+      <Folder Name="bin.apps" TargetFolderName="bin.apps">
+        <Folder Name="xpkg" TargetFolderName="xpkg">
+          <ProjectItem ReplaceParameters="false" TargetFileName="ICSharpCode.SharpZipLib.dll">ICSharpCode.SharpZipLib.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="mdoc.exe">mdoc.exe</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Mono.Cecil.dll">Mono.Cecil.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="monodoc.dll">monodoc.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Newtonsoft.Json.dll">Newtonsoft.Json.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="xpkg">xpkg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="xpkg.exe">xpkg.exe</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="xpkg.zip">xpkg.zip</ProjectItem>
+        </Folder>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="compile.bat">compile.bat</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="component-create.bat">component-create.bat</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="component-create.sh">component-create.sh</ProjectItem>
+      <Folder Name="content" TargetFolderName="content">
+        <ProjectItem ReplaceParameters="true" TargetFileName=".gitignore">.gitignore</ProjectItem>
+        <Folder Name="bin" TargetFolderName="bin" />
+        <ProjectItem ReplaceParameters="false" TargetFileName="Details.md">Details.md</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="GettingStarted.md">GettingStarted.md</ProjectItem>
+        <Folder Name="icons" TargetFolderName="icons">
+          <ProjectItem ReplaceParameters="false" TargetFileName="ComponentName_128x128.png">ComponentName_128x128.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ComponentName_512x512.png">ComponentName_512x512.png</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="false" TargetFileName="License.md">License.md</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Rakefile">Rakefile</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+        <Folder Name="samples" TargetFolderName="samples">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ComponentName.Android.sln">ComponentName.Android.sln</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ComponentName.iOS.sln">ComponentName.iOS.sln</ProjectItem>
+        </Folder>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="how-to.txt">how-to.txt</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
