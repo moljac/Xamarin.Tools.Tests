@@ -4,6 +4,8 @@ References:
 
 * 	[http://forums.xamarin.com/discussion/4113/xamarin-ios-config-in-visual-studio-2010-on-vista/p1](http://forums.xamarin.com/discussion/4113/xamarin-ios-config-in-visual-studio-2010-on-vista/p1)
 * 	[https://github.com/moljac/Xamarin.Test.Toolz/tree/master/logs/2013-05-14-%5BXamarin.iOS%20config%20in%20Visual%20Studio%202010%20on%20Vista%5D](https://github.com/moljac/Xamarin.Test.Toolz/tree/master/logs/2013-05-14-%5BXamarin.iOS%20config%20in%20Visual%20Studio%202010%20on%20Vista%5D)
+*	[https://bugzilla.xamarin.com/show_bug.cgi?id=12263](https://bugzilla.xamarin.com/show_bug.cgi?id=12263)
+
 
 
 Visual Studio Data
@@ -21,7 +23,7 @@ Visual Studio Data
 
 Notes:
 
-Some folders in %SYSTEMDRIVE% (c:)
+Some folders in %SYSTEMDRIVE% (c:) created after installation (Xamarin stuff is inside)
 
 	C:\VS2012_EXTENSIONS_DIR
 	C:\VS2012_ITEMTEMPLATES_DIR
