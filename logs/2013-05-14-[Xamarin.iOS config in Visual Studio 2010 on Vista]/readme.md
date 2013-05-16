@@ -1,10 +1,13 @@
 # Xamarin.iOS config in Visual Studio 2010 on Vista #
 
-[http://forums.xamarin.com/discussion/4113/xamarin-ios-config-in-visual-studio-2010-on-vista/p1](http://forums.xamarin.com/discussion/4113/xamarin-ios-config-in-visual-studio-2010-on-vista/p1)
+References:
 
-Visual Studio
+* 	[http://forums.xamarin.com/discussion/4113/xamarin-ios-config-in-visual-studio-2010-on-vista/p1](http://forums.xamarin.com/discussion/4113/xamarin-ios-config-in-visual-studio-2010-on-vista/p1)
+* 	[https://github.com/moljac/Xamarin.Test.Toolz/tree/master/logs/2013-05-14-%5BXamarin.iOS%20config%20in%20Visual%20Studio%202010%20on%20Vista%5D](https://github.com/moljac/Xamarin.Test.Toolz/tree/master/logs/2013-05-14-%5BXamarin.iOS%20config%20in%20Visual%20Studio%202010%20on%20Vista%5D)
 
- 
+
+Visual Studio Data
+
 	Microsoft Visual Studio 2010
 	Version 10.0.40219.1 SP1Rel
 	Microsoft .NET Framework
