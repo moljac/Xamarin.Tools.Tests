@@ -10,7 +10,7 @@
 4	recompile OK
 5 	close solution
 6	reopen solution - project modification detected   
-	![Project modification - reloading](https://github.com/moljac/Xamarin.Test.Toolz/blob/master/logs/2013-06-03%5BXamarin%20Components%20not%20loaded%20in%20XS%20and%20projects%20modified%20after%20sln%20reopening%5D/screenshots/xamarin-component-vs-not-available-CropperCapture%5B25%5D.png)   
+	![Project modification - reloading](https://github.com/moljac/Xamarin.Test.Toolz/blob/master/logs/2013-06-03%5BXamarin%20Components%20not%20loaded%20in%20XS%20and%20projects%20modified%20after%20sln%20reopening%5D/screenshots/xamarin-component-vs-not-available-CropperCapture[25].png)   
 7	csproj changed component not available (sse below unified diff for csproj)    
 	![Project modification - reloading](https://github.com/moljac/Xamarin.Test.Toolz/blob/master/logs/2013-06-03%5BXamarin%20Components%20not%20loaded%20in%20XS%20and%20projects%20modified%20after%20sln%20reopening%5D/screenshots/xamarin-component-vs-solution-reopened-CropperCapture%5B24%5D.png)   
 8	VS - possible to add the same component (it is not re-downloaded)
