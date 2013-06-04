@@ -12,10 +12,12 @@
 6.	reopen solution in VS - project modification detected   
 	![Project modification - reloading](./screenshots/xamarin-component-vs-not-available-CropperCapture[25].png)   
 7.  reopening in XSW (Xamarin Studio Windows) no project modifications!
-7.	csproj changed component not available (sse below unified diff for csproj)    
 	![Project modification - reloading](./screenshots/xamarin-component-xs-solution-reopened-CropperCapture[23].png)   
-8.	VS - possible to add the same component (it is not re-downloaded)
-9.	XS on Mac cannot add, cannot change - stuck!
+8.	csproj changed component not available (sse below unified diff for csproj)    
+9.	VS - possible to add the same component (it is not re-downloaded)
+10.	XS on Mac cannot add, cannot change - stuck!
+11.	TODO! Mac ScreenShots @Iki
+
 	
 
 
