@@ -6,13 +6,13 @@
 1	New solution
 2	new project - Android App (not tested for other but it seems it would be the same)    
 3	add new Xamarin Component (ZXing in this case)    
-	![Component added in VS](./images/xamarin-component-vs-added-CropperCapture[23].png)   
+	![Component added in VS](./screenshots/xamarin-component-vs-added-CropperCapture[23].png)   
 4	recompile OK
 5 	close solution
 6	reopen solution - project modification detected   
-	![Project modification - reloading](./images/xamarin-component-vs-solution-reopened-CropperCapture[24].png)   
+	![Project modification - reloading](./screenshots/xamarin-component-vs-solution-reopened-CropperCapture[24].png)   
 7	csproj changed component not available (sse below unified diff for csproj)    
-	![Project modification - reloading](./images/xamarin-component-vs-not-available-CropperCapture[25].png)   
+	![Project modification - reloading](./screenshots/xamarin-component-vs-not-available-CropperCapture[25].png)   
 8	VS - possible to add the same component (it is not re-downloaded)
 9	XS on Mac cannot add, cannot change - stuck!
 10	
