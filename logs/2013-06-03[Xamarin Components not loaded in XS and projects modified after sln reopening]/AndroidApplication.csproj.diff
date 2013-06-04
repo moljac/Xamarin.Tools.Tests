@@ -1,0 +1,20 @@
+ .../AndroidApplication1/AndroidApplication1.csproj                 |    4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/logs/2013-06-03[Xamarin Components not loaded in XS and projects modified after sln reopening]/AndroidApplication1/AndroidApplication1.csproj b/logs/2013-06-03[Xamarin Components not loaded in XS and projects modified after sln reopening]/AndroidApplication1/AndroidApplication1.csproj
+index 28f0c1f..08c4d18 100644
+--- a/logs/2013-06-03[Xamarin Components not loaded in XS and projects modified after sln reopening]/AndroidApplication1/AndroidApplication1.csproj	
++++ b/logs/2013-06-03[Xamarin Components not loaded in XS and projects modified after sln reopening]/AndroidApplication1/AndroidApplication1.csproj	
+@@ -82,10 +82,10 @@
+     </XamarinComponentReference>
+   </ItemGroup>
+   <ItemGroup>
+-    <XamarinComponent Include="zxing.net.mobile">
++    <XamarinComponentReference Include="zxing.net.mobile">
+       <Visible>False</Visible>
+       <Version>1.3.3</Version>
+-    </XamarinComponent>
++    </XamarinComponentReference>
+   </ItemGroup>
+   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
