@@ -47,7 +47,7 @@
 	   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 
 
-## Refs ## 
+## Refs  ##
 
 * 	github	
 	[https://github.com/moljac/Xamarin.Test.Toolz/tree/master/logs/2013-06-03%5BXamarin%20Components%20not%20loaded%20in%20VS%20and%20projects%20modified%20after%20sln%20reopening%5D](https://github.com/moljac/Xamarin.Test.Toolz/tree/master/logs/2013-06-03%5BXamarin%20Components%20not%20loaded%20in%20VS%20and%20projects%20modified%20after%20sln%20reopening%5D)
