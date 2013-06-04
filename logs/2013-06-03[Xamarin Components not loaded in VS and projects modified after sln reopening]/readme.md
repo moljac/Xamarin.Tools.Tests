@@ -1,4 +1,4 @@
-# Xamarin Components not loaded in XS and projects modified after sln reopening #
+# Xamarin Components not loaded in VS and projects modified after sln reopening #
 
 
 ## Steps to reproduce ##
@@ -11,7 +11,7 @@
 5. 	close solution
 6.	reopen solution in VS - project modification detected   
 	![Project modification - reloading](./screenshots/xamarin-component-vs-not-available-CropperCapture[25].png)   
-7.  reopening in XSW (Xamarin Studio Windows) no project modifications!
+7.  reopening in XSW (Xamarin Studio Windows) no project modifications!   
 	![Project modification - reloading](./screenshots/xamarin-component-xs-solution-reopened-CropperCapture[23].png)   
 8.	csproj changed component not available (sse below unified diff for csproj)    
 9.	VS - possible to add the same component (it is not re-downloaded)
@@ -47,5 +47,7 @@
 
 ## Refs ## 
 
-* [https://github.com/moljac/Xamarin.Test.Toolz/tree/master/logs/2013-06-03%5BXamarin%20Components%20not%20loaded%20in%20XS%20and%20projects%20modified%20after%20sln%20reopening%5D](https://github.com/moljac/Xamarin.Test.Toolz/tree/master/logs/2013-06-03%5BXamarin%20Components%20not%20loaded%20in%20XS%20and%20projects%20modified%20after%20sln%20reopening%5D)
-* []()
+* 	github	
+	[https://github.com/moljac/Xamarin.Test.Toolz/tree/master/logs/2013-06-03%5BXamarin%20Components%20not%20loaded%20in%20VS%20and%20projects%20modified%20after%20sln%20reopening%5D](https://github.com/moljac/Xamarin.Test.Toolz/tree/master/logs/2013-06-03%5BXamarin%20Components%20not%20loaded%20in%20VS%20and%20projects%20modified%20after%20sln%20reopening%5D)
+* 	Xamarin Forums   
+	[http://forums.xamarin.com/discussion/4783/xamarin-components-not-loaded-in-vs-and-projects-modified-after-sln-reopening](http://forums.xamarin.com/discussion/4783/xamarin-components-not-loaded-in-vs-and-projects-modified-after-sln-reopening)
