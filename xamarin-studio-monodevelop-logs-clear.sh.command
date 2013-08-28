@@ -1,8 +1,11 @@
 #! /usr/bin/env bash
 
-PATH_XAMARIN_STUDIO=~/Library/Logs/XamarinStudio-{VERSION}/
+VERSION=4.0
+PATH_XAMARIN_STUDIO_LOGS=~/Library/Logs/XamarinStudio-$VERSION/
 
-ls -al $PATH_XAMARIN_STUDIO
+ls -al $PATH_XAMARIN_STUDIO_LOGS
+rm -fr $PATH_XAMARIN_STUDIO_LOGS/*
+ls -al $PATH_XAMARIN_STUDIO_LOGS
 
 
 	
