@@ -123,11 +123,11 @@ additional column.
 ### Images / Screenshots 
 
 1.	Android Designer in Visual Studio  
-	![Android Designer in Visual Studio](./screenshots/Xamarin.Android-Designer-TableLayout-VS-CropperCapture[43].png)
+	![Android Designer in Visual Studio](https://github.com/moljac/Xamarin.Test.Toolz/tree/master/logs/2013-08-27-%5BXamarin.Android%20Designer%20problems%20with%20TableLayout%5D/screenshots/Xamarin.Android-Designer-TableLayout-VS-CropperCapture[43].png)
 1.	Android Designer in Visual Studio  
-	![Android Designer in Visual Studio](./screenshots/Xamarin.Android-Designer-TableLayout--XS-CropperCapture[47].png)
+	![Android Designer in Visual Studio](https://github.com/moljac/Xamarin.Test.Toolz/tree/master/logs/2013-08-27-%5BXamarin.Android%20Designer%20problems%20with%20TableLayout%5D/screenshots/Xamarin.Android-Designer-TableLayout--XS-CropperCapture[47].png)
 1.	Layout in emulator (OK)  
-	![Android Designer in Visual Studio](./screenshots/Xamarin.Android-Designer-TableLayout-layout-emulator-CropperCapture[44].png)
+	![Android Designer in Visual Studio](https://github.com/moljac/Xamarin.Test.Toolz/tree/master/logs/2013-08-27-%5BXamarin.Android%20Designer%20problems%20with%20TableLayout%5D/screenshots/Xamarin.Android-Designer-TableLayout-layout-emulator-CropperCapture[44].png)
 
 ### Environment ###
 
