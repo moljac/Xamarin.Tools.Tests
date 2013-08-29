@@ -12,7 +12,7 @@
 Android designer in Visual Studio and Xamarin Studio displays TableLayout with
 additional column.
 
-#### Android Layout
+#### Android Layout (sample)
 
 	<?xml version="1.0" encoding="utf-8"?>
 	<TableLayout xmlns:p1="http://schemas.android.com/apk/res/android"
@@ -146,3 +146,39 @@ additional column.
 
 #### Xamarin Studio Data
 
+	Xamarin Studio
+	Version 4.1.9 (build 6)
+	Installation UUID: 44e4f747-b02b-430b-bd63-3e33a4f2653c
+	Runtime:
+		Microsoft .NET 4.0.30319.18052
+		GTK+ 2.24.20 theme: MS-Windows
+		GTK# (2.12.0.0)
+
+	Xamarin.Android
+	Version: 4.8.2 (Business Edition)
+	Android SDK: C:\Program Files\Android\android-sdk
+		Supported Android versions:
+			1.6   (API level 4)
+			2.1   (API level 7)
+			2.2   (API level 8)
+			2.3   (API level 10)
+			3.1   (API level 12)
+			3.2   (API level 13)
+			4.0   (API level 14)
+			4.0.3 (API level 15)
+			4.1   (API level 16)
+			4.2   (API level 17)
+			4.3   (API level 18)
+	Java SDK: C:\Program Files\Java\jdk1.6.0_39
+	java version "1.6.0_39"
+	Java(TM) SE Runtime Environment (build 1.6.0_39-b04)
+	Java HotSpot(TM) Client VM (build 20.14-b01, mixed mode, sharing)
+
+	Build Information
+	Release ID: 401090006
+	123fc693ab9ba2690f93fcfe2cd3499335049ff4
+	Build date: 2013-08-06 13:13:03Z
+	Xamarin addins: ad4a498b75333e43547e87574c1ec8c7cae05de0
+
+	Operating System
+	Windows 6.0.6002.131072
