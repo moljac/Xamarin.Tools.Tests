@@ -119,6 +119,13 @@ Visual Studio and
 
 ### Images / Screenshots ###
 
+1.	Android Designer in Visual Studio
+	![Android Designer in Visual Studio](./screenshots/Xamarin.Android-Designer-TableLayout-VS-CropperCapture[43].png)
+1.	Android Designer in Visual Studio
+	![Android Designer in Visual Studio](./screenshots/Xamarin.Android-Designer-TableLayout--XS-CropperCapture[47].png)
+1.	Layout in emulator (OK)
+	![Android Designer in Visual Studio](./screenshots/Xamarin.Android-Designer-TableLayout-layout-emulator-CropperCapture[44].png)
+
 
 ### Visual Studio Data ###
 
