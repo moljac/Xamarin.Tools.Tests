@@ -1,15 +1,18 @@
-## Xamarin.Android Desinger Problems With Table Layout##
-
-### References ###
-
-* 	[]()
-* 	[]()
+## Xamarin.Android Desinger Problems With TableLayout
 
 
-### Error ###
+### References 
 
-Visual Studio and 
-#### Android Layout ####
+* 	[Details on github](https://github.com/moljac/Xamarin.Test.Toolz/tree/master/logs/2013-08-27-%5BXamarin.Android%20Designer%20problems%20with%20TableLayout%5D)
+* 	[Forum]()
+*	[Bugzila]()
+
+### Error
+
+Android designer in Visual Studio and Xamarin Studio displays TableLayout with
+additional column.
+
+#### Android Layout
 
 	<?xml version="1.0" encoding="utf-8"?>
 	<TableLayout xmlns:p1="http://schemas.android.com/apk/res/android"
@@ -117,7 +120,7 @@ Visual Studio and
 		</TableRow>
 	</TableLayout>
 
-### Images / Screenshots ###
+### Images / Screenshots 
 
 1.	Android Designer in Visual Studio  
 	![Android Designer in Visual Studio](./screenshots/Xamarin.Android-Designer-TableLayout-VS-CropperCapture[43].png)
@@ -126,8 +129,9 @@ Visual Studio and
 1.	Layout in emulator (OK)  
 	![Android Designer in Visual Studio](./screenshots/Xamarin.Android-Designer-TableLayout-layout-emulator-CropperCapture[44].png)
 
+### Environment ###
 
-### Visual Studio Data ###
+#### Visual Studio Data 
 
 	Microsoft Visual Studio 2010
 	Version 10.0.40219.1 SP1Rel
@@ -140,5 +144,5 @@ Visual Studio and
 	Xamarin.iOS   1.1.200 (7d63692c)
 	Visual Studio extension to enable development for Xamarin.iOS
 
-### Xamarin Studio Data ###
+#### Xamarin Studio Data
 
