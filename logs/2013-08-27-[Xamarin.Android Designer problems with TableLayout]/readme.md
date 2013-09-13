@@ -178,8 +178,8 @@ additional column.
 	Windows 6.0.6002.131072
 
 	
-### References 
+### References/Links
 
 * 	[Details on github](https://github.com/moljac/Xamarin.Test.Toolz/tree/master/logs/2013-08-27-%5BXamarin.Android%20Designer%20problems%20with%20TableLayout%5D)
-* 	[Forum]()
-*	[Bugzila]()
+* 	[Forum](http://forums.xamarin.com/discussion/7479/xamarin-android-desinger-problems-with-tablelayout/p1)
+*	[Bugzila](https://bugzilla.xamarin.com/show_bug.cgi?id=14320)
