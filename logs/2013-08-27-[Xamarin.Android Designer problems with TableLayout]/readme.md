@@ -1,12 +1,6 @@
 ## Xamarin.Android Desinger Problems With TableLayout
 
 
-### References 
-
-* 	[Details on github](https://github.com/moljac/Xamarin.Test.Toolz/tree/master/logs/2013-08-27-%5BXamarin.Android%20Designer%20problems%20with%20TableLayout%5D)
-* 	[Forum]()
-*	[Bugzila]()
-
 ### Error
 
 Android designer in Visual Studio and Xamarin Studio displays TableLayout with
@@ -182,3 +176,10 @@ additional column.
 
 	Operating System
 	Windows 6.0.6002.131072
+
+	
+### References 
+
+* 	[Details on github](https://github.com/moljac/Xamarin.Test.Toolz/tree/master/logs/2013-08-27-%5BXamarin.Android%20Designer%20problems%20with%20TableLayout%5D)
+* 	[Forum]()
+*	[Bugzila]()
