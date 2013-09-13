@@ -16,7 +16,7 @@ tested on the release configuration it’s throwing the error
 
 Screenshot Visual Studio - all ABIs included -  not in csproj.
 
-![Visual Studio - no ability to select Configuration it should apply to all (Debug, Release)](https://github.com/moljac/Xamarin.Test.Toolz/tree/master/logs/2013-08-19-[Xamarin Android Project targets]/screenshots/vs-android-app-properties-application-abis.png)
+![Visual Studio - no ability to select Configuration it should apply to all (Debug, Release)](https://github.com/moljac/Xamarin.Test.Toolz/blob/master/logs/2013-08-19-%5BXamarin%20Android%20Project%20targets%5D/screenshots/vs-android-app-properties-application-abis.png)
 
 	  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
 		<DebugType>pdbonly</DebugType>
@@ -206,6 +206,6 @@ or Xamarin Studio/Monodevelop (Comparison with projects generated with older VS 
 ### References/Links
 
 * 	[Details on github](https://github.com/moljac/Xamarin.Test.Toolz/tree/master/logs/2013-08-19-%5BXamarin%20Android%20Project%20targets%5D)
-* 	[Forum]()
-*	[Bugzila]()
+* 	[Forum](http://forums.xamarin.com/discussion/7904/android-architeture-abis-in-project-file-csproj)
+*	[Bugzila](https://bugzilla.xamarin.com/show_bug.cgi?id=14711)
 	  
