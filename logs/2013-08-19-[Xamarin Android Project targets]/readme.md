@@ -1,4 +1,10 @@
-## Android Architeture
+## Android Architeture ABIs in project file csproj
+
+This problem surfaced for second time during component submission, the Android sample 
+for MarkDownDeep seems to be having the same error as SharpSerializer had, in that when 
+tested on the release configuration it’s throwing the error 
+
+	‘The package does not support the device architecture (armeabi-v7a/armeabi).’ 
 
 ### Steps
 
