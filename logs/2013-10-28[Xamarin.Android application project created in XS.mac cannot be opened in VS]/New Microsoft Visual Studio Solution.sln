@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinAndroidApp.XamarinStudio.Windows", "XamarinAndroidApp.XamarinStudio.Windows\XamarinAndroidApp.XamarinStudio.Windows.csproj", "{EBA3ED38-B115-4A88-9E4E-01758315A01B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBA3ED38-B115-4A88-9E4E-01758315A01B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA3ED38-B115-4A88-9E4E-01758315A01B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA3ED38-B115-4A88-9E4E-01758315A01B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA3ED38-B115-4A88-9E4E-01758315A01B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = XamarinAndroidApp.XamarinStudio.Windows\XamarinAndroidApp.XamarinStudio.Windows.csproj
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
