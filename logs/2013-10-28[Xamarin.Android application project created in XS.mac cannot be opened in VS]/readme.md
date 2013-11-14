@@ -13,13 +13,13 @@ Android Application Project created in XS on MacOSX
 ### Screenshots
 
 * ![](url "Visual Studio message")
-* ![](url "Visual Studio Soluton")
+* ![](https://raw.github.com/moljac/Xamarin.Test.Toolz/master/logs/2013-10-28%5BXamarin.Android%20application%20project%20created%20in%20XS.mac%20cannot%20be%20opened%20in%20VS%5D/screenshots/VS2010%5D.png "Visual Studio Soluton")
 
 
 ## Analysis
 
 
-### Generated ProjectTypeGUIDS
+### Generated ProjectTypeGuids
 
 ### Xamarin Studio MacOSX
 
