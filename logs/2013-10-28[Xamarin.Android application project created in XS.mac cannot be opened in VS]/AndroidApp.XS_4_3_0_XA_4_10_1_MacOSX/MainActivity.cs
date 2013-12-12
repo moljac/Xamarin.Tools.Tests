@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Android.App;
 using Android.Content;
 using Android.Runtime;
@@ -6,9 +6,9 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-namespace XamarinAndroidApp.XamarinStudio.Windows
+namespace AndroidApp.XS_4_3_0_XA_4_10_1_MacOSX
 {
-	[Activity (Label = "XamarinAndroidApp.XamarinStudio.Windows", MainLauncher = true)]
+	[Activity (Label = "AndroidApp.XS_4_3_0_XA_4_10_1_MacOSX", MainLauncher = true)]
 	public class MainActivity : Activity
 	{
 		int count = 1;
@@ -24,7 +24,8 @@ namespace XamarinAndroidApp.XamarinStudio.Windows
 			// and attach an event to it
 			Button button = FindViewById<Button> (Resource.Id.myButton);
 			
-			button.Click += delegate {
+			button.Click += delegate
+			{
 				button.Text = string.Format ("{0} clicks!", count++);
 			};
 		}
