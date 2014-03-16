@@ -1,0 +1,3 @@
+xamarin components
+
+C:\Program Files\Mono-3.0.9\bin

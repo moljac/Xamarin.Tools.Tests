@@ -1,0 +1,53 @@
+New
+		
+	memory optimiztions
+	Sgen
+	
+	iOS
+		backgorund thread checking 
+			currently
+				Debug = true
+				Release = false
+				
+		Thread Safe APIs
+		
+	async
+		BCL 4.5
+		114 methods mono
+	
+		per thread variable SynchronizationContext
+		
+		Background thread  = Grand Central Dispatch
+
+	c# vs objective-c
+		srongly typed => intellisense
+		
+		options => NSDictionary
+			silently ignored if wrong
+		
+		NSDictionaries - srongly typed 
+
+		screenshots API
+		UIGesturesRecognizers strongly typed
+		
+		selector = 
+			old style 
+			avoid it 
+			loosly typed
+			
+	Notifications = loosly typed (guess work)
+	
+	NSAttributedString
+		painful to use
+		Dictionary
+		
+	HttpClient 
+		CFNetwork powered
+		apples proxy system
+		
+	NSObject
+		GC imporvements
+		
+	Razor integration
+		
+		

@@ -1,0 +1,19 @@
+Android
+
+	Build.VERSION.
+	Build.Model;
+	Build.Version
+	
+	
+	Sensor.Manager
+		
+	External Storage
+		never use hardcoded paths
+			/sdcard
+		not external or removable
+		
+		
+	Device Issues
+		trial error
+		beta users groups
+		

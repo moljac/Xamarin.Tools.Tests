@@ -1,0 +1,13 @@
+#!/bin/bash
+
+sudo apt-get install build-essential automake checkinstall intltool git
+sudo apt-get install mono-complete mono-addins-utils gtk-sharp2 gnome-sharp2
+
+git clone git://github.com/mono/monodevelop
+cd monodevelop
+git checkout monodevelop-4.0
+git submodule update --init --recursive
+
+./configure
+make
+sudo checkinstall

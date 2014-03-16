@@ -1,0 +1,11 @@
+
+set MSI_PACKAGE=mono-android-4.4.54.208556545.msi
+cd /d "%USERPROFILE%\Temp\MonoForAndroid\downloads\"
+msiexec /i %MSi_PACKAGE% /L*V %TMP%\log.txt
+notepad %TMP%\log.txt
+
+# It's possible that your installation is failing because of MSI software 
+# update registration corruption issues; check %TMP%\log.txt, and see if it 
+# contains the text "Couldn't find local patch." If it does, see:
+
+#	http://support.microsoft.com/kb/971187
