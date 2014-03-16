@@ -1,4 +1,4 @@
-# mono mcs 3.2.7 
+# Mono 3.2.7 compile error for unassigned variable vs csc (.net 4.5) no errors.
 
 ## Description
 
