@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidLibraryProject", "AndroidLibraryProject\AndroidLibraryProject.csproj", "{90ED637E-2185-4917-937D-C571016CA3D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidJavaBindingsLibrary", "AndroidJavaBindingsLibrary\AndroidJavaBindingsLibrary.csproj", "{8BDEA018-09E7-4EC8-BF60-D9D760E9BD8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidApplication", "AndroidApplication\AndroidApplication.csproj", "{6A866F53-CB95-458F-AFB0-D6568317FC08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidHoneycombApplication", "AndroidHoneycombApplication\AndroidHoneycombApplication.csproj", "{72AC69A4-B376-4C4B-B299-5A32E42D1572}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidIceCreamSandwichApplication", "AndroidIceCreamSandwichApplication\AndroidIceCreamSandwichApplication.csproj", "{3A133203-5C8A-4B24-9276-BAF41643D7E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidWebViewApplication", "AndroidWebViewApplication\AndroidWebViewApplication.csproj", "{23E85B38-26D7-40BB-974C-961FA2155E94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidOpenGLApplication", "AndroidOpenGLApplication\AndroidOpenGLApplication.csproj", "{AC02AB3C-CFE3-4F28-9738-C9A00C347F00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidUnitTestProject", "AndroidUnitTestProject\AndroidUnitTestProject.csproj", "{70C8A8DD-F727-4980-B2D9-9C7DA3F3514C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23E85B38-26D7-40BB-974C-961FA2155E94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23E85B38-26D7-40BB-974C-961FA2155E94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23E85B38-26D7-40BB-974C-961FA2155E94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23E85B38-26D7-40BB-974C-961FA2155E94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A133203-5C8A-4B24-9276-BAF41643D7E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A133203-5C8A-4B24-9276-BAF41643D7E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A133203-5C8A-4B24-9276-BAF41643D7E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A133203-5C8A-4B24-9276-BAF41643D7E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A866F53-CB95-458F-AFB0-D6568317FC08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A866F53-CB95-458F-AFB0-D6568317FC08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A866F53-CB95-458F-AFB0-D6568317FC08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A866F53-CB95-458F-AFB0-D6568317FC08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70C8A8DD-F727-4980-B2D9-9C7DA3F3514C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70C8A8DD-F727-4980-B2D9-9C7DA3F3514C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70C8A8DD-F727-4980-B2D9-9C7DA3F3514C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70C8A8DD-F727-4980-B2D9-9C7DA3F3514C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72AC69A4-B376-4C4B-B299-5A32E42D1572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72AC69A4-B376-4C4B-B299-5A32E42D1572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72AC69A4-B376-4C4B-B299-5A32E42D1572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72AC69A4-B376-4C4B-B299-5A32E42D1572}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BDEA018-09E7-4EC8-BF60-D9D760E9BD8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BDEA018-09E7-4EC8-BF60-D9D760E9BD8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BDEA018-09E7-4EC8-BF60-D9D760E9BD8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BDEA018-09E7-4EC8-BF60-D9D760E9BD8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90ED637E-2185-4917-937D-C571016CA3D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90ED637E-2185-4917-937D-C571016CA3D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90ED637E-2185-4917-937D-C571016CA3D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90ED637E-2185-4917-937D-C571016CA3D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC02AB3C-CFE3-4F28-9738-C9A00C347F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC02AB3C-CFE3-4F28-9738-C9A00C347F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC02AB3C-CFE3-4F28-9738-C9A00C347F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC02AB3C-CFE3-4F28-9738-C9A00C347F00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = AndroidLibraryProject\AndroidLibraryProject.csproj
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

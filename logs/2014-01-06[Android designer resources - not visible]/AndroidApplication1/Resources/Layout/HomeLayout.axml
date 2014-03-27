@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:background="@drawable/top_bar"
+            android:text="Home"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/headercolor"
+            android:shadowColor="@color/headerwhitecolor"
+            android:maxWidth="110dp"
+            android:minWidth="110dp"
+            android:textSize="16dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:background="@drawable/top_bar"
+            android:text="Unpaid Bills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/subheadercolor"
+            android:shadowColor="@color/headerwhitecolor"
+            android:maxWidth="110dp"
+            android:minWidth="110dp"
+            android:textSize="14dp" />
+        <TextView
+            android:background="@drawable/top_bar"
+            android:text="This Week Payments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/subheadercolor"
+            android:textSize="14dp"
+            android:layout_marginLeft="0.2dp"
+            android:maxWidth="110dp"
+            android:minWidth="110dp" />
+        <TextView
+            android:background="@drawable/top_bar"
+            android:text="Bank Balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/subheadercolor"
+            android:textSize="14dp"
+            android:layout_marginLeft="0.2dp"
+            android:maxWidth="110dp"
+            android:minWidth="110dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:background="@drawable/quick_look_amount"
+            android:text="0.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/headerwhitecolor"
+            android:minHeight="10dp"
+            android:maxHeight="10dp"
+            android:maxWidth="110dp"
+            android:minWidth="110dp"
+            android:textSize="14dp" />
+        <TextView
+            android:background="@drawable/quick_look_amount"
+            android:text="42.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/headerwhitecolor"
+            android:textSize="14dp"
+            android:layout_marginLeft="0.2dp"
+            android:minHeight="10dp"
+            android:maxHeight="10dp"
+            android:maxWidth="110dp"
+            android:minWidth="110dp" />
+        <TextView
+            android:background="@drawable/quick_look_amount"
+            android:text="0.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/headerwhitecolor"
+            android:textSize="14dp"
+            android:layout_marginLeft="0.2dp"
+            android:maxWidth="110dp"
+            android:minWidth="110dp"
+            android:minHeight="10dp"
+            android:maxHeight="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:background="@drawable/quick_look"
+            android:text="Total Expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/grey"
+            android:minHeight="10dp"
+            android:maxHeight="10dp"
+            android:maxWidth="110dp"
+            android:minWidth="110dp"
+            android:textSize="14dp" />
+        <TextView
+            android:background="@drawable/quick_look"
+            android:text="Total Income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/grey"
+            android:textSize="14dp"
+            android:layout_marginLeft="0.2dp"
+            android:minHeight="10dp"
+            android:maxHeight="10dp"
+            android:maxWidth="110dp"
+            android:minWidth="110dp" />
+        <TextView
+            android:background="@drawable/quick_look"
+            android:text="Balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/grey"
+            android:textSize="14dp"
+            android:layout_marginLeft="0.2dp"
+            android:maxWidth="110dp"
+            android:minWidth="110dp"
+            android:minHeight="10dp"
+            android:maxHeight="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:background="@drawable/totals_amount_red"
+            android:text="150.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/headerwhitecolor"
+            android:minHeight="10dp"
+            android:maxHeight="10dp"
+            android:maxWidth="110dp"
+            android:minWidth="110dp"
+            android:textSize="14dp" />
+        <TextView
+            android:background="@drawable/totals_amount_green"
+            android:text="0.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/headerwhitecolor"
+            android:textSize="14dp"
+            android:layout_marginLeft="0.2dp"
+            android:minHeight="10dp"
+            android:maxHeight="10dp"
+            android:maxWidth="110dp"
+            android:minWidth="110dp" />
+        <TextView
+            android:background="@drawable/totals_amount_red"
+            android:text="-150.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/headerwhitecolor"
+            android:textSize="14dp"
+            android:layout_marginLeft="0.2dp"
+            android:maxWidth="110dp"
+            android:minWidth="110dp"
+            android:minHeight="10dp"
+            android:maxHeight="10dp" />
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginProgress"
+        android:background="@android:color/white"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+    <TextView
+        android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center" />
+</LinearLayout>

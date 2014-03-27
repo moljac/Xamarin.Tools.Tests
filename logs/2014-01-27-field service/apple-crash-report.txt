@@ -1,0 +1,1218 @@
+Process:         XamarinStudio [33356]
+Path:            /Applications/Xamarin Studio.app/Contents/MacOS/XamarinStudio
+Identifier:      com.xamarin.monodevelop
+Version:         4.3.1.5 (4.3.1.5)
+Code Type:       X86 (Native)
+Parent Process:  launchd [256]
+Responsible:     XamarinStudio [33356]
+User ID:         501
+
+Date/Time:       2014-01-27 23:14:20.889 +0100
+OS Version:      Mac OS X 10.9.1 (13B42)
+Report Version:  11
+Anonymous UUID:  C244B8B1-7996-049D-0CAA-D0C95507A505
+
+Sleep/Wake UUID: 2583BAC3-D8B7-45A3-9CA7-12F8B602A70E
+
+Crashed Thread:  0  Dispatch queue: com.apple.root.default-priority
+
+Exception Type:  EXC_CRASH (SIGILL)
+Exception Codes: 0x0000000000000000, 0x0000000000000000
+
+Thread 0 Crashed:: Dispatch queue: com.apple.root.default-priority
+0   libsystem_kernel.dylib        	0x9abf5046 __workq_kernreturn + 10
+1   libsystem_pthread.dylib       	0x953d4eb6 pthread_workqueue_addthreads_np + 79
+2   libdispatch.dylib             	0x97e2aef9 _dispatch_queue_wakeup_global_slow + 67
+3   libdispatch.dylib             	0x97e3132f _dispatch_queue_push_list_slow + 76
+4   libdispatch.dylib             	0x97e31280 dispatch_apply_f + 496
+5   libdispatch.dylib             	0x97e3108a dispatch_apply + 66
+6   com.apple.vImage              	0x9249e68c vImageConvolveWithBias_Planar8 + 1036
+7   com.apple.vImage              	0x9249e26f vImageConvolve_Planar8 + 111
+8   libRIP.A.dylib                	0x96b26486 symmetric_convolve + 772
+9   libRIP.A.dylib                	0x96b25fc6 RIPLayerSymmetricConvolve + 692
+10  libRIP.A.dylib                	0x96b25c7a RIPLayerGaussianBlur + 769
+11  libRIP.A.dylib                	0x96b2536a rips_s_BltShapeShadow + 766
+12  libRIP.A.dylib                	0x96b24c2c rips_s_BltGlyph + 280
+13  libRIP.A.dylib                	0x96b17ceb render_glyph_list + 404
+14  libRIP.A.dylib                	0x96b17971 render_glyphs + 370
+15  libRIP.A.dylib                	0x96b16a4b draw_glyph_bitmaps + 1426
+16  libRIP.A.dylib                	0x96b15fda ripc_DrawGlyphs + 2041
+17  com.apple.CoreGraphics        	0x9b0e7011 draw_glyphs + 1298
+18  com.apple.CoreGraphics        	0x9afba075 CGContextShowGlyphsAtPositions + 159
+19  com.apple.CoreText            	0x915e669d CTFontDrawGlyphsAtPositions + 289
+20  com.apple.coreui              	0x96267b74 -[CUITextEffectStack drawGlyphs:inContext:usingFont:atPositions:count:lineHeight:inBounds:atScale:] + 1597
+21  com.apple.coreui              	0x962bfa4d -[CUICatalog drawGlyphs:atPositions:inContext:withFont:count:stylePresetName:styleConfiguration:foregroundColor:] + 2171
+22  com.apple.AppKit              	0x9936ab71 -[NSLineFragmentRenderingContext drawAtPoint:inContext:] + 5140
+23  com.apple.AppKit              	0x99369435 _NSStringDrawingCore + 5905
+24  com.apple.AppKit              	0x99367280 _NSDrawTextCell + 6596
+25  com.apple.AppKit              	0x993658ba -[NSTitledFrame _drawTitleStringIn:withColor:] + 449
+26  com.apple.AppKit              	0x993656d9 -[NSThemeFrame _drawTitleStringInClip:] + 204
+27  com.apple.AppKit              	0x993655fa -[NSThemeFrame _drawTitleBar:] + 230
+28  com.apple.AppKit              	0x993654fe -[NSThemeFrame _drawFrameInterior:clip:] + 81
+29  com.apple.AppKit              	0x99365136 -[NSThemeFrame drawFrame:] + 137
+30  com.apple.AppKit              	0x99363976 -[NSThemeFrame _drawTexturedWindowWithClipRect:inView:] + 108
+31  com.apple.AppKit              	0x999b535e -[NSThemeFrame _drawTexturedWindowWithClipRect:] + 59
+32  com.apple.AppKit              	0x99448343 -[NSThemeFrame drawRect:] + 192
+33  com.apple.AppKit              	0x9935f90b -[NSView _drawRect:clip:] + 4033
+34  com.apple.AppKit              	0x9935cce4 -[NSView _recursiveDisplayRectIfNeededIgnoringOpacity:isVisibleRect:rectIsVisibleRectForView:topView:] + 2482
+35  com.apple.AppKit              	0x9935be90 -[NSThemeFrame _recursiveDisplayRectIfNeededIgnoringOpacity:isVisibleRect:rectIsVisibleRectForView:topView:] + 290
+36  com.apple.AppKit              	0x993591c1 -[NSView _displayRectIgnoringOpacity:isVisibleRect:rectIsVisibleRectForView:] + 3645
+37  com.apple.AppKit              	0x99336cbc -[NSView displayIfNeeded] + 1414
+38  com.apple.AppKit              	0x99354cdc -[NSWindow displayIfNeeded] + 324
+39  com.apple.AppKit              	0x9939e6f5 _handleWindowNeedsDisplayOrLayoutOrUpdateConstraints + 1107
+40  com.apple.AppKit              	0x99a0cdab __83-[NSWindow _postWindowNeedsDisplayOrLayoutOrUpdateConstraintsUnlessPostingDisabled]_block_invoke1381 + 58
+41  com.apple.CoreFoundation      	0x90c4ab4d _runLoopObserverWithBlockContext + 29
+42  com.apple.CoreFoundation      	0x90c4a59e __CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__ + 30
+43  com.apple.CoreFoundation      	0x90c4a4ef __CFRunLoopDoObservers + 399
+44  com.apple.CoreFoundation      	0x90c3b39e __CFRunLoopRun + 974
+45  com.apple.CoreFoundation      	0x90c3ad5a CFRunLoopRunSpecific + 394
+46  com.apple.CoreFoundation      	0x90c3abbb CFRunLoopRunInMode + 123
+47  com.apple.HIToolbox           	0x9341ae2d RunCurrentEventLoopInMode + 259
+48  com.apple.HIToolbox           	0x9341aa47 ReceiveNextEventCommon + 163
+49  com.apple.HIToolbox           	0x9341a98d _BlockUntilNextEventMatchingListInModeWithFilter + 92
+50  com.apple.AppKit              	0x991f85a9 _DPSNextEvent + 1602
+51  com.apple.AppKit              	0x991f7ad0 -[NSApplication nextEventMatchingMask:untilDate:inMode:dequeue:] + 119
+52  libgdk-quartz-2.0.0.dylib     	0x05956e83 poll_func + 355
+53  libglib-2.0.0.dylib           	0x0528e198 g_main_context_poll + 120
+54  libglib-2.0.0.dylib           	0x0528d93c g_main_context_iterate + 428
+55  libglib-2.0.0.dylib           	0x0528d9fb g_main_context_pending + 75
+56  libgtk-quartz-2.0.0.dylib     	0x054e73f5 gtk_events_pending + 53
+57  ???                           	0x123ddd80 0 + 306044288
+58  ???                           	0x123ddd44 0 + 306044228
+59  ???                           	0x123ddbec 0 + 306043884
+60  ???                           	0x18aa13e4 0 + 413799396
+61  ???                           	0x03eba5f5 0 + 65775093
+62  libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+63  libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+64  libmonosgen-2.0.dylib         	0x004ce36c mono_runtime_invoke_array + 1596 (object.c:4268)
+65  libmonosgen-2.0.dylib         	0x00436765 ves_icall_InternalExecute + 629 (icall.c:2991)
+66  ???                           	0x0db37a5c 0 + 229866076
+67  ???                           	0x0db374d0 0 + 229864656
+68  ???                           	0x15ce0e98 0 + 365825688
+69  ???                           	0x12015e66 0 + 302079590
+70  ???                           	0x12015cd6 0 + 302079190
+71  ???                           	0x1886788b 0 + 411465867
+72  ???                           	0x18586e81 0 + 408448641
+73  ???                           	0x18586e2c 0 + 408448556
+74  ???                           	0x120158c8 0 + 302078152
+75  ???                           	0x123befe7 0 + 305917927
+76  ???                           	0x0db36345 0 + 229860165
+77  ???                           	0x123beda5 0 + 305917349
+78  ???                           	0x123beb54 0 + 305916756
+79  ???                           	0x123be9bc 0 + 305916348
+80  ???                           	0x123be7a3 0 + 305915811
+81  ???                           	0x0d9b19e4 0 + 228268516
+82  ???                           	0x0d9b2500 0 + 228271360
+83  libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+84  libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+85  libmonosgen-2.0.dylib         	0x004c7416 mono_remoting_invoke + 134 (object.c:5978)
+86  libmonosgen-2.0.dylib         	0x0045eefd mono_remoting_wrapper + 493 (marshal.c:3153)
+87  ???                           	0x0d9b1570 0 + 228267376
+88  ???                           	0x18581f90 0 + 408428432
+89  ???                           	0x1c28f48e 0 + 472446094
+90  ???                           	0x1c28ea14 0 + 472443412
+91  ???                           	0x1c28e948 0 + 472443208
+92  ???                           	0x1c28e910 0 + 472443152
+93  ???                           	0x1c28e884 0 + 472443012
+94  ???                           	0x1c28e173 0 + 472441203
+95  ???                           	0x1c28e077 0 + 472440951
+96  ???                           	0x15cda73b 0 + 365799227
+97  libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+98  libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+99  libmonosgen-2.0.dylib         	0x004ce36c mono_runtime_invoke_array + 1596 (object.c:4268)
+100 libmonosgen-2.0.dylib         	0x00434a36 ves_icall_InternalInvoke + 1286 (icall.c:2875)
+101 ???                           	0x044ebd58 0 + 72269144
+102 ???                           	0x044eb9d8 0 + 72268248
+103 ???                           	0x044eb923 0 + 72268067
+104 ???                           	0x0de19e8c 0 + 232889996
+105 ???                           	0x0de19c64 0 + 232889444
+106 ???                           	0x0de19c27 0 + 232889383
+107 ???                           	0x0de19bf8 0 + 232889336
+108 ???                           	0x0de19abc 0 + 232889020
+109 ???                           	0x0de18824 0 + 232884260
+110 ???                           	0x064beddc 0 + 105639388
+111 libgobject-2.0.0.dylib        	0x06291918 g_closure_invoke + 504
+112 libgobject-2.0.0.dylib        	0x062b2b89 signal_emit_unlocked_R + 2345
+113 libgobject-2.0.0.dylib        	0x062b1a3f g_signal_emit_valist + 4735
+114 libgobject-2.0.0.dylib        	0x062b20f1 g_signal_emit + 65
+115 libgtk-quartz-2.0.0.dylib     	0x05674ad9 gtk_tree_view_row_activated + 217
+116 libgtk-quartz-2.0.0.dylib     	0x0565d989 gtk_tree_view_button_press + 4345
+117 libgtksharpglue-2.so          	0x0dcfcd46 gtksharp_widget_base_button_press_event + 86 (generated.c:5612)
+118 ???                           	0x1a2f6670 0 + 439314032
+119 ???                           	0x1a2f6624 0 + 439313956
+120 ???                           	0x1a2f5eac 0 + 439312044
+121 ???                           	0x1a2f5e3a 0 + 439311930
+122 ???                           	0x0de218e8 0 + 232921320
+123 libgtk-quartz-2.0.0.dylib     	0x054ebcde _gtk_marshal_BOOLEAN__BOXED + 286
+124 libgobject-2.0.0.dylib        	0x0629219e g_type_class_meta_marshal + 142
+125 libgobject-2.0.0.dylib        	0x06291918 g_closure_invoke + 504
+126 libgobject-2.0.0.dylib        	0x062b2a28 signal_emit_unlocked_R + 1992
+127 libgobject-2.0.0.dylib        	0x062b1af1 g_signal_emit_valist + 4913
+128 libgobject-2.0.0.dylib        	0x062b20f1 g_signal_emit + 65
+129 libgtk-quartz-2.0.0.dylib     	0x0569f43d gtk_widget_event_internal + 749
+130 libgtk-quartz-2.0.0.dylib     	0x0569ec2f gtk_widget_event + 319
+131 libgtk-quartz-2.0.0.dylib     	0x054e95f1 propagate_event_up + 97
+132 libgtk-quartz-2.0.0.dylib     	0x054e99b7 propagate_event + 535
+133 libgtk-quartz-2.0.0.dylib     	0x054e9ac7 gtk_propagate_event + 247
+134 libgtk-quartz-2.0.0.dylib     	0x054e7bb9 gtk_main_do_event + 777
+135 libgdk-quartz-2.0.0.dylib     	0x05956cd9 gdk_event_dispatch + 153
+136 libglib-2.0.0.dylib           	0x0528c9b9 g_main_dispatch + 409
+137 libglib-2.0.0.dylib           	0x0528d780 g_main_context_dispatch + 48
+138 libglib-2.0.0.dylib           	0x0528d975 g_main_context_iterate + 485
+139 libglib-2.0.0.dylib           	0x0528deaf g_main_loop_run + 527
+140 libgtk-quartz-2.0.0.dylib     	0x054e71a0 gtk_main + 240
+141 ???                           	0x17f198a8 0 + 401709224
+142 ???                           	0x17f1986c 0 + 401709164
+143 ???                           	0x17f1984c 0 + 401709132
+144 ???                           	0x044e3a50 0 + 72235600
+145 ???                           	0x0076713c 0 + 7762236
+146 ???                           	0x00766ed4 0 + 7761620
+147 ???                           	0x00766f9a 0 + 7761818
+148 libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+149 libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+150 libmonosgen-2.0.dylib         	0x004cb924 mono_runtime_exec_main + 420 (object.c:4052)
+151 libmonosgen-2.0.dylib         	0x004cbc95 mono_runtime_run_main + 725 (object.c:3678)
+152 libmonosgen-2.0.dylib         	0x00378c75 mono_jit_exec + 149 (driver.c:950)
+153 libmonosgen-2.0.dylib         	0x0037b2b2 mono_main + 9778 (driver.c:2007)
+154 com.xamarin.monodevelop       	0x00002dae main + 2398
+155 com.xamarin.monodevelop       	0x00002445 start + 53
+
+Thread 1:
+0   libsystem_kernel.dylib        	0x9abeffb6 semaphore_wait_trap + 10
+1   libmonosgen-2.0.dylib         	0x00548cce mono_sem_wait + 30 (mono-semaphore.c:118)
+2   libmonosgen-2.0.dylib         	0x004c0caa finalizer_thread + 74 (gc.c:1078)
+3   libmonosgen-2.0.dylib         	0x00497784 start_wrapper + 468 (threads.c:608)
+4   libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+5   libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+6   libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+7   libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+8   libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 2:
+0   libsystem_kernel.dylib        	0x9abf5046 __workq_kernreturn + 10
+1   libsystem_pthread.dylib       	0x953d4dcf _pthread_wqthread + 372
+2   libsystem_pthread.dylib       	0x953d8cce start_wqthread + 30
+
+Thread 3:: Dispatch queue: com.apple.libdispatch-manager
+0   libsystem_kernel.dylib        	0x9abf5992 kevent64 + 10
+1   libdispatch.dylib             	0x97e2b8bd _dispatch_mgr_invoke + 238
+2   libdispatch.dylib             	0x97e2b556 _dispatch_mgr_thread + 52
+
+Thread 4:: Dispatch queue: com.apple.root.default-priority
+0   com.apple.vImage              	0x924d2bf5 conv4_8_B + 117
+1   com.apple.vImage              	0x924cffae vConvolveCore_Planar8 + 3230
+2   com.apple.vImage              	0x9249e90e __vImageConvolveWithBias_Planar8_block_invoke + 542
+3   libdispatch.dylib             	0x97e313da _dispatch_apply_invoke + 169
+4   libdispatch.dylib             	0x97e293a6 _dispatch_client_callout + 50
+5   libdispatch.dylib             	0x97e2b467 _dispatch_root_queue_drain + 257
+6   libdispatch.dylib             	0x97e2c732 _dispatch_worker_thread2 + 39
+7   libsystem_pthread.dylib       	0x953d4dab _pthread_wqthread + 336
+8   libsystem_pthread.dylib       	0x953d8cce start_wqthread + 30
+
+Thread 5:
+0   libsystem_kernel.dylib        	0x9abf47ca __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	0x953d5d1d _pthread_cond_wait + 728
+2   libsystem_pthread.dylib       	0x953d7bd9 pthread_cond_wait$UNIX2003 + 71
+3   libmonosgen-2.0.dylib         	0x00526d8c _wapi_handle_timedwait_signal_handle + 620 (handles.c:1588)
+4   libmonosgen-2.0.dylib         	0x00526dd8 _wapi_handle_wait_signal_handle + 40 (handles.c:1533)
+5   libmonosgen-2.0.dylib         	0x0053a101 WaitForSingleObjectEx + 625 (wait.c:196)
+6   libmonosgen-2.0.dylib         	0x0049a4aa mono_wait_uninterrupted + 122
+7   libmonosgen-2.0.dylib         	0x0049a56f ves_icall_System_Threading_WaitHandle_WaitOne_internal + 95 (threads.c:1633)
+8   ???                           	0x064c15ac 0 + 105649580
+9   ???                           	0x064c13f0 0 + 105649136
+10  ???                           	0x064c0c63 0 + 105647203
+11  ???                           	0x064c0ae0 0 + 105646816
+12  ???                           	0x03eba5f5 0 + 65775093
+13  libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+14  libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+15  libmonosgen-2.0.dylib         	0x004c74dc mono_runtime_delegate_invoke + 140 (object.c:3538)
+16  libmonosgen-2.0.dylib         	0x004977b0 start_wrapper + 512 (threads.c:614)
+17  libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+18  libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+19  libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+20  libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+21  libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 6:
+0   libsystem_kernel.dylib        	0x9abf4b76 __semwait_signal + 10
+1   libsystem_c.dylib             	0x97ebd05b nanosleep$UNIX2003 + 219
+2   libmonosgen-2.0.dylib         	0x0053c315 SleepEx + 309 (wthreads.c:842)
+3   libmonosgen-2.0.dylib         	0x0049c398 monitor_thread + 120 (threadpool.c:779)
+4   libmonosgen-2.0.dylib         	0x00497784 start_wrapper + 468 (threads.c:608)
+5   libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+6   libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+7   libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+8   libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+9   libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 7:
+0   libsystem_kernel.dylib        	0x9abeffce semaphore_timedwait_trap + 10
+1   libmonosgen-2.0.dylib         	0x00548c55 mono_sem_timedwait + 261 (mono-semaphore.c:79)
+2   libmonosgen-2.0.dylib         	0x0049ee3e async_invoke_thread + 2974 (threadpool.c:1565)
+3   libmonosgen-2.0.dylib         	0x00497784 start_wrapper + 468 (threads.c:608)
+4   libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+5   libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+6   libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+7   libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+8   libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 8:
+0   libsystem_kernel.dylib        	0x9abf47ca __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	0x953d5d1d _pthread_cond_wait + 728
+2   libsystem_pthread.dylib       	0x953d7c25 pthread_cond_timedwait$UNIX2003 + 71
+3   libmonosgen-2.0.dylib         	0x00526d24 _wapi_handle_timedwait_signal_handle + 516 (handles.c:1493)
+4   libmonosgen-2.0.dylib         	0x0053a124 WaitForSingleObjectEx + 660 (wait.c:198)
+5   libmonosgen-2.0.dylib         	0x0049a4aa mono_wait_uninterrupted + 122
+6   libmonosgen-2.0.dylib         	0x0049a56f ves_icall_System_Threading_WaitHandle_WaitOne_internal + 95 (threads.c:1633)
+7   ???                           	0x064c15ac 0 + 105649580
+8   ???                           	0x0cd4ed38 0 + 215280952
+9   ???                           	0x0cd4eca9 0 + 215280809
+10  ???                           	0x0cd4e9f4 0 + 215280116
+11  ???                           	0x064c0ae0 0 + 105646816
+12  ???                           	0x03eba5f5 0 + 65775093
+13  libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+14  libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+15  libmonosgen-2.0.dylib         	0x004c74dc mono_runtime_delegate_invoke + 140 (object.c:3538)
+16  libmonosgen-2.0.dylib         	0x004977b0 start_wrapper + 512 (threads.c:614)
+17  libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+18  libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+19  libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+20  libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+21  libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 9:
+0   libsystem_kernel.dylib        	0x9abf4ace __select + 10
+1   libmonosgen-2.0.dylib         	0x0054868f mono_poll + 463 (mono-poll.c:76)
+2   libmonosgen-2.0.dylib         	0x0049d2f8 tp_poll_wait + 1400 (tpool-poll.c:186)
+3   libmonosgen-2.0.dylib         	0x00497784 start_wrapper + 468 (threads.c:608)
+4   libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+5   libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+6   libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+7   libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+8   libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 10:
+0   libsystem_kernel.dylib        	0x9abeffce semaphore_timedwait_trap + 10
+1   libmonosgen-2.0.dylib         	0x00548c55 mono_sem_timedwait + 261 (mono-semaphore.c:79)
+2   libmonosgen-2.0.dylib         	0x0049ee3e async_invoke_thread + 2974 (threadpool.c:1565)
+3   libmonosgen-2.0.dylib         	0x00497784 start_wrapper + 468 (threads.c:608)
+4   libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+5   libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+6   libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+7   libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+8   libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 11:
+0   libsystem_kernel.dylib        	0x9abeffce semaphore_timedwait_trap + 10
+1   libmonosgen-2.0.dylib         	0x00548c55 mono_sem_timedwait + 261 (mono-semaphore.c:79)
+2   libmonosgen-2.0.dylib         	0x0049ee3e async_invoke_thread + 2974 (threadpool.c:1565)
+3   libmonosgen-2.0.dylib         	0x00497784 start_wrapper + 468 (threads.c:608)
+4   libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+5   libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+6   libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+7   libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+8   libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 12:: CVDisplayLink
+0   libsystem_kernel.dylib        	0x9abf47ca __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	0x953d5d8a _pthread_cond_wait + 837
+2   libsystem_pthread.dylib       	0x953d6042 pthread_cond_timedwait_relative_np + 47
+3   com.apple.CoreVideo           	0x9c13a33d CVDisplayLink::waitUntil(unsigned long long) + 287
+4   com.apple.CoreVideo           	0x9c13942e CVDisplayLink::runIOThread() + 662
+5   com.apple.CoreVideo           	0x9c139180 startIOThread(void*) + 159
+6   libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+7   libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+8   libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 13:
+0   libsystem_kernel.dylib        	0x9abf4b76 __semwait_signal + 10
+1   libsystem_c.dylib             	0x97ebd05b nanosleep$UNIX2003 + 219
+2   libmonosgen-2.0.dylib         	0x0053c315 SleepEx + 309 (wthreads.c:842)
+3   libmonosgen-2.0.dylib         	0x0049a7e8 ves_icall_System_Threading_Thread_Sleep_internal + 88 (threads.c:1261)
+4   ???                           	0x154e2df4 0 + 357445108
+5   ???                           	0x154e2ce0 0 + 357444832
+6   ???                           	0x154e2b44 0 + 357444420
+7   ???                           	0x064c0ae0 0 + 105646816
+8   ???                           	0x03eba5f5 0 + 65775093
+9   libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+10  libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+11  libmonosgen-2.0.dylib         	0x004c74dc mono_runtime_delegate_invoke + 140 (object.c:3538)
+12  libmonosgen-2.0.dylib         	0x004977b0 start_wrapper + 512 (threads.c:614)
+13  libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+14  libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+15  libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+16  libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+17  libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 14:
+0   libsystem_kernel.dylib        	0x9abeffce semaphore_timedwait_trap + 10
+1   libmonosgen-2.0.dylib         	0x00548c55 mono_sem_timedwait + 261 (mono-semaphore.c:79)
+2   libmonosgen-2.0.dylib         	0x0049ee3e async_invoke_thread + 2974 (threadpool.c:1565)
+3   libmonosgen-2.0.dylib         	0x00497784 start_wrapper + 468 (threads.c:608)
+4   libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+5   libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+6   libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+7   libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+8   libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 15:
+0   libsystem_kernel.dylib        	0x9abf4b76 __semwait_signal + 10
+1   libsystem_c.dylib             	0x97ebd05b nanosleep$UNIX2003 + 219
+2   libmonosgen-2.0.dylib         	0x0053c315 SleepEx + 309 (wthreads.c:842)
+3   libmonosgen-2.0.dylib         	0x0049a7e8 ves_icall_System_Threading_Thread_Sleep_internal + 88 (threads.c:1261)
+4   ???                           	0x154e2df4 0 + 357445108
+5   ???                           	0x154e2ce0 0 + 357444832
+6   ???                           	0x1910f430 0 + 420541488
+7   ???                           	0x1910ea98 0 + 420539032
+8   ???                           	0x1910e740 0 + 420538176
+9   ???                           	0x1910e6ac 0 + 420538028
+10  ???                           	0x120117fa 0 + 302061562
+11  ???                           	0x1200dd0f 0 + 302046479
+12  ???                           	0x1200d274 0 + 302043764
+13  ???                           	0x1200d05c 0 + 302043228
+14  ???                           	0x1200d024 0 + 302043172
+15  ???                           	0x00766d9d 0 + 7761309
+16  libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+17  libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+18  libmonosgen-2.0.dylib         	0x004c74dc mono_runtime_delegate_invoke + 140 (object.c:3538)
+19  libmonosgen-2.0.dylib         	0x0049eafd async_invoke_thread + 2141 (threadpool.c:622)
+20  libmonosgen-2.0.dylib         	0x00497784 start_wrapper + 468 (threads.c:608)
+21  libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+22  libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+23  libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+24  libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+25  libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 16:
+0   libsystem_kernel.dylib        	0x9abeffce semaphore_timedwait_trap + 10
+1   libmonosgen-2.0.dylib         	0x00548c55 mono_sem_timedwait + 261 (mono-semaphore.c:79)
+2   libmonosgen-2.0.dylib         	0x0049ee3e async_invoke_thread + 2974 (threadpool.c:1565)
+3   libmonosgen-2.0.dylib         	0x00497784 start_wrapper + 468 (threads.c:608)
+4   libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+5   libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+6   libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+7   libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+8   libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 17:
+0   libsystem_kernel.dylib        	0x9abf47ca __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	0x953d5d1d _pthread_cond_wait + 728
+2   libsystem_pthread.dylib       	0x953d7c25 pthread_cond_timedwait$UNIX2003 + 71
+3   libmonosgen-2.0.dylib         	0x00526d24 _wapi_handle_timedwait_signal_handle + 516 (handles.c:1493)
+4   libmonosgen-2.0.dylib         	0x0053a124 WaitForSingleObjectEx + 660 (wait.c:198)
+5   libmonosgen-2.0.dylib         	0x0049a4aa mono_wait_uninterrupted + 122
+6   libmonosgen-2.0.dylib         	0x0049a56f ves_icall_System_Threading_WaitHandle_WaitOne_internal + 95 (threads.c:1633)
+7   ???                           	0x064c15ac 0 + 105649580
+8   ???                           	0x0cd4ed38 0 + 215280952
+9   ???                           	0x123f912a 0 + 306155818
+10  ???                           	0x123f9038 0 + 306155576
+11  ???                           	0x064c0ae0 0 + 105646816
+12  ???                           	0x03eba5f5 0 + 65775093
+13  libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+14  libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+15  libmonosgen-2.0.dylib         	0x004c74dc mono_runtime_delegate_invoke + 140 (object.c:3538)
+16  libmonosgen-2.0.dylib         	0x004977b0 start_wrapper + 512 (threads.c:614)
+17  libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+18  libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+19  libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+20  libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+21  libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 18:: com.apple.CFSocket.private
+0   libsystem_kernel.dylib        	0x9abf4ace __select + 10
+1   com.apple.CoreFoundation      	0x90c8bdc6 __CFSocketManager + 1158
+2   libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+3   libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+4   libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 19:
+0   libsystem_kernel.dylib        	0x9abeff7a mach_msg_trap + 10
+1   libsystem_kernel.dylib        	0x9abef16c mach_msg + 68
+2   com.apple.CoreFoundation      	0x90c3bf69 __CFRunLoopServiceMachPort + 169
+3   com.apple.CoreFoundation      	0x90c3b541 __CFRunLoopRun + 1393
+4   com.apple.CoreFoundation      	0x90c3ad5a CFRunLoopRunSpecific + 394
+5   com.apple.CoreFoundation      	0x90c3abbb CFRunLoopRunInMode + 123
+6   com.apple.AppKit              	0x993a1f18 _NSEventThread + 283
+7   libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+8   libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+9   libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 20:
+0   libsystem_kernel.dylib        	0x9abf4656 __open + 10
+1   libmonosgen-2.0.dylib         	0x0052d2fb _wapi_open + 75 (io-portability.c:45)
+2   libmonosgen-2.0.dylib         	0x0052ce7f CreateFile + 303 (io.c:1472)
+3   libmonosgen-2.0.dylib         	0x004294bb ves_icall_System_IO_MonoIO_Open + 587 (file-io.c:787)
+4   ???                           	0x03ec9a1c 0 + 65837596
+5   ???                           	0x03ec93c8 0 + 65835976
+6   ???                           	0x03ec9184 0 + 65835396
+7   ???                           	0x03ec9114 0 + 65835284
+8   ???                           	0x0ca02fec 0 + 211824620
+9   ???                           	0x154dfbdc 0 + 357432284
+10  ???                           	0x154dfa88 0 + 357431944
+11  ???                           	0x19170f9c 0 + 420941724
+12  ???                           	0x19170c84 0 + 420940932
+13  ???                           	0x00766d9d 0 + 7761309
+14  libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+15  libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+16  libmonosgen-2.0.dylib         	0x004c74dc mono_runtime_delegate_invoke + 140 (object.c:3538)
+17  libmonosgen-2.0.dylib         	0x0049eafd async_invoke_thread + 2141 (threadpool.c:622)
+18  libmonosgen-2.0.dylib         	0x00497784 start_wrapper + 468 (threads.c:608)
+19  libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+20  libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+21  libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+22  libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+23  libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 21:
+0   libsystem_kernel.dylib        	0x9abeffce semaphore_timedwait_trap + 10
+1   libmonosgen-2.0.dylib         	0x00548c55 mono_sem_timedwait + 261 (mono-semaphore.c:79)
+2   libmonosgen-2.0.dylib         	0x0049ee3e async_invoke_thread + 2974 (threadpool.c:1565)
+3   libmonosgen-2.0.dylib         	0x00497784 start_wrapper + 468 (threads.c:608)
+4   libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+5   libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+6   libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+7   libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+8   libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 22:
+0   libsystem_kernel.dylib        	0x9abf4b76 __semwait_signal + 10
+1   libsystem_c.dylib             	0x97ebd05b nanosleep$UNIX2003 + 219
+2   libmonosgen-2.0.dylib         	0x0053c315 SleepEx + 309 (wthreads.c:842)
+3   libmonosgen-2.0.dylib         	0x0049a7e8 ves_icall_System_Threading_Thread_Sleep_internal + 88 (threads.c:1261)
+4   ???                           	0x154e2df4 0 + 357445108
+5   ???                           	0x154e2ce0 0 + 357444832
+6   ???                           	0x1910f430 0 + 420541488
+7   ???                           	0x1910ea98 0 + 420539032
+8   ???                           	0x1910e740 0 + 420538176
+9   ???                           	0x1910e6ac 0 + 420538028
+10  ???                           	0x120117fa 0 + 302061562
+11  ???                           	0x1200dd0f 0 + 302046479
+12  ???                           	0x1200d274 0 + 302043764
+13  ???                           	0x1200d05c 0 + 302043228
+14  ???                           	0x1200d024 0 + 302043172
+15  ???                           	0x00766d9d 0 + 7761309
+16  libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+17  libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+18  libmonosgen-2.0.dylib         	0x004c74dc mono_runtime_delegate_invoke + 140 (object.c:3538)
+19  libmonosgen-2.0.dylib         	0x0049eafd async_invoke_thread + 2141 (threadpool.c:622)
+20  libmonosgen-2.0.dylib         	0x00497784 start_wrapper + 468 (threads.c:608)
+21  libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+22  libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+23  libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+24  libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+25  libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 23:
+0   libsystem_kernel.dylib        	0x9abf47ca __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	0x953d5d1d _pthread_cond_wait + 728
+2   libsystem_pthread.dylib       	0x953d7bd9 pthread_cond_wait$UNIX2003 + 71
+3   libgdk-quartz-2.0.0.dylib     	0x05955fcd select_thread_func + 157
+4   libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+5   libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+6   libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 24:
+0   libsystem_kernel.dylib        	0x9abeff7a mach_msg_trap + 10
+1   libsystem_kernel.dylib        	0x9abef16c mach_msg + 68
+2   ???                           	0x191136b8 0 + 420558520
+3   ???                           	0x19113634 0 + 420558388
+4   ???                           	0x19113450 0 + 420557904
+5   ???                           	0x19113344 0 + 420557636
+6   ???                           	0x064c0ae0 0 + 105646816
+7   ???                           	0x03eba5f5 0 + 65775093
+8   libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+9   libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+10  libmonosgen-2.0.dylib         	0x004c74dc mono_runtime_delegate_invoke + 140 (object.c:3538)
+11  libmonosgen-2.0.dylib         	0x004977b0 start_wrapper + 512 (threads.c:614)
+12  libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+13  libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+14  libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+15  libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+16  libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 25:
+0   libsystem_kernel.dylib        	0x9abeffce semaphore_timedwait_trap + 10
+1   libmonosgen-2.0.dylib         	0x00548c55 mono_sem_timedwait + 261 (mono-semaphore.c:79)
+2   libmonosgen-2.0.dylib         	0x0049ee3e async_invoke_thread + 2974 (threadpool.c:1565)
+3   libmonosgen-2.0.dylib         	0x00497784 start_wrapper + 468 (threads.c:608)
+4   libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+5   libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+6   libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+7   libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+8   libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 26:
+0   libsystem_kernel.dylib        	0x9abeffce semaphore_timedwait_trap + 10
+1   libmonosgen-2.0.dylib         	0x00548c55 mono_sem_timedwait + 261 (mono-semaphore.c:79)
+2   libmonosgen-2.0.dylib         	0x0049ee3e async_invoke_thread + 2974 (threadpool.c:1565)
+3   libmonosgen-2.0.dylib         	0x00497784 start_wrapper + 468 (threads.c:608)
+4   libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+5   libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+6   libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+7   libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+8   libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 27:
+0   libsystem_kernel.dylib        	0x9abf5976 kevent + 10
+1   ???                           	0x1916d6ec 0 + 420927212
+2   ???                           	0x1916d0b4 0 + 420925620
+3   ???                           	0x19116ccc 0 + 420572364
+4   ???                           	0x064c0ae0 0 + 105646816
+5   ???                           	0x03eba5f5 0 + 65775093
+6   libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+7   libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+8   libmonosgen-2.0.dylib         	0x004c74dc mono_runtime_delegate_invoke + 140 (object.c:3538)
+9   libmonosgen-2.0.dylib         	0x004977b0 start_wrapper + 512 (threads.c:614)
+10  libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+11  libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+12  libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+13  libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+14  libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 28:
+0   ???                           	0x0c86d915 0 + 210163989
+1   ???                           	0x1a79aba4 0 + 444181412
+2   ???                           	0x1a2f0534 0 + 439289140
+3   ???                           	0x1a2f7b14 0 + 439319316
+4   ???                           	0x1a2e28ac 0 + 439232684
+5   ???                           	0x1a396bea 0 + 439970794
+6   ???                           	0x1a38de3c 0 + 439934524
+7   ???                           	0x1a38d6ec 0 + 439932652
+8   ???                           	0x18a4ae5e 0 + 413445726
+9   ???                           	0x1200dd0f 0 + 302046479
+10  ???                           	0x1200d274 0 + 302043764
+11  ???                           	0x1200d05c 0 + 302043228
+12  ???                           	0x1200d024 0 + 302043172
+13  ???                           	0x00766d9d 0 + 7761309
+14  libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+15  libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+16  libmonosgen-2.0.dylib         	0x004c74dc mono_runtime_delegate_invoke + 140 (object.c:3538)
+17  libmonosgen-2.0.dylib         	0x0049eafd async_invoke_thread + 2141 (threadpool.c:622)
+18  libmonosgen-2.0.dylib         	0x00497784 start_wrapper + 468 (threads.c:608)
+19  libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+20  libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+21  libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+22  libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+23  libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 29:
+0   libsystem_kernel.dylib        	0x9abf3d2e __accept + 10
+1   libmonosgen-2.0.dylib         	0x005378f3 _wapi_accept + 275 (sockets.c:221)
+2   libmonosgen-2.0.dylib         	0x0048b11b ves_icall_System_Net_Sockets_Socket_Accept_internal + 43 (socket-io.c:868)
+3   ???                           	0x1971f5e0 0 + 426898912
+4   ???                           	0x1971f430 0 + 426898480
+5   ???                           	0x1971f37c 0 + 426898300
+6   ???                           	0x1971f318 0 + 426898200
+7   ???                           	0x1971f268 0 + 426898024
+8   ???                           	0x064c0ae0 0 + 105646816
+9   ???                           	0x03eba5f5 0 + 65775093
+10  libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+11  libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+12  libmonosgen-2.0.dylib         	0x004c74dc mono_runtime_delegate_invoke + 140 (object.c:3538)
+13  libmonosgen-2.0.dylib         	0x004977b0 start_wrapper + 512 (threads.c:614)
+14  libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+15  libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+16  libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+17  libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+18  libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 30:
+0   libsystem_kernel.dylib        	0x9abf3d2e __accept + 10
+1   libmonosgen-2.0.dylib         	0x005378f3 _wapi_accept + 275 (sockets.c:221)
+2   libmonosgen-2.0.dylib         	0x0048b11b ves_icall_System_Net_Sockets_Socket_Accept_internal + 43 (socket-io.c:868)
+3   ???                           	0x1971f5e0 0 + 426898912
+4   ???                           	0x1971f430 0 + 426898480
+5   ???                           	0x197217b4 0 + 426907572
+6   ???                           	0x1972160c 0 + 426907148
+7   ???                           	0x064c0ae0 0 + 105646816
+8   ???                           	0x03eba5f5 0 + 65775093
+9   libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+10  libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+11  libmonosgen-2.0.dylib         	0x004c74dc mono_runtime_delegate_invoke + 140 (object.c:3538)
+12  libmonosgen-2.0.dylib         	0x004977b0 start_wrapper + 512 (threads.c:614)
+13  libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+14  libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+15  libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+16  libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+17  libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 31:
+0   libsystem_kernel.dylib        	0x9abeffce semaphore_timedwait_trap + 10
+1   libmonosgen-2.0.dylib         	0x00548c55 mono_sem_timedwait + 261 (mono-semaphore.c:79)
+2   libmonosgen-2.0.dylib         	0x0049ee3e async_invoke_thread + 2974 (threadpool.c:1565)
+3   libmonosgen-2.0.dylib         	0x00497784 start_wrapper + 468 (threads.c:608)
+4   libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+5   libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+6   libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+7   libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+8   libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 32:
+0   libsystem_kernel.dylib        	0x9abeff7a mach_msg_trap + 10
+1   libsystem_kernel.dylib        	0x9abef16c mach_msg + 68
+2   ???                           	0x191136b8 0 + 420558520
+3   ???                           	0x19113634 0 + 420558388
+4   ???                           	0x19113450 0 + 420557904
+5   ???                           	0x19113344 0 + 420557636
+6   ???                           	0x064c0ae0 0 + 105646816
+7   ???                           	0x03eba5f5 0 + 65775093
+8   libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+9   libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+10  libmonosgen-2.0.dylib         	0x004c74dc mono_runtime_delegate_invoke + 140 (object.c:3538)
+11  libmonosgen-2.0.dylib         	0x004977b0 start_wrapper + 512 (threads.c:614)
+12  libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+13  libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+14  libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+15  libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+16  libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 33:
+0   libsystem_kernel.dylib        	0x9abf47ca __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	0x953d5d1d _pthread_cond_wait + 728
+2   libsystem_pthread.dylib       	0x953d7bd9 pthread_cond_wait$UNIX2003 + 71
+3   libmonosgen-2.0.dylib         	0x00526d8c _wapi_handle_timedwait_signal_handle + 620 (handles.c:1588)
+4   libmonosgen-2.0.dylib         	0x00526dd8 _wapi_handle_wait_signal_handle + 40 (handles.c:1533)
+5   libmonosgen-2.0.dylib         	0x0053a101 WaitForSingleObjectEx + 625 (wait.c:196)
+6   libmonosgen-2.0.dylib         	0x0049a4aa mono_wait_uninterrupted + 122
+7   libmonosgen-2.0.dylib         	0x0049a56f ves_icall_System_Threading_WaitHandle_WaitOne_internal + 95 (threads.c:1633)
+8   ???                           	0x064c15ac 0 + 105649580
+9   ???                           	0x0cd4ed38 0 + 215280952
+10  ???                           	0x18a4d538 0 + 413455672
+11  ???                           	0x1e8ba348 0 + 512467784
+12  ???                           	0x1e8ba12c 0 + 512467244
+13  ???                           	0x1e8ba0f0 0 + 512467184
+14  ???                           	0x1f794424 0 + 528040996
+15  ???                           	0x120117fa 0 + 302061562
+16  ???                           	0x1200dd0f 0 + 302046479
+17  ???                           	0x1200d274 0 + 302043764
+18  ???                           	0x1200d05c 0 + 302043228
+19  ???                           	0x1200d024 0 + 302043172
+20  ???                           	0x00766d9d 0 + 7761309
+21  libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+22  libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+23  libmonosgen-2.0.dylib         	0x004c74dc mono_runtime_delegate_invoke + 140 (object.c:3538)
+24  libmonosgen-2.0.dylib         	0x0049eafd async_invoke_thread + 2141 (threadpool.c:622)
+25  libmonosgen-2.0.dylib         	0x00497784 start_wrapper + 468 (threads.c:608)
+26  libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+27  libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+28  libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+29  libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+30  libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 34:
+0   libsystem_kernel.dylib        	0x9abeffce semaphore_timedwait_trap + 10
+1   libmonosgen-2.0.dylib         	0x00548c55 mono_sem_timedwait + 261 (mono-semaphore.c:79)
+2   libmonosgen-2.0.dylib         	0x0049ee3e async_invoke_thread + 2974 (threadpool.c:1565)
+3   libmonosgen-2.0.dylib         	0x00497784 start_wrapper + 468 (threads.c:608)
+4   libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+5   libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+6   libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+7   libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+8   libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 35:
+0   libsystem_kernel.dylib        	0x9abf4b76 __semwait_signal + 10
+1   libsystem_c.dylib             	0x97ebd05b nanosleep$UNIX2003 + 219
+2   libmonosgen-2.0.dylib         	0x0053c315 SleepEx + 309 (wthreads.c:842)
+3   libmonosgen-2.0.dylib         	0x0049a7e8 ves_icall_System_Threading_Thread_Sleep_internal + 88 (threads.c:1261)
+4   ???                           	0x154e2df4 0 + 357445108
+5   ???                           	0x154e2ce0 0 + 357444832
+6   ???                           	0x1a7e6808 0 + 444491784
+7   ???                           	0x064c0ae0 0 + 105646816
+8   ???                           	0x03eba5f5 0 + 65775093
+9   libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+10  libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+11  libmonosgen-2.0.dylib         	0x004c74dc mono_runtime_delegate_invoke + 140 (object.c:3538)
+12  libmonosgen-2.0.dylib         	0x004977b0 start_wrapper + 512 (threads.c:614)
+13  libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+14  libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+15  libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+16  libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+17  libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 36:
+0   libsystem_kernel.dylib        	0x9abf5976 kevent + 10
+1   ???                           	0x1916d6ec 0 + 420927212
+2   ???                           	0x1916d0b4 0 + 420925620
+3   ???                           	0x19116ccc 0 + 420572364
+4   ???                           	0x064c0ae0 0 + 105646816
+5   ???                           	0x03eba5f5 0 + 65775093
+6   libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+7   libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+8   libmonosgen-2.0.dylib         	0x004c74dc mono_runtime_delegate_invoke + 140 (object.c:3538)
+9   libmonosgen-2.0.dylib         	0x004977b0 start_wrapper + 512 (threads.c:614)
+10  libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+11  libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+12  libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+13  libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+14  libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 37:
+0   libsystem_pthread.dylib       	0x953d8cb0 start_wqthread + 0
+
+Thread 38:
+0   libsystem_kernel.dylib        	0x9abf5046 __workq_kernreturn + 10
+1   libsystem_pthread.dylib       	0x953d4dcf _pthread_wqthread + 372
+2   libsystem_pthread.dylib       	0x953d8cce start_wqthread + 30
+
+Thread 39:
+0   libsystem_kernel.dylib        	0x9abf5046 __workq_kernreturn + 10
+1   libsystem_pthread.dylib       	0x953d4dcf _pthread_wqthread + 372
+2   libsystem_pthread.dylib       	0x953d8cce start_wqthread + 30
+
+Thread 40:
+0   libsystem_kernel.dylib        	0x9abf5046 __workq_kernreturn + 10
+1   libsystem_pthread.dylib       	0x953d4dcf _pthread_wqthread + 372
+2   libsystem_pthread.dylib       	0x953d8cce start_wqthread + 30
+
+Thread 41:
+0   libsystem_kernel.dylib        	0x9abf5046 __workq_kernreturn + 10
+1   libsystem_pthread.dylib       	0x953d4dcf _pthread_wqthread + 372
+2   libsystem_pthread.dylib       	0x953d8cce start_wqthread + 30
+
+Thread 42:
+0   libsystem_kernel.dylib        	0x9abf47ca __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	0x953d5d1d _pthread_cond_wait + 728
+2   libsystem_pthread.dylib       	0x953d7bd9 pthread_cond_wait$UNIX2003 + 71
+3   libmonosgen-2.0.dylib         	0x00526d8c _wapi_handle_timedwait_signal_handle + 620 (handles.c:1588)
+4   libmonosgen-2.0.dylib         	0x00526dd8 _wapi_handle_wait_signal_handle + 40 (handles.c:1533)
+5   libmonosgen-2.0.dylib         	0x0053a101 WaitForSingleObjectEx + 625 (wait.c:196)
+6   libmonosgen-2.0.dylib         	0x0049a4aa mono_wait_uninterrupted + 122
+7   libmonosgen-2.0.dylib         	0x0049a56f ves_icall_System_Threading_WaitHandle_WaitOne_internal + 95 (threads.c:1633)
+8   ???                           	0x064c15ac 0 + 105649580
+9   ???                           	0x064c13f0 0 + 105649136
+10  ???                           	0x1c29178f 0 + 472455055
+11  ???                           	0x064c0ae0 0 + 105646816
+12  ???                           	0x03eba5f5 0 + 65775093
+13  libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+14  libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+15  libmonosgen-2.0.dylib         	0x004c74dc mono_runtime_delegate_invoke + 140 (object.c:3538)
+16  libmonosgen-2.0.dylib         	0x004977b0 start_wrapper + 512 (threads.c:614)
+17  libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+18  libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+19  libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+20  libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+21  libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 43:
+0   libsystem_kernel.dylib        	0x9abf47ca __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	0x953d5d1d _pthread_cond_wait + 728
+2   libsystem_pthread.dylib       	0x953d7bd9 pthread_cond_wait$UNIX2003 + 71
+3   libmonosgen-2.0.dylib         	0x00526d8c _wapi_handle_timedwait_signal_handle + 620 (handles.c:1588)
+4   libmonosgen-2.0.dylib         	0x00526dd8 _wapi_handle_wait_signal_handle + 40 (handles.c:1533)
+5   libmonosgen-2.0.dylib         	0x0053a101 WaitForSingleObjectEx + 625 (wait.c:196)
+6   libmonosgen-2.0.dylib         	0x0049a4aa mono_wait_uninterrupted + 122
+7   libmonosgen-2.0.dylib         	0x0049a56f ves_icall_System_Threading_WaitHandle_WaitOne_internal + 95 (threads.c:1633)
+8   ???                           	0x064c15ac 0 + 105649580
+9   ???                           	0x064c13f0 0 + 105649136
+10  ???                           	0x1d4f9567 0 + 491754855
+11  ???                           	0x064c0ae0 0 + 105646816
+12  ???                           	0x03eba5f5 0 + 65775093
+13  libmonosgen-2.0.dylib         	0x0030d68e mono_jit_runtime_invoke + 798 (mini.c:6473)
+14  libmonosgen-2.0.dylib         	0x004c736e mono_runtime_invoke + 126 (object.c:2827)
+15  libmonosgen-2.0.dylib         	0x004c74dc mono_runtime_delegate_invoke + 140 (object.c:3538)
+16  libmonosgen-2.0.dylib         	0x004977b0 start_wrapper + 512 (threads.c:614)
+17  libmonosgen-2.0.dylib         	0x0053d0aa thread_start_routine + 154 (wthreads.c:294)
+18  libmonosgen-2.0.dylib         	0x0054dcd1 inner_start_thread + 65 (mono-threads-posix.c:49)
+19  libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+20  libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+21  libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 44:: com.apple.appkit-heartbeat
+0   libsystem_kernel.dylib        	0x9abf4b76 __semwait_signal + 10
+1   libsystem_c.dylib             	0x97ebd05b nanosleep$UNIX2003 + 219
+2   libsystem_c.dylib             	0x97ebcf06 usleep$UNIX2003 + 60
+3   com.apple.AppKit              	0x9946cddc -[NSUIHeartBeat _heartBeatThread:] + 2318
+4   com.apple.Foundation          	0x9ac67f2e -[NSThread main] + 45
+5   com.apple.Foundation          	0x9ac67e86 __NSThread__main__ + 1426
+6   libsystem_pthread.dylib       	0x953d35fb _pthread_body + 144
+7   libsystem_pthread.dylib       	0x953d3485 _pthread_start + 130
+8   libsystem_pthread.dylib       	0x953d8cf2 thread_start + 34
+
+Thread 0 crashed with X86 Thread State (32-bit):
+  eax: 0x00000000  ebx: 0xa15be140  ecx: 0xbfff7cac  edx: 0x9abf5046
+  edi: 0x00000007  esi: 0x97e2aec4  ebp: 0xbfff7cc8  esp: 0xbfff7cac
+   ss: 0x00000023  efl: 0x00200246  eip: 0x9abf5046   cs: 0x0000000b
+   ds: 0x00000023   es: 0x00000023   fs: 0x00000000   gs: 0x0000000f
+  cr2: 0x1baef0f8
+  
+Logical CPU:     0
+Error Code:      0x00100170
+Trap Number:     132
+
+
+Binary Images:
+    0x1000 -     0x5ffa +com.xamarin.monodevelop (4.3.1.5 - 4.3.1.5) <215251D5-42A5-3347-9376-DC45AEFD24C7> /Applications/Xamarin Studio.app/Contents/MacOS/XamarinStudio
+  0x300000 -   0x632ff6 +libmonosgen-2.0.dylib (2) <72A1B04F-E501-39B5-901D-2703D6BE7A68> /Library/Frameworks/Mono.framework/Versions/Current/lib/libmonosgen-2.0.dylib
+ 0x2749000 -  0x2749ff9 +libgthread-2.0.0.dylib (3601.4) <EF82A91E-53B7-35B7-9D8A-AE2A241D3E8E> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libgthread-2.0.0.dylib
+ 0x27fb000 -  0x27fcffb +libgmodule-2.0.0.dylib (3601.4) <1796605D-BF71-3102-AA8E-BBAE6E5090E3> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libgmodule-2.0.0.dylib
+ 0x3e91000 -  0x3e92fff +libglibsharpglue-2.so (???) <C0C67916-2568-3E3B-AC43-05CAECA567D2> /Library/Frameworks/Mono.framework/Versions/Current/lib/libglibsharpglue-2.so
+ 0x4484000 -  0x44acfe7 +libMonoPosixHelper.dylib (0) <43F22427-D0F9-3DDA-A8E2-8304CEE5184C> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libMonoPosixHelper.dylib
+ 0x44f0000 -  0x44f8fff +libffi.6.dylib (7.1) <C8691050-D8E7-3D50-972D-462C237DD988> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libffi.6.dylib
+ 0x47d0000 -  0x47ddff7 +libintl.8.dylib (10.2) <0333BDB7-7044-362C-A13C-123A15EB41C1> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libintl.8.dylib
+ 0x47e2000 -  0x47f0ff7 +libpangocairo-1.0.0.dylib (3501) <3D5C70B0-D7D2-32E0-8757-8D6ED995AF53> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libpangocairo-1.0.0.dylib
+ 0x5245000 -  0x5380ff7 +libglib-2.0.0.dylib (3601.4) <A50260CB-9104-3458-A8CF-92F13019417C> /Library/Frameworks/Mono.framework/Versions/Current/lib/libglib-2.0.0.dylib
+ 0x53af000 -  0x581bfe2 +libgtk-quartz-2.0.0.dylib (2401.23) <6823AC6F-4077-3CC8-A3BE-1E0CF38387AC> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libgtk-quartz-2.0.0.dylib
+ 0x5900000 -  0x5996feb +libgdk-quartz-2.0.0.dylib (2401.23) <5B3528E1-D5D2-3C10-824B-D785FF3D2029> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libgdk-quartz-2.0.0.dylib
+ 0x59bf000 -  0x5a08ffb +libpango-1.0.0.dylib (3501) <FE2A1DF5-9C6E-3F60-A560-8614A2D8E6CD> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libpango-1.0.0.dylib
+ 0x5a1d000 -  0x5a36feb +libatk-1.0.0.dylib (20810.1) <6C5B3BB3-2212-3A77-B5E7-B2A758EE5EF2> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libatk-1.0.0.dylib
+ 0x5a44000 -  0x5b61ff3 +libcairo.2.dylib (11203.14) <22ED0262-012E-333A-B3D8-A157BE9BE44B> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libcairo.2.dylib
+ 0x5b97000 -  0x5f2bffb +libpixman-1.0.dylib (31) <848365D0-16DD-3899-BD9A-2876B88F418A> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libpixman-1.0.dylib
+ 0x5f40000 -  0x5f7afff +libfontconfig.1.dylib (8.2) <AB89C194-98B2-3F0E-850C-07049D95220F> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libfontconfig.1.dylib
+ 0x5f86000 -  0x5fb0ff7 +libexpat.1.dylib (7.2) <985E7B0E-4475-3442-8783-A3D82E69F5FB> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libexpat.1.dylib
+ 0x5fb7000 -  0x6057fef +libfreetype.6.dylib (17.2) <552DB286-4FAC-3B0D-B62E-C2AC30320FE0> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libfreetype.6.dylib
+ 0x606e000 -  0x608dff7 +libgdk_pixbuf-2.0.0.dylib (2801.2) <C215D405-7FF2-3648-90DB-78BAACF6F7B6> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libgdk_pixbuf-2.0.0.dylib
+ 0x6097000 -  0x60c3fe3 +libpng14.14.dylib (27) <29E9B624-13C3-3B6E-8096-F075E5316666> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libpng14.14.dylib
+ 0x60ca000 -  0x6222ff4 +libgio-2.0.0.dylib (3601.4) <75E0836F-C54E-3DD3-B978-FF0D140D46EE> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libgio-2.0.0.dylib
+ 0x628a000 -  0x62d0fff +libgobject-2.0.0.dylib (3601.4) <91BA6214-AB5C-33A3-8E77-E7C74150823F> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libgobject-2.0.0.dylib
+ 0xc89a000 -  0xc8d4ffd +libxamarin.so (???) <38332952-D58A-39BB-9942-417E8EFAAEEF> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/gtk-2.0/2.10.0/engines/libxamarin.so
+ 0xc8dd000 -  0xc8e8fee +libquartz.so (???) <20FA010B-38AD-3EA8-BB44-261EB702D968> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/gtk-2.0/2.10.0/engines/libquartz.so
+ 0xccee000 -  0xcd06ff7  com.apple.ScriptingBridge (1.3.1 - 63) <6A12D8A2-A60D-3304-B3A8-DFE3901CC94A> /System/Library/Frameworks/ScriptingBridge.framework/ScriptingBridge
+ 0xdced000 -  0xdcfdffb +libgtksharpglue-2.so (???) <430149C9-E384-374B-8F7B-484774FA21CF> /Library/Frameworks/Mono.framework/Versions/Current/lib/libgtksharpglue-2.so
+ 0xde10000 -  0xde13ff8 +libpixbufloader-png.so (???) <1A576197-DA4E-3BB6-BFC0-C93B8CBA5F7D> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-png.so
+0x10df9000 - 0x10dfaff3 +cl_kernels (???) <7ACED47D-0C85-4699-999D-9E797668959C> cl_kernels
+0x10fbf000 - 0x10fbfffd +cl_kernels (???) <E836F0F9-0721-4038-A89C-8885DB6354F8> cl_kernels
+0x10fc4000 - 0x10fc5ffd +cl_kernels (???) <0E7B44E2-2AB6-44D8-BF3D-6A9196283E12> cl_kernels
+0x10fc7000 - 0x10fc8ff9 +pango-basic-coretext.so (???) <0788C494-41D2-3D9B-8444-D0F1DE58CAFE> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/pango/1.8.0/modules/pango-basic-coretext.so
+0x10fcc000 - 0x10fcdff7 +cl_kernels (???) <88AFB6E7-CED2-4A62-AA9D-C42A59226B5A> cl_kernels
+0x10fd4000 - 0x10fd5ff7 +libpangosharpglue-2.so (???) <A5C56BE7-D3EC-3DE3-A285-9B3AB7C08730> /Library/Frameworks/Mono.framework/Versions/Current/lib/libpangosharpglue-2.so
+0x10ffc000 - 0x10ffdff6 +libpixbufloader-icns.so (???) <9156E50A-C9D2-3A87-81B0-37BA305B6B37> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-icns.so
+0x12000000 - 0x12002ffb +im-quartz.so (???) <A7B30FFD-E50A-30AB-AC8F-D614D237D758> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/gtk-2.0/2.10.0/immodules/im-quartz.so
+0x12500000 - 0x12525ff9  com.apple.framework.familycontrols (4.1 - 410) <A33A97EE-C735-38BA-9B49-5D78DAA3DEDA> /System/Library/PrivateFrameworks/FamilyControls.framework/Versions/A/FamilyControls
+0x1253a000 - 0x12545ffa  com.apple.CommerceCore (1.0 - 42) <E59717F2-6770-3DBC-8510-F7AA61E60F57> /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Frameworks/CommerceCore.framework/Versions/A/CommerceCore
+0x14315000 - 0x14400ff7  unorm8_bgra.dylib (2.3.58) <44644D3C-3D0E-3CBB-9265-664D95EC791F> /System/Library/Frameworks/OpenCL.framework/Versions/A/Libraries/ImageFormats/unorm8_bgra.dylib
+0x1442c000 - 0x14517ff7  unorm8_argb.dylib (2.3.58) <9B100FCA-E5EA-36AE-B32B-5EE2C599ADD7> /System/Library/Frameworks/OpenCL.framework/Versions/A/Libraries/ImageFormats/unorm8_argb.dylib
+0x145d5000 - 0x145d8ff6 +libgdksharpglue-2.so (???) <624EBD0A-94AD-3BB5-9455-CB5B41703289> /Library/Frameworks/Mono.framework/Versions/Current/lib/libgdksharpglue-2.so
+0x17f25000 - 0x1800fff0  com.apple.mobiledevice (710.3 - 710.3) <D7544C40-504E-394B-BF1A-7B41C3BE6F72> /System/Library/PrivateFrameworks/MobileDevice.framework/MobileDevice
+0x18a1a000 - 0x18a1bfff +liblaunch_sim.dylib (330.1.2) <BC5C234A-3BBE-3040-A854-FC54AED74B21> /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/host/liblaunch_sim.dylib
+0x1918c000 - 0x1918eff1 +libpixbufloader-tiff.so (???) <2A6B441F-FC03-3FDB-805C-9F669AA90D84> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-tiff.so
+0x1a680000 - 0x1a6ffff9 +libtiff.5.dylib (8) <6117A401-D54A-3DDD-B39C-94F022789424> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libtiff.5.dylib
+0x1a720000 - 0x1a74bfe3 +liblzma.5.dylib (6.4) <4477301D-B0E8-310E-8518-F80184620B18> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/liblzma.5.dylib
+0x1a752000 - 0x1a791ffc +libjpeg.8.dylib (9) <0B434BB8-DE67-3F27-9371-0144C92A2929> /Library/Frameworks/Mono.framework/Versions/3.2.6/lib/libjpeg.8.dylib
+0x40000000 - 0x404a7ff7  com.apple.driver.AppleIntelHD4000GraphicsGLDriver (8.18.29 - 8.1.8) <972405CE-4321-34A9-85C2-DCA8715CD083> /System/Library/Extensions/AppleIntelHD4000GraphicsGLDriver.bundle/Contents/MacOS/AppleIntelHD4000GraphicsGLDriver
+0x48000000 - 0x488d6ff7  com.apple.GeForceGLDriver (8.18.22 - 8.1.8) <58FFC859-4EF6-390B-9918-37B17A22F98D> /System/Library/Extensions/GeForceGLDriver.bundle/Contents/MacOS/GeForceGLDriver
+0x8feaa000 - 0x8fedc417  dyld (239.3) <4B280BB1-55F8-313F-86A6-8ADD644ED69E> /usr/lib/dyld
+0x90008000 - 0x901ceffb  libicucore.A.dylib (511.27) <653147E9-7326-337A-99E1-B42E4D801E53> /usr/lib/libicucore.A.dylib
+0x901cf000 - 0x905f4fe3  com.apple.VideoToolbox (1.0 - 1273.29) <200BFEED-8948-3266-A2C4-1DC6A695EC58> /System/Library/Frameworks/VideoToolbox.framework/Versions/A/VideoToolbox
+0x905f5000 - 0x9091bffd  com.apple.JavaScriptCore (9537 - 9537.73.10) <B5331B86-DEBC-387A-8F3E-5B9FC28E8055> /System/Library/Frameworks/JavaScriptCore.framework/Versions/A/JavaScriptCore
+0x9092a000 - 0x90980ff6  com.apple.ScalableUserInterface (1.0 - 1) <2C81641B-FA30-32FF-8B3E-3CB9BF53B2D9> /System/Library/Frameworks/QuartzCore.framework/Versions/A/Frameworks/ScalableUserInterface.framework/Versions/A/ScalableUserInterface
+0x90981000 - 0x909b2ffd  com.apple.GSS (4.0 - 2.0) <6BA01155-4DAD-30EE-B480-D224650EA010> /System/Library/Frameworks/GSS.framework/Versions/A/GSS
+0x909b3000 - 0x909b5fff  com.apple.securityhi (9.0 - 55005) <51765C73-80D1-33E3-9589-3E88380CE007> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SecurityHI.framework/Versions/A/SecurityHI
+0x909b6000 - 0x90b62ff1  com.apple.QuartzCore (1.8 - 332.0) <07F9B77F-35A2-3D21-99FA-CD3FCE5B9C7B> /System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore
+0x90b63000 - 0x90b6efff  libGPUSupportMercury.dylib (9.0.83) <F4DD06F4-FF45-3E26-BF56-24258B726EA8> /System/Library/PrivateFrameworks/GPUSupport.framework/Versions/A/Libraries/libGPUSupportMercury.dylib
+0x90b6f000 - 0x90b75ffb  libunwind.dylib (35.3) <099D1A6F-A1F0-3D05-BF1C-0A7BB32D39C2> /usr/lib/system/libunwind.dylib
+0x90b76000 - 0x90b80fff  com.apple.ProtocolBuffer (1 - 182.1.3) <FE710AC6-806D-3379-AC1D-6A094BE9827C> /System/Library/PrivateFrameworks/ProtocolBuffer.framework/Versions/A/ProtocolBuffer
+0x90b81000 - 0x90ba0ff9  com.apple.framework.Apple80211 (9.0 - 900.47) <68E399FF-AB98-378D-94AC-D0869A72344F> /System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Apple80211
+0x90ba1000 - 0x90bc4ff7  libc++abi.dylib (48) <5367BE5A-D475-3FB4-972D-E1DC999A709A> /usr/lib/libc++abi.dylib
+0x90bc5000 - 0x90dc7ff7  com.apple.CoreFoundation (6.9 - 855.11) <50F70E07-043A-3A2F-87EF-A36BA6C5C9D9> /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+0x90dc8000 - 0x90e67ff7  libCoreStorage.dylib (380) <55467C87-E1A3-3057-B428-9BCEFD39E36D> /usr/lib/libCoreStorage.dylib
+0x90e68000 - 0x90eaafff  libGLU.dylib (9.0.83) <0D9BFE5A-435E-3C66-AF96-D3567B8FC87B> /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib
+0x90eab000 - 0x90ef1fff  libcurl.4.dylib (78) <EC84399F-5EA8-321B-B122-99730CC557C8> /usr/lib/libcurl.4.dylib
+0x90ef2000 - 0x90f67ffb  com.apple.framework.IOKit (2.0.1 - 907.1.13) <86D72735-9DFB-35C8-83F7-CE0DCF17D354> /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+0x90f68000 - 0x90f71fff  com.apple.AppleSRP (5.0 - 1) <6B946F4B-7DC4-3E82-BF2C-BE0930E3CF47> /System/Library/PrivateFrameworks/AppleSRP.framework/Versions/A/AppleSRP
+0x90f72000 - 0x91010ff7  com.apple.PDFKit (2.9 - 2.9) <0792168D-320D-33EF-AE24-6CDCB8C1990A> /System/Library/Frameworks/Quartz.framework/Versions/A/Frameworks/PDFKit.framework/Versions/A/PDFKit
+0x91011000 - 0x91014ffb  libutil.dylib (34) <B496031E-E763-3DEB-84D2-85C0F3DF2012> /usr/lib/libutil.dylib
+0x91015000 - 0x91028fff  com.apple.ImageCapture (9.0 - 9.0) <63D5C96F-1893-3F35-ADFB-EE451AFD87E6> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/ImageCapture.framework/Versions/A/ImageCapture
+0x91029000 - 0x91030ff7  com.apple.XPCService (2.0 - 1) <94783930-9E46-394F-B1B2-9CA57CBA2D25> /System/Library/PrivateFrameworks/XPCService.framework/Versions/A/XPCService
+0x91031000 - 0x9105cff7  libpcap.A.dylib (42) <66FBEAD3-FE91-3A89-8706-FB95229068AC> /usr/lib/libpcap.A.dylib
+0x9105d000 - 0x910b1fff  com.apple.AppleVAFramework (5.0.27 - 5.0.27) <95A1E1CF-FC3E-3203-8683-34823CD70B6B> /System/Library/PrivateFrameworks/AppleVA.framework/Versions/A/AppleVA
+0x910b2000 - 0x910efff7  libauto.dylib (185.5) <CD008E66-4A0C-35F5-8D72-80D76A716A03> /usr/lib/libauto.dylib
+0x910f0000 - 0x910fefff  libxar.1.dylib (202) <B73748D4-F830-3C71-98B3-7A3ABF5136FD> /usr/lib/libxar.1.dylib
+0x910ff000 - 0x91236ff3  com.apple.desktopservices (1.8 - 1.8) <4D853961-F911-3FE2-A7DF-3130EA1D8CEB> /System/Library/PrivateFrameworks/DesktopServicesPriv.framework/Versions/A/DesktopServicesPriv
+0x91237000 - 0x91265ff3  com.apple.DebugSymbols (106 - 106) <FC70F4C9-B2A6-352F-9563-6C085E9DDDB8> /System/Library/PrivateFrameworks/DebugSymbols.framework/Versions/A/DebugSymbols
+0x91266000 - 0x912c2ffa  com.apple.print.framework.PrintCore (9.0 - 428) <3E248391-2669-328B-B84F-8763FE8E92BB> /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
+0x912c3000 - 0x91528ff7  com.apple.AddressBook.framework (8.0 - 1365) <6D80FC70-269E-3C12-A9B4-279F27C58BEF> /System/Library/Frameworks/AddressBook.framework/Versions/A/AddressBook
+0x91529000 - 0x9157aff1  libstdc++.6.dylib (60) <354F284B-2343-3810-9CA2-E28038824F6E> /usr/lib/libstdc++.6.dylib
+0x9157b000 - 0x915baff5  com.apple.ids (10.0 - 1000) <AEDCAD16-6626-3A0B-A9BE-3FC8A47CEB52> /System/Library/PrivateFrameworks/IDS.framework/Versions/A/IDS
+0x915c2000 - 0x91685ff1  com.apple.CoreText (352.0 - 367.15) <746AD442-F7B4-3273-A36D-C7103D26F727> /System/Library/Frameworks/CoreText.framework/Versions/A/CoreText
+0x91686000 - 0x91771ff4  com.apple.DiskImagesFramework (10.9 - 371.1) <FC13BD5A-0FB7-35D5-A8DF-0510CFA996FE> /System/Library/PrivateFrameworks/DiskImages.framework/Versions/A/DiskImages
+0x91772000 - 0x917c5fff  com.apple.htmlrendering (77 - 1.1.4) <408FA30F-4FE9-3162-9FFD-677E8569C1EA> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HTMLRendering.framework/Versions/A/HTMLRendering
+0x917c6000 - 0x917d9ff7  com.apple.idsfoundation (10.0 - 1000) <1C0CCF49-109E-3C34-96ED-466B7BEB8551> /System/Library/PrivateFrameworks/IDSFoundation.framework/Versions/A/IDSFoundation
+0x917da000 - 0x91838ffd  com.apple.AE (665.5 - 665.5) <54F2F247-160C-3A22-A6E3-5D49655A67AB> /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+0x91839000 - 0x91842fff  com.apple.audio.SoundManager (4.1 - 4.1) <68B7CEB7-AF09-3E24-8548-6ABF065B5186> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework/Versions/A/CarbonSound
+0x91843000 - 0x91889ff7  libFontRegistry.dylib (127) <A0930DB2-A6C6-3C6E-B4A2-119E0D76FD7D> /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/Resources/libFontRegistry.dylib
+0x9188a000 - 0x91893fff  libsystem_notify.dylib (121) <623269F5-1518-3035-A916-8AF83C972154> /usr/lib/system/libsystem_notify.dylib
+0x91894000 - 0x91895fff  com.apple.marco (10.0 - 1000) <F7AD1FF7-5B1E-3D3C-AF00-FA3A43118CE5> /System/Library/PrivateFrameworks/Marco.framework/Versions/A/Marco
+0x91896000 - 0x918e7ffb  com.apple.CoreMedia (1.0 - 1273.29) <BE08E6C7-5E6F-3B54-9C17-751CFCBD823D> /System/Library/Frameworks/CoreMedia.framework/Versions/A/CoreMedia
+0x918e8000 - 0x918e9fff  libsystem_blocks.dylib (63) <2AC67D5E-ECD4-3644-A53C-9684F9B7AA33> /usr/lib/system/libsystem_blocks.dylib
+0x918ec000 - 0x91914fff  libsystem_info.dylib (449.1.3) <BB68E8CC-422F-3121-8C86-D0F766FB696D> /usr/lib/system/libsystem_info.dylib
+0x91915000 - 0x9199affc  com.apple.CorePDF (4.0 - 4) <73557F2A-B0EF-3128-90FE-8EDD7824CE73> /System/Library/PrivateFrameworks/CorePDF.framework/Versions/A/CorePDF
+0x9199b000 - 0x9199fff7  libmacho.dylib (845) <D8E93E59-1F80-3413-B9CF-78B848F6E873> /usr/lib/system/libmacho.dylib
+0x919a0000 - 0x919a6ff7  com.apple.AddressBook.ContactsFoundation (8.0 - 1365) <3CABD941-9D36-3FB7-BD93-11A7CDC3FB4D> /System/Library/PrivateFrameworks/ContactsFoundation.framework/Versions/A/ContactsFoundation
+0x919a7000 - 0x91a05ff7  com.apple.CoreUtils (1.9 - 190.4) <9E43FF7D-7FCD-3032-9EF9-BCF6D09E73C3> /System/Library/PrivateFrameworks/CoreUtils.framework/Versions/A/CoreUtils
+0x91a06000 - 0x91c84ff7  com.apple.imageKit (2.5 - 770) <C2FE06B8-DB32-392F-9280-5C1CB148D174> /System/Library/Frameworks/Quartz.framework/Versions/A/Frameworks/ImageKit.framework/Versions/A/ImageKit
+0x91c85000 - 0x91caffff  libxslt.1.dylib (13) <249D54AB-1D82-38FE-ABEC-0D575450C73B> /usr/lib/libxslt.1.dylib
+0x91cb0000 - 0x91ce8fff  com.apple.LDAPFramework (2.4.28 - 194.5) <0C42A932-15E8-3CD1-AC35-1DF7D41B25A2> /System/Library/Frameworks/LDAP.framework/Versions/A/LDAP
+0x91ce9000 - 0x91d5eff1  com.apple.ApplicationServices.ATS (360 - 363.1) <5C9BC698-0CC1-3F6A-9F9D-BCC3A9C3D6DC> /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS
+0x91d5f000 - 0x91d69ff0  libCGInterfaces.dylib (271) <F78617B0-10DD-3DB0-988A-2407D630519A> /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vImage.framework/Versions/A/Resources/libCGInterfaces.dylib
+0x91d6a000 - 0x91e77fe4  com.apple.MediaControlSender (1.9 - 190.4) <DF0B5A99-046A-38C1-B68E-241CB2E622BC> /System/Library/PrivateFrameworks/MediaControlSender.framework/Versions/A/MediaControlSender
+0x91e78000 - 0x91e7affe  libCVMSPluginSupport.dylib (9.0.83) <BD30BDD1-DD5B-3F31-A09B-C274EA93CD7C> /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libCVMSPluginSupport.dylib
+0x91e7b000 - 0x91e88ff7  com.apple.AppleFSCompression (56 - 1.0) <0C44B3E4-C4A7-3A65-9C1A-334CA3E35BDB> /System/Library/PrivateFrameworks/AppleFSCompression.framework/Versions/A/AppleFSCompression
+0x91e89000 - 0x91f64ff7  com.apple.LaunchServices (572.23 - 572.23) <7E52FB5C-9ECF-3CB9-BF18-6652B8D8CDE0> /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+0x91f65000 - 0x91f7efff  com.apple.Kerberos (3.0 - 1) <91F17EB2-C70C-359C-B09D-96B52D2A9C9F> /System/Library/Frameworks/Kerberos.framework/Versions/A/Kerberos
+0x91f7f000 - 0x92016ff7  com.apple.ink.framework (10.9 - 207) <EF00BCCB-B270-3F3D-9424-EF5F4BC23E25> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Ink.framework/Versions/A/Ink
+0x92017000 - 0x9201affa  libCGXType.A.dylib (599.7) <2738FF52-4B47-31AD-B7E5-412F6AFACC2A> /System/Library/Frameworks/CoreGraphics.framework/Versions/A/Resources/libCGXType.A.dylib
+0x9201b000 - 0x9201bfff  com.apple.CoreServices (59 - 59) <06747539-5035-3307-8645-9BC4E7F89023> /System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices
+0x9201c000 - 0x92028ffc  libbz2.1.0.dylib (29) <3CEF1E92-BA42-3F8A-8E8D-9E1F7658E5C7> /usr/lib/libbz2.1.0.dylib
+0x92029000 - 0x92029fff  com.apple.Accelerate (1.9 - Accelerate 1.9) <C85070A7-D942-3CFA-981F-5864480788C8> /System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate
+0x9202a000 - 0x923efff6  libLAPACK.dylib (1094.5) <E6286E68-3501-31AC-813E-75B3B3968011> /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLAPACK.dylib
+0x923f0000 - 0x923f4ffc  com.apple.IOSurface (91 - 91) <DECEEB72-3C7E-3C21-9237-E5AD293F8B09> /System/Library/Frameworks/IOSurface.framework/Versions/A/IOSurface
+0x923f5000 - 0x923fbff7  com.apple.AOSNotification (1.7.0 - 760.3) <63F7E7F8-6FA3-38D3-9907-CDF360CA9354> /System/Library/PrivateFrameworks/AOSNotification.framework/Versions/A/AOSNotification
+0x923fc000 - 0x92412ff9  com.apple.aps.framework (4.0 - 4.0) <B3D5B83C-4DDF-3E8E-A701-7931AE6FAF65> /System/Library/PrivateFrameworks/ApplePushService.framework/Versions/A/ApplePushService
+0x92413000 - 0x926fdfd2  com.apple.vImage (7.0 - 7.0) <256972F0-3DBC-3CE1-9EE8-B48243868729> /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vImage.framework/Versions/A/vImage
+0x926fe000 - 0x9282bff9  com.apple.avfoundation (2.0 - 651.12) <1AB88210-F2E6-3318-ACB2-41ED5AE6A0EF> /System/Library/Frameworks/AVFoundation.framework/Versions/A/AVFoundation
+0x9282c000 - 0x92a90fff  com.apple.CoreData (107 - 481) <F699EC21-57D9-3AE6-A17B-C1D1092780BD> /System/Library/Frameworks/CoreData.framework/Versions/A/CoreData
+0x92a91000 - 0x92ac2ffa  libsystem_m.dylib (3047.16) <28E614E8-7802-3E84-960A-AD4721EF10F7> /usr/lib/system/libsystem_m.dylib
+0x92ac3000 - 0x92ac3fff  libkeymgr.dylib (28) <1B097DEA-011E-3B1C-86D5-6C7FAD5C765A> /usr/lib/system/libkeymgr.dylib
+0x92ac4000 - 0x92b01ffb  libGLImage.dylib (9.0.83) <FA15FEB5-54E4-313B-8E78-A2D2E6C88FE1> /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLImage.dylib
+0x92b02000 - 0x92b0afff  libcopyfile.dylib (103) <1B1484BD-08B6-3BA9-94CA-A7C24B610EB3> /usr/lib/system/libcopyfile.dylib
+0x92b0b000 - 0x92bb6ffd  com.apple.imcore (10.0 - 1000) <90B6B340-1473-3F5C-B39D-887FFD2D01AD> /System/Library/PrivateFrameworks/IMCore.framework/Versions/A/IMCore
+0x92bb7000 - 0x92c37ff7  com.apple.CoreServices.OSServices (600.4 - 600.4) <1227DF22-E2DA-3764-A1CA-10CC0CEBE377> /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+0x92c38000 - 0x92ce4ffb  libvMisc.dylib (423.32) <43873EFF-FB43-3301-BEE8-F2C3A046D7A6> /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvMisc.dylib
+0x92ce5000 - 0x92cf7fff  libbsm.0.dylib (33) <1BE92DB5-0D2F-3BB5-BCC6-8A71EF2A3450> /usr/lib/libbsm.0.dylib
+0x92cf8000 - 0x92d02ff7  com.apple.DirectoryService.Framework (10.9 - 173.1.1) <D6735614-EF4B-389F-BF99-7D8416A504BA> /System/Library/Frameworks/DirectoryService.framework/Versions/A/DirectoryService
+0x92d03000 - 0x92d35ffb  com.apple.CoreAVCHD (5.7.0 - 5700.4.3) <30CF0E7B-3511-318F-AC31-06C29EDC111E> /System/Library/PrivateFrameworks/CoreAVCHD.framework/Versions/A/CoreAVCHD
+0x92d67000 - 0x93068ff7  com.apple.CoreServices.CarbonCore (1077.14 - 1077.14) <42E10BD1-995B-3FB4-8A6D-5FD071FB8BD1> /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+0x93069000 - 0x9307eff3  com.apple.AppContainer (3.0 - 1) <B53ED2AD-9B19-316F-B7B9-80A3A94AC1D3> /System/Library/PrivateFrameworks/AppContainer.framework/Versions/A/AppContainer
+0x9307f000 - 0x93158ff6  com.apple.QuickLookUIFramework (5.0 - 622.3) <41D10880-AD68-3DE3-94F0-4CA9F44EBD5B> /System/Library/Frameworks/Quartz.framework/Versions/A/Frameworks/QuickLookUI.framework/Versions/A/QuickLookUI
+0x93159000 - 0x931eafff  com.apple.ColorSync (4.9.0 - 4.9.0) <8366AE10-0396-3100-B87A-A176E8ECE7B6> /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync
+0x931eb000 - 0x931edffb  libRadiance.dylib (1038) <F0D3F13B-5628-3DF9-8B86-A4D914567B25> /System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libRadiance.dylib
+0x931ee000 - 0x933b5ff6  com.apple.GeoServices (1.0 - 702.14.9) <241F21BD-F058-3FD3-BECA-7A975F7F4C37> /System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/GeoServices
+0x933b6000 - 0x933cdff4  com.apple.CoreMediaAuthoring (2.2 - 947) <BF917B77-0935-3F56-A2B9-E62A58A713B8> /System/Library/PrivateFrameworks/CoreMediaAuthoring.framework/Versions/A/CoreMediaAuthoring
+0x933ce000 - 0x933eefff  com.apple.facetimeservices (10.0 - 1000) <BD92DB29-AD36-3B60-A5EF-F4A68F1394A1> /System/Library/PrivateFrameworks/FTServices.framework/Versions/A/FTServices
+0x933ef000 - 0x93764ff9  com.apple.HIToolbox (2.1 - 696) <43CB31D6-4C2B-30FA-A374-DB7C5728E7AD> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox
+0x93765000 - 0x9376cfff  libMatch.1.dylib (19) <3B3680FC-2AC9-37CC-B262-5ACE2CF8939A> /usr/lib/libMatch.1.dylib
+0x9376d000 - 0x937c0ff3  com.apple.CoreMediaIO (401.0 - 4544) <867D01AF-3326-39CB-A136-48AFE4BE9802> /System/Library/Frameworks/CoreMediaIO.framework/Versions/A/CoreMediaIO
+0x937c1000 - 0x93917ff0  libBLAS.dylib (1094.5) <74310C2F-4FDB-3995-A01A-5AFB83010A43> /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
+0x93918000 - 0x9391fff2  com.apple.NetFS (6.0 - 4.0) <915AA303-C02B-3B0C-8208-D8AAA4350DB4> /System/Library/Frameworks/NetFS.framework/Versions/A/NetFS
+0x93920000 - 0x93932fff  libsystem_asl.dylib (217.1.4) <51EB17C9-9F5B-39F3-B6CD-8EF238B05B89> /usr/lib/system/libsystem_asl.dylib
+0x93933000 - 0x93999ff4  com.apple.ISSupport (1.9.9 - 57) <BF22E11E-56CB-3396-A109-8C75694DDE7F> /System/Library/PrivateFrameworks/ISSupport.framework/Versions/A/ISSupport
+0x9399a000 - 0x939b5ff6  libPng.dylib (1038) <F39168D4-ABEB-3C2D-A763-B9D3E1EF43BC> /System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libPng.dylib
+0x939b6000 - 0x939c3fff  com.apple.Librarian (1.2 - 1) <F85681E3-3398-327B-829B-1D8078C38C22> /System/Library/PrivateFrameworks/Librarian.framework/Versions/A/Librarian
+0x939c4000 - 0x93a14ff7  libcorecrypto.dylib (161.1) <135FD99E-2211-3DF4-825C-C9F816107F0C> /usr/lib/system/libcorecrypto.dylib
+0x93a15000 - 0x93a2dff7  libsystem_malloc.dylib (23.1.10) <69F485C9-B3E7-3E36-A06C-D7DFD29D22E1> /usr/lib/system/libsystem_malloc.dylib
+0x93db3000 - 0x93dbdff3  com.apple.DisplayServicesFW (2.8 - 360.8.14) <B14B15EC-41BA-37F6-B696-8BBA0E325C0C> /System/Library/PrivateFrameworks/DisplayServices.framework/Versions/A/DisplayServices
+0x94719000 - 0x94719fff  com.apple.Carbon (154 - 157) <C49AD4A1-8DE3-357D-AEF3-D6CD39EA91EF> /System/Library/Frameworks/Carbon.framework/Versions/A/Carbon
+0x9471a000 - 0x9471fff7  com.apple.print.framework.Print (9.0 - 260) <A6C465F6-C5D1-353A-9F33-19B9CEDBBC2A> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Print.framework/Versions/A/Print
+0x94720000 - 0x94720fff  libodfde.dylib (20) <98FC02AE-C596-3ED5-80D1-C502FF6115ED> /usr/lib/libodfde.dylib
+0x94721000 - 0x9478bff7  com.apple.framework.CoreWiFi (2.0 - 200.21.1) <13EE6C12-B981-3132-864A-D493B91AE37E> /System/Library/Frameworks/CoreWiFi.framework/Versions/A/CoreWiFi
+0x9478c000 - 0x9478cfff  com.apple.Cocoa (6.8 - 20) <407DC9E6-BBCE-3D34-9BBB-00C90584FFDF> /System/Library/Frameworks/Cocoa.framework/Versions/A/Cocoa
+0x9478d000 - 0x9478efff  libSystem.B.dylib (1197.1.1) <C58F0CC9-C1FD-3024-9358-D3359A6BBCAD> /usr/lib/libSystem.B.dylib
+0x9478f000 - 0x9479bffe  libkxld.dylib (2422.1.72) <F9B35FA5-C936-3286-A055-2B0780A674AC> /usr/lib/system/libkxld.dylib
+0x9479c000 - 0x947c1ff7  com.apple.quartzfilters (1.8.0 - 1.7.0) <FCF52905-85B1-375C-B0AA-B8251B614D2D> /System/Library/Frameworks/Quartz.framework/Versions/A/Frameworks/QuartzFilters.framework/Versions/A/QuartzFilters
+0x947c2000 - 0x94b08ffb  com.apple.MediaToolbox (1.0 - 1273.29) <60F62850-70EC-38E8-9C7F-81204CF9C382> /System/Library/Frameworks/MediaToolbox.framework/Versions/A/MediaToolbox
+0x94b09000 - 0x94b09fff  com.apple.quartzframework (1.5 - 1.5) <5BB3FDD4-4727-3D1B-9582-C96F36DA1542> /System/Library/Frameworks/Quartz.framework/Versions/A/Quartz
+0x94b0a000 - 0x94b75ff9  com.apple.Heimdal (4.0 - 2.0) <E3091095-A893-3089-8DA1-8705B3BE5BF9> /System/Library/PrivateFrameworks/Heimdal.framework/Versions/A/Heimdal
+0x94b76000 - 0x94b7bfff  com.apple.MediaAccessibility (1.0 - 43) <1CC2B661-146A-3FF3-B843-508F611F7B4B> /System/Library/Frameworks/MediaAccessibility.framework/Versions/A/MediaAccessibility
+0x94b7c000 - 0x94bddff7  com.apple.Symbolication (1.4 - 129) <E5948C08-6ADF-3D86-9134-6AE49CF1DA0F> /System/Library/PrivateFrameworks/Symbolication.framework/Versions/A/Symbolication
+0x94bde000 - 0x94be6fff  libsystem_dnssd.dylib (522.1.11) <1C015806-B971-34F9-B162-3DF7897351D0> /usr/lib/system/libsystem_dnssd.dylib
+0x94be7000 - 0x94c05ff5  com.apple.frameworks.preferencepanes (16.0 - 16.0) <3E3368EE-CAD3-3096-89BC-D006A25A6294> /System/Library/Frameworks/PreferencePanes.framework/Versions/A/PreferencePanes
+0x94c06000 - 0x94c54ff9  com.apple.HIServices (1.22 - 466) <30636237-408A-3552-90C1-1279348DF7CB> /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices
+0x94c58000 - 0x94ccbfff  com.apple.SearchKit (1.4.0 - 1.4.0) <6F607AB6-7553-37BA-BEC5-98FD7C27FAD7> /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+0x94ccc000 - 0x94d1bfff  com.apple.opencl (2.3.57 - 2.3.57) <93385E1C-00D9-31BE-9652-7F3C09484B3E> /System/Library/Frameworks/OpenCL.framework/Versions/A/OpenCL
+0x94d1c000 - 0x94d5aff7  com.apple.NavigationServices (3.8 - 215) <A093AAF0-248E-313E-BA82-01F69E269895> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/NavigationServices.framework/Versions/A/NavigationServices
+0x94d5b000 - 0x94d87ff7  com.apple.DictionaryServices (1.2 - 208) <33873336-BECD-3F62-A315-C45F24C1818C> /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+0x94d88000 - 0x94d91fff  com.apple.DiskArbitration (2.6 - 2.6) <6379523D-3196-370C-AE4A-8EA586E36909> /System/Library/Frameworks/DiskArbitration.framework/Versions/A/DiskArbitration
+0x94d92000 - 0x94fffff6  com.apple.security (7.0 - 55471) <5FCF76B2-92C6-3404-87D3-91B3F6E203AA> /System/Library/Frameworks/Security.framework/Versions/A/Security
+0x95000000 - 0x95062ff3  com.apple.imfoundation (10.0 - 1000) <20565092-0897-3E34-A35A-E1F027D53A26> /System/Library/PrivateFrameworks/IMFoundation.framework/Versions/A/IMFoundation
+0x95063000 - 0x9514fff7  libxml2.2.dylib (26) <32040145-6FD6-3AD2-B98B-39F73BF9AC47> /usr/lib/libxml2.2.dylib
+0x95150000 - 0x95233ff7  libcrypto.0.9.8.dylib (50) <B367D3A3-FC1F-326C-92EC-CAD81666524D> /usr/lib/libcrypto.0.9.8.dylib
+0x95234000 - 0x95242ff3  com.apple.opengl (9.0.83 - 9.0.83) <16CFFD50-217E-3E18-88AF-7F2AD980628B> /System/Library/Frameworks/OpenGL.framework/Versions/A/OpenGL
+0x95243000 - 0x95298fff  libc++.1.dylib (120) <10C0A136-64F9-3CC2-9420-013247032120> /usr/lib/libc++.1.dylib
+0x95299000 - 0x952a2ffa  com.apple.CommonAuth (4.0 - 2.0) <6CB82D57-3C55-39E5-9036-8047DF3E6F57> /System/Library/PrivateFrameworks/CommonAuth.framework/Versions/A/CommonAuth
+0x952a3000 - 0x952abfff  liblaunch.dylib (842.1.4) <3798500D-4436-3AEB-B273-7F2428C33A4A> /usr/lib/system/liblaunch.dylib
+0x952ac000 - 0x952b7fff  libcsfde.dylib (380) <C9E61AFB-1A9D-324B-9827-06B182CDD7B0> /usr/lib/libcsfde.dylib
+0x952b8000 - 0x953cfffb  com.apple.WebKit (9537 - 9537.73.11) <74634980-1AC4-3874-9BC2-72E1ED8FB534> /System/Library/Frameworks/WebKit.framework/Versions/A/WebKit
+0x953d0000 - 0x953d1fff  liblangid.dylib (117) <F18F76C6-7E4B-34AD-AE81-C1C031BF2F7D> /usr/lib/liblangid.dylib
+0x953d2000 - 0x953d9ffb  libsystem_pthread.dylib (53.1.4) <8B1B7B84-1B5D-32A8-AC0D-1E689E5C8A4C> /usr/lib/system/libsystem_pthread.dylib
+0x953da000 - 0x954e6fff  com.apple.ImageIO.framework (3.3.0 - 1038) <0B4A6607-9FBC-3A6C-984A-0542DE8385FB> /System/Library/Frameworks/ImageIO.framework/Versions/A/ImageIO
+0x954e7000 - 0x955e5fff  libJP2.dylib (1038) <EE0B9985-625D-39E6-B425-03FB75BA2594> /System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libJP2.dylib
+0x955e6000 - 0x955f0ff2  com.apple.AppSandbox (3.0 - 1) <085C3B38-C7D8-3A62-AFC6-CEE27F93DFD1> /System/Library/PrivateFrameworks/AppSandbox.framework/Versions/A/AppSandbox
+0x955f1000 - 0x95615fff  libxpc.dylib (300.1.17) <252BC88F-A5CA-3E67-AEDB-3D7B9F4537E2> /usr/lib/system/libxpc.dylib
+0x95616000 - 0x95641ff5  com.apple.ChunkingLibrary (2.0 - 155.1) <50BBBBF8-F30B-39EA-A512-11A47F429F2C> /System/Library/PrivateFrameworks/ChunkingLibrary.framework/Versions/A/ChunkingLibrary
+0x95642000 - 0x95697ff3  com.apple.ImageCaptureCore (5.0 - 5.0) <69A007AE-4654-3C79-9AF6-5EC8F173F225> /System/Library/Frameworks/ImageCaptureCore.framework/Versions/A/ImageCaptureCore
+0x956c2000 - 0x959c3ff1  com.apple.AOSKit (1.06 - 176) <E5067665-E177-37FF-AD38-0D995FB79741> /System/Library/PrivateFrameworks/AOSKit.framework/Versions/A/AOSKit
+0x959c4000 - 0x95c40ff7  com.apple.QuickTime (7.7.3 - 2826.0.1) <42542002-DCFF-3675-B919-440EC5057D56> /System/Library/Frameworks/QuickTime.framework/Versions/A/QuickTime
+0x95c41000 - 0x95f33ff8  com.apple.CoreImage (9.0.54) <D7BC3E53-EF5B-3A14-8808-8D45EE505B48> /System/Library/Frameworks/QuartzCore.framework/Versions/A/Frameworks/CoreImage.framework/Versions/A/CoreImage
+0x95f34000 - 0x95f37ff7  com.apple.help (1.3.3 - 46) <AB6292FA-D3BC-3D56-B3A5-2BE630A503E7> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Help.framework/Versions/A/Help
+0x95f38000 - 0x95f52ff7  com.apple.GenerationalStorage (2.0 - 160.2) <8755F7F1-2402-387C-A32A-2270E7D680C8> /System/Library/PrivateFrameworks/GenerationalStorage.framework/Versions/A/GenerationalStorage
+0x95f53000 - 0x95f8bff7  com.apple.MediaKit (15 - 709) <82E0F8C0-313C-379C-9994-4D21587D0C0C> /System/Library/PrivateFrameworks/MediaKit.framework/Versions/A/MediaKit
+0x95fa0000 - 0x95faeff7  com.apple.Sharing (132.2 - 132.2) <87DBFC7A-9689-3B8E-AD16-5A9DFF9DE625> /System/Library/PrivateFrameworks/Sharing.framework/Versions/A/Sharing
+0x95faf000 - 0x95fe4ffd  libssl.0.9.8.dylib (50) <F3BEA2DF-DB84-37F0-B4C7-97C0A4DF19C9> /usr/lib/libssl.0.9.8.dylib
+0x95fe5000 - 0x9602dfff  com.apple.PerformanceAnalysis (1.47 - 47) <16935C0F-7F9F-316E-9D46-11973DE0904A> /System/Library/PrivateFrameworks/PerformanceAnalysis.framework/Versions/A/PerformanceAnalysis
+0x9602e000 - 0x9602fff7  com.apple.diagnosticlogcollection (10.0 - 1000) <B2525E0D-2BB1-3AF6-BDCA-56DCDC1F7DBF> /System/Library/PrivateFrameworks/DiagnosticLogCollection.framework/Versions/A/DiagnosticLogCollection
+0x96033000 - 0x96034fff  com.apple.AddressBook.ContactsData (8.0 - 1365) <3A9C53C8-07EC-310D-80AD-0B6E2492F021> /System/Library/PrivateFrameworks/ContactsData.framework/Versions/A/ContactsData
+0x96035000 - 0x96036ffd  libunc.dylib (28) <22A126A1-DCFB-3BE5-A66B-C973F0A5D839> /usr/lib/system/libunc.dylib
+0x96037000 - 0x96041fff  com.apple.bsd.ServiceManagement (2.0 - 2.0) <B84F3916-236A-347B-9C1F-3DE571496737> /System/Library/Frameworks/ServiceManagement.framework/Versions/A/ServiceManagement
+0x96042000 - 0x9610fff7  com.apple.backup.framework (1.5.1 - 1.5.1) <91998CDF-3547-3183-A962-D9E981C14891> /System/Library/PrivateFrameworks/Backup.framework/Versions/A/Backup
+0x96110000 - 0x96110ffd  com.apple.audio.units.AudioUnit (1.9 - 1.9) <8A37963C-DF6F-3DFF-94E9-407DC5DFEDA9> /System/Library/Frameworks/AudioUnit.framework/Versions/A/AudioUnit
+0x96111000 - 0x96115ffa  libGIF.dylib (1038) <5CEB4EDF-B0B6-33A6-BDDE-8C0D3226FA72> /System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libGIF.dylib
+0x96116000 - 0x96206ffb  libiconv.2.dylib (41) <848FEBA7-2E3E-3ECB-BD59-007F32468787> /usr/lib/libiconv.2.dylib
+0x96207000 - 0x962edff7  com.apple.coreui (2.1 - 231) <1C1AE894-C5C2-3F1C-BF29-B152ECD9BD88> /System/Library/PrivateFrameworks/CoreUI.framework/Versions/A/CoreUI
+0x96344000 - 0x96373fff  com.apple.framework.SystemAdministration (1.0 - 1.0) <05E81260-7DC7-3546-B45D-15B3E5DF056D> /System/Library/PrivateFrameworks/SystemAdministration.framework/Versions/A/SystemAdministration
+0x96374000 - 0x96390ff9  com.apple.Ubiquity (1.3 - 289) <1CEDC83D-7282-3B4D-8CF7-4FE045012391> /System/Library/PrivateFrameworks/Ubiquity.framework/Versions/A/Ubiquity
+0x96391000 - 0x96395fff  libheimdal-asn1.dylib (323.12) <9EA2A221-301B-3B9A-BBF2-38134145B5A8> /usr/lib/libheimdal-asn1.dylib
+0x96396000 - 0x9641ffff  com.apple.CoreSymbolication (3.0 - 141) <178DDF5C-B6DA-39BD-84F5-FD3FA7E93BF8> /System/Library/PrivateFrameworks/CoreSymbolication.framework/Versions/A/CoreSymbolication
+0x96420000 - 0x9642bffb  libcommonCrypto.dylib (60049) <F8E60C43-22EE-3E0B-9546-3365056901F1> /usr/lib/system/libcommonCrypto.dylib
+0x9642c000 - 0x968d3fe7  com.apple.CoreAUC (6.22.08 - 6.22.08) <3F9E2986-8FF9-3339-A0C8-DC1186C4A5EC> /System/Library/PrivateFrameworks/CoreAUC.framework/Versions/A/CoreAUC
+0x968d4000 - 0x9699bff7  com.apple.DiscRecording (8.0 - 8000.4.6) <84A7EC09-3BBD-3E04-A88C-6D3B724448FF> /System/Library/Frameworks/DiscRecording.framework/Versions/A/DiscRecording
+0x9699c000 - 0x969ccff3  libtidy.A.dylib (15.12) <3DBE95FE-8FA7-3584-9202-E37B54B3B064> /usr/lib/libtidy.A.dylib
+0x969cd000 - 0x96a36fff  com.apple.datadetectorscore (5.0 - 354.0) <A5559FE6-7A00-383D-8665-C0D622409D85> /System/Library/PrivateFrameworks/DataDetectorsCore.framework/Versions/A/DataDetectorsCore
+0x96a37000 - 0x96a5bfff  libJPEG.dylib (1038) <212B0986-9227-397C-9493-BCB190EC020E> /System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libJPEG.dylib
+0x96a5c000 - 0x96a5eff2  com.apple.EFILogin (2.0 - 2) <BC558029-74C0-3A69-B376-8F4CBF8C338F> /System/Library/PrivateFrameworks/EFILogin.framework/Versions/A/EFILogin
+0x96a5f000 - 0x96a60ffa  libsystem_sandbox.dylib (278.10) <F3C9C427-AF9F-3CE0-95FF-DC9ACA0B5760> /usr/lib/system/libsystem_sandbox.dylib
+0x96a61000 - 0x96afdfff  com.apple.QD (3.50 - 298) <F73FD4D4-17A4-37D6-AC06-7CA5A8BA1212> /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
+0x96afe000 - 0x96b02ffc  libpam.2.dylib (20) <50623D44-795F-3E28-AA85-23E0E7E2AE0E> /usr/lib/libpam.2.dylib
+0x96b09000 - 0x96b0cff9  com.apple.TCC (1.0 - 1) <A5FCF7AA-3F56-3A19-9DF1-661F1F02F79D> /System/Library/PrivateFrameworks/TCC.framework/Versions/A/TCC
+0x96b0d000 - 0x96b35ff7  libRIP.A.dylib (599.7) <461297C0-DDA9-3613-8F27-D7F1AC57208F> /System/Library/Frameworks/CoreGraphics.framework/Versions/A/Resources/libRIP.A.dylib
+0x96b36000 - 0x96b3affe  libCoreVMClient.dylib (58.1) <0EB8FFD7-AFED-3A63-810E-29629831D43D> /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libCoreVMClient.dylib
+0x96b3b000 - 0x96b40ff3  libsystem_platform.dylib (24.1.4) <875321B9-34EF-3FCC-880C-633FA05223F5> /usr/lib/system/libsystem_platform.dylib
+0x96b41000 - 0x96b43fff  com.apple.SecCodeWrapper (3.0 - 1) <29ECC157-F444-31FE-99CC-A9289FF3AC8D> /System/Library/PrivateFrameworks/SecCodeWrapper.framework/Versions/A/SecCodeWrapper
+0x96b44000 - 0x96b52ff7  libz.1.dylib (53) <858B4D9F-D87E-3D81-B07A-DF9632BD185F> /usr/lib/libz.1.dylib
+0x96b53000 - 0x96bbaffc  com.apple.framework.CoreWLAN (4.0 - 400.45.1) <8DADD7D2-AB98-34ED-8D6F-335338502CBE> /System/Library/Frameworks/CoreWLAN.framework/Versions/A/CoreWLAN
+0x96bbb000 - 0x96c14ffa  libTIFF.dylib (1038) <691DAAFD-D72B-3BE9-AE5C-84AF86BE66CD> /System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libTIFF.dylib
+0x96cc1000 - 0x96e33ffb  com.apple.audio.toolbox.AudioToolbox (1.9 - 1.9) <E5FFD35D-18CF-333C-BECE-39F8E47BE707> /System/Library/Frameworks/AudioToolbox.framework/Versions/A/AudioToolbox
+0x96e34000 - 0x96e34ffd  libOpenScriptingUtil.dylib (157) <4D06E8ED-D312-34EA-A448-DFF45ADC3CE5> /usr/lib/libOpenScriptingUtil.dylib
+0x96e35000 - 0x96e6bfff  com.apple.IconServices (25 - 25.17) <A4B5242B-765E-3D58-B066-BBEDB5947AAD> /System/Library/PrivateFrameworks/IconServices.framework/Versions/A/IconServices
+0x96e6c000 - 0x96e97ff7  libsystem_network.dylib (241.3) <71EBA489-386D-3608-ADE6-CB50EBD1AB1B> /usr/lib/system/libsystem_network.dylib
+0x96e98000 - 0x96ea8ff7  libsasl2.2.dylib (170) <CA1C07F6-8E17-315E-AE49-AB696DDE6707> /usr/lib/libsasl2.2.dylib
+0x96eb2000 - 0x972e6ff7  com.apple.vision.FaceCore (3.0.0 - 3.0.0) <5B12F3E9-84F6-3183-B85D-FD19EF800ADB> /System/Library/PrivateFrameworks/FaceCore.framework/Versions/A/FaceCore
+0x972e7000 - 0x972eafff  libdyld.dylib (239.3) <729B32AC-EEE2-3739-8CE3-F90838D51906> /usr/lib/system/libdyld.dylib
+0x972f3000 - 0x9738bff7  com.apple.Metadata (10.7.0 - 800.12.2) <5E9EA0AC-EE9E-362E-9DAC-9B7D21A53A2A> /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+0x973af000 - 0x9791cfff  com.apple.QuartzComposer (5.1 - 316) <4FC30662-E3CC-3AE5-88CE-7B271B59EFF0> /System/Library/Frameworks/Quartz.framework/Versions/A/Frameworks/QuartzComposer.framework/Versions/A/QuartzComposer
+0x9791d000 - 0x97969ff7  libcups.2.dylib (372) <9A2BE8DC-37E4-3019-B665-1036FE7868EA> /usr/lib/libcups.2.dylib
+0x97a0b000 - 0x97a0dfff  libsystem_configuration.dylib (596.12) <1C31C3F6-568D-3854-AE03-A5DA2F39297E> /usr/lib/system/libsystem_configuration.dylib
+0x97a0e000 - 0x97b7efff  com.apple.QTKit (7.7.3 - 2826.0.1) <2C936219-2C31-3912-8CD3-42A16844AFE2> /System/Library/Frameworks/QTKit.framework/Versions/A/QTKit
+0x97b7f000 - 0x97b84ff6  libcompiler_rt.dylib (35) <9924DF2E-D80B-3A21-920D-544A4597203F> /usr/lib/system/libcompiler_rt.dylib
+0x97b85000 - 0x97bb6ff4  com.apple.securityinterface (9.0 - 55047) <0D5ED2B8-C973-3C91-BA45-22501A043263> /System/Library/Frameworks/SecurityInterface.framework/Versions/A/SecurityInterface
+0x97bb7000 - 0x97bbbfff  com.apple.IOAccelerator (98.7.1 - 98.7.1) <8D098F2D-5884-3E61-8D20-5B9A7847BC20> /System/Library/PrivateFrameworks/IOAccelerator.framework/Versions/A/IOAccelerator
+0x97bbc000 - 0x97be8ff7  GLRendererFloat (9.0.83) <53D57A4C-3973-33ED-A0EF-1BCFE1B97A42> /System/Library/Frameworks/OpenGL.framework/Versions/A/Resources/GLRendererFloat.bundle/GLRendererFloat
+0x97be9000 - 0x97bf5ff7  com.apple.OpenDirectory (10.9 - 173.1.1) <2AA24814-2DC6-3E28-B71B-186B686F0F19> /System/Library/Frameworks/OpenDirectory.framework/Versions/A/OpenDirectory
+0x97bf6000 - 0x97bf6fff  com.apple.Accelerate.vecLib (3.9 - vecLib 3.9) <DDAC0B59-F886-3AB1-98E8-C71FFF161CD4> /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/vecLib
+0x97bf7000 - 0x97bfaffe  com.apple.LoginUICore (3.0 - 3.0) <6FE961A4-3C17-3004-B50B-FD78FDC28350> /System/Library/PrivateFrameworks/LoginUIKit.framework/Versions/A/Frameworks/LoginUICore.framework/Versions/A/LoginUICore
+0x97bfb000 - 0x97c02ff1  com.apple.phonenumbers (1.1.1 - 105) <4279F426-BD5E-3716-A23E-5A718B01F466> /System/Library/PrivateFrameworks/PhoneNumbers.framework/Versions/A/PhoneNumbers
+0x97c03000 - 0x97d15ffc  libsqlite3.dylib (158) <B3DB0FED-FE4C-314D-8329-CF7708C8AAF4> /usr/lib/libsqlite3.dylib
+0x97d65000 - 0x97d66fff  libDiagnosticMessagesClient.dylib (100) <B936B1D4-90BB-395D-8EA9-E1237608E7D0> /usr/lib/libDiagnosticMessagesClient.dylib
+0x97d9a000 - 0x97db6fff  libCRFSuite.dylib (34) <FFF76EBA-DF35-3A5F-857F-3F4B1C9F4C77> /usr/lib/libCRFSuite.dylib
+0x97db7000 - 0x97e15fff  com.apple.ViewBridge (1.0 - 46) <62450F2D-C27A-3D11-BA41-AF8C6B18BEDD> /System/Library/PrivateFrameworks/ViewBridge.framework/Versions/A/ViewBridge
+0x97e16000 - 0x97e1effe  libGFXShared.dylib (9.0.83) <35644AAA-B1E7-367C-90C0-378024F8A46A> /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGFXShared.dylib
+0x97e1f000 - 0x97e27fee  libcldcpuengine.dylib (2.3.58) <713322D8-A643-3B9F-8194-9C4020D8A4D6> /System/Library/Frameworks/OpenCL.framework/Versions/A/Libraries/libcldcpuengine.dylib
+0x97e28000 - 0x97e40ffd  libdispatch.dylib (339.1.9) <6249BAE5-044F-3A7A-9CCC-03FF7E6B405B> /usr/lib/system/libdispatch.dylib
+0x97e41000 - 0x97ed3ffe  libsystem_c.dylib (997.1.1) <D06FD754-8CE3-3EB7-BE05-2EF939BBE05F> /usr/lib/system/libsystem_c.dylib
+0x97ed4000 - 0x97edcff7  libCGCMS.A.dylib (599.7) <A7404924-9A2B-3324-A934-BD08953E7098> /System/Library/Frameworks/CoreGraphics.framework/Versions/A/Resources/libCGCMS.A.dylib
+0x97edd000 - 0x97ee7ff7  com.apple.speech.synthesis.framework (4.6.2 - 4.6.2) <16E20DCD-89F4-3C8E-9DBA-EED359807038> /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
+0x97ee8000 - 0x97f01fff  libAVFAudio.dylib (32.2) <C4CBDFDF-8F77-3872-B7DE-D2D7982084BA> /System/Library/Frameworks/AVFoundation.framework/Versions/A/Resources/libAVFAudio.dylib
+0x97f02000 - 0x97f41ff7  com.apple.bom (12.0 - 192) <50F9D23C-9C9A-38BF-B4E2-66D93BE2A174> /System/Library/PrivateFrameworks/Bom.framework/Versions/A/Bom
+0x97f42000 - 0x980d2ff0  GLEngine (9.0.83) <1B032F5D-0D72-30E5-B4AD-D1EBAD995DAC> /System/Library/Frameworks/OpenGL.framework/Versions/A/Resources/GLEngine.bundle/GLEngine
+0x980d3000 - 0x980fdff7  libsandbox.1.dylib (278.10) <28813216-B652-3E4D-B0D5-BE49B385C6EC> /usr/lib/libsandbox.1.dylib
+0x980fe000 - 0x980fefff  com.apple.ApplicationServices (48 - 48) <7967F6FA-2984-3CC3-AD9A-7B9AEC562A2A> /System/Library/Frameworks/ApplicationServices.framework/Versions/A/ApplicationServices
+0x980ff000 - 0x98f9affb  com.apple.WebCore (9537 - 9537.73.13) <85E27D26-9FA4-3CB0-9355-DDD7E3BBFBD7> /System/Library/Frameworks/WebKit.framework/Versions/A/Frameworks/WebCore.framework/Versions/A/WebCore
+0x98f9b000 - 0x9906bfef  libvDSP.dylib (423.32) <E2FA7230-A001-3F6B-9ACF-6998C51AD7DC> /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvDSP.dylib
+0x9906c000 - 0x9906dffc  com.apple.TrustEvaluationAgent (2.0 - 25) <064B485D-56E0-3DD7-BBE2-E08A5BFFF8B3> /System/Library/PrivateFrameworks/TrustEvaluationAgent.framework/Versions/A/TrustEvaluationAgent
+0x9906e000 - 0x991d0ff3  com.apple.CFNetwork (673.0.3 - 673.0.3) <5E0E9AE8-073B-3F2B-B0C7-A0129DE787F6> /System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork
+0x991d1000 - 0x99decff3  com.apple.AppKit (6.9 - 1265) <AE258D94-0272-394F-BBB7-9B5C165A4A78> /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+0x99ded000 - 0x99e42ff7  com.apple.QuickLookFramework (5.0 - 622.3) <3C6ADC02-2C67-361B-B042-47DDCC0EDA5F> /System/Library/Frameworks/QuickLook.framework/Versions/A/QuickLook
+0x99e43000 - 0x9a603ffd  libclh.dylib (4.0.3 - 4.0.3) <D8E24CD9-529A-3D2A-AC36-DB0B52CD6AF9> /System/Library/Extensions/GeForceGLDriver.bundle/Contents/MacOS/libclh.dylib
+0x9a604000 - 0x9a659ff7  com.apple.audio.CoreAudio (4.2.0 - 4.2.0) <0F1C111F-1E64-33BB-A69F-14643B3037D5> /System/Library/Frameworks/CoreAudio.framework/Versions/A/CoreAudio
+0x9a65a000 - 0x9a65efff  com.apple.CommonPanels (1.2.6 - 96) <E7CA63C6-CEE9-3F0A-93A7-C12C653FFB80> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CommonPanels.framework/Versions/A/CommonPanels
+0x9a65f000 - 0x9a662ff3  com.apple.AppleSystemInfo (3.0 - 3.0) <99A923AE-121B-307D-AC1C-968976FBA225> /System/Library/PrivateFrameworks/AppleSystemInfo.framework/Versions/A/AppleSystemInfo
+0x9a663000 - 0x9a8fbfff  com.apple.RawCamera.bundle (5.03 - 729) <61747488-E5EA-388D-886C-214FC4BAF1DD> /System/Library/CoreServices/RawCamera.bundle/Contents/MacOS/RawCamera
+0x9a997000 - 0x9a99bffa  libcache.dylib (62) <9730D7F2-D226-3F30-8D26-BF598CB781F6> /usr/lib/system/libcache.dylib
+0x9a99c000 - 0x9a9acff5  com.apple.LangAnalysis (1.7.0 - 1.7.0) <71DE7754-0A47-3F35-B1BF-B1FE7E1311E0> /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis
+0x9a9ad000 - 0x9aa02ff7  com.apple.framework.internetaccounts (2.1 - 210) <613F079B-6D69-3B3A-84EF-3F178A55F710> /System/Library/PrivateFrameworks/InternetAccounts.framework/Versions/A/InternetAccounts
+0x9aa03000 - 0x9aa03ffe  com.apple.AOSMigrate (1.0 - 1) <E612B5AD-06AE-3BCB-BA14-F7B64714640A> /System/Library/PrivateFrameworks/AOSMigrate.framework/Versions/A/AOSMigrate
+0x9aa04000 - 0x9aa6dfff  com.apple.SystemConfiguration (1.13 - 1.13) <542075CD-9085-3F30-B84B-DD0277D6A40E> /System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration
+0x9aa6e000 - 0x9aae4ff3  com.apple.securityfoundation (6.0 - 55122) <25149798-A37E-316F-84AB-93029EAF33D8> /System/Library/Frameworks/SecurityFoundation.framework/Versions/A/SecurityFoundation
+0x9aae5000 - 0x9abd9fff  libFontParser.dylib (111.1) <D8F9B2A4-41A6-3407-8D80-13A841F97BE5> /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/Resources/libFontParser.dylib
+0x9abda000 - 0x9abdcfff  libquarantine.dylib (71) <EE3B510E-1AEC-3171-8A1A-D6A5A42CF35C> /usr/lib/system/libquarantine.dylib
+0x9abdd000 - 0x9abfaff4  libsystem_kernel.dylib (2422.1.72) <C5641F6C-E271-380A-A656-AE4C04345602> /usr/lib/system/libsystem_kernel.dylib
+0x9abfb000 - 0x9af26ff6  com.apple.Foundation (6.9 - 1056) <C8AE9C03-3460-354A-A8B6-EF4955BE600D> /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+0x9af27000 - 0x9af57ff7  com.apple.CoreServicesInternal (184.8 - 184.8) <88528205-9452-3EEC-BB27-DAAA7EC81E04> /System/Library/PrivateFrameworks/CoreServicesInternal.framework/Versions/A/CoreServicesInternal
+0x9af58000 - 0x9b350ff3  com.apple.CoreGraphics (1.600.0 - 599.7) <DB004990-F06F-3768-AE4C-191B3C748EFC> /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+0x9bc78000 - 0x9bc90fff  com.apple.CFOpenDirectory (10.9 - 173.1.1) <630A5CCF-8FC3-379D-B0BD-41DCE1F0B624> /System/Library/Frameworks/OpenDirectory.framework/Versions/A/Frameworks/CFOpenDirectory.framework/Versions/A/CFOpenDirectory
+0x9bc91000 - 0x9bca5ff9  com.apple.MultitouchSupport.framework (245.13 - 245.13) <6860A0D0-3654-3B02-B2E9-C4D2637167B8> /System/Library/PrivateFrameworks/MultitouchSupport.framework/Versions/A/MultitouchSupport
+0x9bca6000 - 0x9bcd5ff1  com.apple.frameworks.CoreDaemon (1.3 - 1.3) <2215559E-C517-3122-906F-156FD3CC10AD> /System/Library/PrivateFrameworks/CoreDaemon.framework/Versions/B/CoreDaemon
+0x9bcd6000 - 0x9bcdffff  com.apple.speech.recognition.framework (4.2.4 - 4.2.4) <CF8E5706-F744-3139-8A51-D52BF055D19F> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SpeechRecognition.framework/Versions/A/SpeechRecognition
+0x9bce0000 - 0x9bcfbff5  com.apple.openscripting (1.4 - 157) <5C161A52-8D2F-3D56-A988-05727BED7A59> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/OpenScripting.framework/Versions/A/OpenScripting
+0x9bcfc000 - 0x9bcfdfff  libremovefile.dylib (33) <ED35EA79-EB06-3B84-A6D4-B1A9D6B8648D> /usr/lib/system/libremovefile.dylib
+0x9bcfe000 - 0x9bea64af  libobjc.A.dylib (551.1) <31CBE178-E972-30D1-ADC6-4B8345CAE326> /usr/lib/libobjc.A.dylib
+0x9bf5c000 - 0x9bf6bfff  libGL.dylib (9.0.83) <E76D1F2A-D98B-3464-AD0B-FC1EBBADF027> /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
+0x9c075000 - 0x9c0dbfff  com.apple.corelocation (1486.17 - 1486.24) <7DA4ADC6-4766-3DAC-B1AD-1ECEAD4CE477> /System/Library/Frameworks/CoreLocation.framework/Versions/A/CoreLocation
+0x9c0dc000 - 0x9c118ff4  com.apple.RemoteViewServices (2.0 - 94) <BEEE6ADF-7DA3-3D68-BCB0-9863BE1A1F46> /System/Library/PrivateFrameworks/RemoteViewServices.framework/Versions/A/RemoteViewServices
+0x9c119000 - 0x9c136ffb  libresolv.9.dylib (54) <3EC12A7F-6BA1-3976-9F1F-6A4B76303028> /usr/lib/libresolv.9.dylib
+0x9c137000 - 0x9c15efff  com.apple.CoreVideo (1.8 - 117.2) <A53FDD90-F200-3F7C-8A8E-5DE36D3DFBB0> /System/Library/Frameworks/CoreVideo.framework/Versions/A/CoreVideo
+0x9c15f000 - 0x9c16afff  com.apple.CrashReporterSupport (10.9 - 538) <7A5FF845-433C-33E3-99B5-F6AA5B825734> /System/Library/PrivateFrameworks/CrashReporterSupport.framework/Versions/A/CrashReporterSupport
+0x9c16b000 - 0x9c2e9ff8  libGLProgrammability.dylib (9.0.83) <268638DE-5A32-3352-9068-97244D06E43F> /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLProgrammability.dylib
+0x9c2ea000 - 0x9c2eafff  libffi.dylib (18.1) <7A14A976-B202-3074-8B0D-FB718DF172DA> /usr/lib/libffi.dylib
+0x9c2eb000 - 0x9c2f6ff6  com.apple.NetAuth (5.0 - 5.0) <3B2E9615-EE12-38FC-BDCF-09529FF9464B> /System/Library/PrivateFrameworks/NetAuth.framework/Versions/A/NetAuth
+
+External Modification Summary:
+  Calls made by other processes targeting this process:
+    task_for_pid: 1
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by all processes on this machine:
+    task_for_pid: 78447
+    thread_create: 0
+    thread_set_state: 0
+
+VM Region Summary:
+ReadOnly portion of Libraries: Total=252.2M resident=80.8M(32%) swapped_out_or_unallocated=171.4M(68%)
+Writable regions: Total=475.9M written=217.9M(46%) resident=303.1M(64%) swapped_out=8K(0%) unallocated=172.8M(36%)
+ 
+REGION TYPE                      VIRTUAL
+===========                      =======
+CG backing stores                  18.3M
+CG image                             28K
+CG raster data                      204K
+CG shared images                    212K
+CoreAnimation                        48K
+IOKit                              26.9M
+IOKit (reserved)                      4K        reserved VM address space (unallocated)
+Image IO                             40K
+Kernel Alloc Once                     4K
+MALLOC                            194.4M
+MALLOC (admin)                       48K
+Memory Tag 242                       12K
+OpenCL                               44K
+OpenGL GLSL                        1280K
+Stack                              98.3M
+VM_ALLOCATE                       214.3M
+VM_ALLOCATE (reserved)              708K        reserved VM address space (unallocated)
+__DATA                             31.4M
+__IMAGE                             528K
+__LINKEDIT                         48.6M
+__OBJC                             4048K
+__PAGEZERO                            4K
+__TEXT                            203.6M
+__UNICODE                           544K
+mapped file                       182.2M
+shared memory                        68K
+===========                      =======
+TOTAL                               1.0G
+TOTAL, minus reserved VM space      1.0G
+ 
+
+Model: MacBookPro10,1, BootROM MBP101.00EE.B03, 4 processors, Intel Core i7, 2.7 GHz, 16 GB, SMC 2.3f36
+Graphics: Intel HD Graphics 4000, Intel HD Graphics 4000, Built-In, 1024 MB
+Graphics: NVIDIA GeForce GT 650M, NVIDIA GeForce GT 650M, PCIe, 1024 MB
+Memory Module: BANK 0/DIMM0, 8 GB, DDR3, 1600 MHz, 0x802C, 0x384B54463531323634485A2D314736453120
+Memory Module: BANK 1/DIMM0, 8 GB, DDR3, 1600 MHz, 0x802C, 0x384B54463531323634485A2D314736453120
+AirPort: spairport_wireless_card_type_airport_extreme (0x14E4, 0xEF), Broadcom BCM43xx 1.0 (5.106.98.100.22)
+Bluetooth: Version 4.2.0f6 12982, 3 services, 15 devices, 1 incoming serial ports
+Network Service: USB Ethernet, Ethernet, en4
+Network Service: Wi-Fi, AirPort, en0
+Network Service: Thunderbolt Bridge, Ethernet, bridge0
+Serial ATA Device: APPLE SSD SD512E, 500,28 GB
+USB Device: Hub
+USB Device: FaceTime HD Camera (Built-in)
+USB Device: Hub
+USB Device: Hub
+USB Device: BRCM20702 Hub
+USB Device: Bluetooth USB Host Controller
+USB Device: Apple Internal Keyboard / Trackpad
+Thunderbolt Bus: MacBook Pro, Apple Inc., 23.4
