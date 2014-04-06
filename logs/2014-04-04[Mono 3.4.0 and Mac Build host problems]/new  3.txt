@@ -1,0 +1,33 @@
+[02-Apr-2014 14:00:21] Exception: Exception type: System.TypeInitializationException
+An exception was thrown by the type initializer for System.Net.Sockets.Socket
+  at System.Net.Sockets.TcpListener.Init (AddressFamily family, System.Net.EndPoint ep) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.TcpListener..ctor (System.Net.IPAddress localaddr, Int32 port) [0x00000] in <filename unknown>:0 
+  at Mtb.Server.Listener.GetAvailablePort () [0x00000] in <filename unknown>:0 
+  at Mtb.Server.Listener..ctor (Mtb.Server.ServerConfig config) [0x00000] in <filename unknown>:0 
+  at Mtb.Application.MainClass.Init () [0x00000] in <filename unknown>:0 
+  at Mtb.Application.MainClass.Main (System.String[] args) [0x00000] in <filename unknown>:0 
+[02-Apr-2014 14:05:02] Exception: Exception type: System.TypeInitializationException
+An exception was thrown by the type initializer for System.Net.Sockets.Socket
+  at System.Net.Sockets.TcpListener.Init (AddressFamily family, System.Net.EndPoint ep) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.TcpListener..ctor (System.Net.IPAddress localaddr, Int32 port) [0x00000] in <filename unknown>:0 
+  at Mtb.Server.Listener.GetAvailablePort () [0x00000] in <filename unknown>:0 
+  at Mtb.Server.Listener..ctor (Mtb.Server.ServerConfig config) [0x00000] in <filename unknown>:0 
+  at Mtb.Application.MainClass.Init () [0x00000] in <filename unknown>:0 
+  at Mtb.Application.MainClass.Main (System.String[] args) [0x00000] in <filename unknown>:0 
+[02-Apr-2014 14:05:33] Exception: Exception type: System.TypeInitializationException
+An exception was thrown by the type initializer for System.Net.Sockets.Socket
+  at System.Net.Sockets.TcpListener.Init (AddressFamily family, System.Net.EndPoint ep) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.TcpListener..ctor (System.Net.IPAddress localaddr, Int32 port) [0x00000] in <filename unknown>:0 
+  at Mtb.Server.Listener.GetAvailablePort () [0x00000] in <filename unknown>:0 
+  at Mtb.Server.Listener..ctor (Mtb.Server.ServerConfig config) [0x00000] in <filename unknown>:0 
+  at Mtb.Application.MainClass.Init () [0x00000] in <filename unknown>:0 
+  at Mtb.Application.MainClass.Main (System.String[] args) [0x00000] in <filename unknown>:0 
+[02-Apr-2014 14:05:42] Exception: Exception type: System.TypeInitializationException
+An exception was thrown by the type initializer for System.Net.Sockets.Socket
+  at System.Net.Sockets.TcpListener.Init (AddressFamily family, System.Net.EndPoint ep) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.TcpListener..ctor (System.Net.IPAddress localaddr, Int32 port) [0x00000] in <filename unknown>:0 
+  at Mtb.Server.Listener.GetAvailablePort () [0x00000] in <filename unknown>:0 
+  at Mtb.Server.Listener..ctor (Mtb.Server.ServerConfig config) [0x00000] in <filename unknown>:0 
+  at Mtb.Application.MainClass.Init () [0x00000] in <filename unknown>:0 
+  at Mtb.Application.MainClass.Main (System.String[] args) [0x00000] in <filename unknown>:0 
+/Users/moljac/Library/Logs/Xamarin/MonotouchVS/mtbserver.log (END) 

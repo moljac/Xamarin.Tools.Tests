@@ -1,0 +1,176 @@
+Mono.IOS.VisualStudio.Utilities.RemoteServerDiagnostics Error: 0 : Server command 'Info': information about server not available
+Command execution task ended with exception
+Exception System.ArgumentOutOfRangeException: port
+Parameter name: must be between 0 and 65535
+Exception details can be found in the log file
+
+
+Mono.IOS.VisualStudio.Utilities.RemoteServerDiagnostics Error: 0 : Server command 'SdkStatus': unable to obtain SDK status from server
+No response received from the server
+
+
+Mono.IOS.VisualStudio.Utilities.RemoteServerDiagnostics Error: 0 : Server command 'Info': information about server not available
+Command execution task ended with exception
+Exception System.ArgumentOutOfRangeException: port
+Parameter name: must be between 0 and 65535
+Exception details can be found in the log file
+
+
+Mono.IOS.VisualStudio.Utilities.RemoteServerDiagnostics Error: 0 : Server command 'SdkStatus': unable to obtain SDK status from server
+No response received from the server
+
+
+Mono.IOS.VisualStudio.Utilities.RemoteServerDiagnostics Error: 0 : Server command 'Info': information about server not available
+Command execution task ended with exception
+Exception System.ArgumentOutOfRangeException: port
+Parameter name: must be between 0 and 65535
+Exception details can be found in the log file
+
+
+Mono.IOS.VisualStudio.Utilities.RemoteServerDiagnostics Error: 0 : Server command 'SdkStatus': unable to obtain SDK status from server
+No response received from the server
+
+
+Mono.IOS.VisualStudio.BuildServerAddressProvider.BuildServerAddressProvider Error: 0 : Server address 255.255.255.255 is not routable
+Mono.IOS.VisualStudio.Utilities.RemoteServerDiagnostics Error: 0 : Server command 'Info': information about server not available
+Command execution task ended with exception
+Exception System.ArgumentOutOfRangeException: port
+Parameter name: must be between 0 and 65535
+Exception details can be found in the log file
+
+
+Mono.IOS.VisualStudio.Utilities.RemoteServerDiagnostics Error: 0 : Server command 'SdkStatus': unable to obtain SDK status from server
+No response received from the server
+
+
+Mono.IOS.VisualStudio.Utilities.RemoteServerDiagnostics Error: 0 : Server command 'Info': information about server not available
+Command execution task ended with exception
+Exception System.ArgumentOutOfRangeException: port
+Parameter name: must be between 0 and 65535
+Exception details can be found in the log file
+
+
+Mono.IOS.VisualStudio.Utilities.RemoteServerDiagnostics Error: 0 : Server command 'SdkStatus': unable to obtain SDK status from server
+No response received from the server
+
+
+[2014-04-04 07:27:07.8] System.TypeInitializationException: An exception was thrown by the type initializer for System.Net.Sockets.Socket ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies.
+[2014-04-04 07:27:07.8] File name: 'System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
+[2014-04-04 07:27:07.8]   at System.Net.Sockets.Socket..cctor () [0x00000] in <filename unknown>:0 
+[2014-04-04 07:27:07.8]   --- End of inner exception stack trace ---
+[2014-04-04 07:27:07.8]   at System.Net.Sockets.TcpListener.Init (AddressFamily family, System.Net.EndPoint ep) [0x00000] in <filename unknown>:0 
+[2014-04-04 07:27:07.8]   at System.Net.Sockets.TcpListener..ctor (System.Net.IPAddress localaddr, Int32 port) [0x00000] in <filename unknown>:0 
+[2014-04-04 07:27:07.8]   at Mtb.Server.Listener.GetAvailablePort () [0x00000] in <filename unknown>:0 
+[2014-04-04 07:27:07.8]   at Mtb.Server.Listener..ctor (Mtb.Server.ServerConfig config) [0x00000] in <filename unknown>:0 
+[2014-04-04 07:27:07.8]   at Mtb.Application.MainClass.Init () [0x00000] in <filename unknown>:0 
+Mono.Android.VisualStudio.MonoAndroidPackage Error: 0 : Connection task failed. One or more errors occurred. (System.AggregateException)
+Mono.IOS.VisualStudio.MonoTouchPackage Error: 0 : Connection task failed. One or more errors occurred. (System.AggregateException)
+Mono.Android.VisualStudio.MonoAndroidPackage Error: 0 : Error establishing connection to Xamarin.iOS build server
+System.AggregateException: One or more errors occurred. ---> System.AggregateException: One or more errors occurred. ---> System.ArgumentOutOfRangeException: port
+Parameter name: must be between 0 and 65535
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.EnsureValidPort(Int32 port)
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.set_HttpPort(Int32 value)
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.EnsureConnection()
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.<>c__DisplayClass26.<Connect>b__25()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at Mono.IOS.VisualStudio.Utilities.Helpers.EstablishConnection(VSBuildServerClient srv, String connectMessage, Int32 maxRetries, Boolean autoShowWizard)
+---> (Inner Exception #0) System.AggregateException: One or more errors occurred. ---> System.ArgumentOutOfRangeException: port
+Parameter name: must be between 0 and 65535
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.EnsureValidPort(Int32 port)
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.set_HttpPort(Int32 value)
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.EnsureConnection()
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.<>c__DisplayClass26.<Connect>b__25()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.ArgumentOutOfRangeException: port
+Parameter name: must be between 0 and 65535
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.EnsureValidPort(Int32 port)
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.set_HttpPort(Int32 value)
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.EnsureConnection()
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.<>c__DisplayClass26.<Connect>b__25()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+<---
+
+[2014-04-04 07:27:07.8]   at Mtb.Application.MainClass.Main (System.String[] args) [0x00000] in <filename unknown>:0 
+Mono.IOS.VisualStudio.MonoTouchPackage Error: 0 : Error establishing connection to Xamarin.iOS build server
+System.AggregateException: One or more errors occurred. ---> System.AggregateException: One or more errors occurred. ---> System.ArgumentOutOfRangeException: port
+Parameter name: must be between 0 and 65535
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.EnsureValidPort(Int32 port)
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.set_HttpPort(Int32 value)
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.EnsureConnection()
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.<>c__DisplayClass26.<Connect>b__25()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at Mono.IOS.VisualStudio.Utilities.Helpers.EstablishConnection(VSBuildServerClient srv, String connectMessage, Int32 maxRetries, Boolean autoShowWizard)
+---> (Inner Exception #0) System.AggregateException: One or more errors occurred. ---> System.ArgumentOutOfRangeException: port
+Parameter name: must be between 0 and 65535
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.EnsureValidPort(Int32 port)
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.set_HttpPort(Int32 value)
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.EnsureConnection()
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.<>c__DisplayClass26.<Connect>b__25()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.ArgumentOutOfRangeException: port
+Parameter name: must be between 0 and 65535
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.EnsureValidPort(Int32 port)
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.set_HttpPort(Int32 value)
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.EnsureConnection()
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.<>c__DisplayClass26.<Connect>b__25()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+<---
+
+Mono.Android.VisualStudio.MonoAndroidPackage Error: 0 : Exception caught.
+System.ArgumentOutOfRangeException: port
+Parameter name: must be between 0 and 65535
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.EnsureValidPort(Int32 port)
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.Server_Init(String command, String method, IDictionary`2 queryVariables, String payloadChecksum)
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.Server_GetResult[T](String command, IDictionary`2 queryVariables)
+Mono.IOS.VisualStudio.MonoTouchPackage Error: 0 : Exception caught.
+System.ArgumentOutOfRangeException: port
+Parameter name: must be between 0 and 65535
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.EnsureValidPort(Int32 port)
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.Server_Init(String command, String method, IDictionary`2 queryVariables, String payloadChecksum)
+   at MonoTouch.Tools.Utilities.BuildServerClient.ServerIO.Server_GetResult[T](String command, IDictionary`2 queryVariables)
+Mono.Android.VisualStudio.MonoAndroidPackage Error: 0 : Server command 'Info': information about server not available
+Command execution task ended with exception
+Exception System.ArgumentOutOfRangeException: port
+Parameter name: must be between 0 and 65535
+Exception details can be found in the log file
+
+
+Mono.IOS.VisualStudio.MonoTouchPackage Error: 0 : Server command 'Info': information about server not available
+Command execution task ended with exception
+Exception System.ArgumentOutOfRangeException: port
+Parameter name: must be between 0 and 65535
+Exception details can be found in the log file
+
+
+Mono.Android.VisualStudio.MonoAndroidPackage Error: 0 : port
+Parameter name: must be between 0 and 65535
+Mono.IOS.VisualStudio.MonoTouchPackage Error: 0 : port
+Parameter name: must be between 0 and 65535
+Mono.Android.VisualStudio.MonoAndroidPackage Error: 0 : Build server control connection failed
+Mono.IOS.VisualStudio.MonoTouchPackage Error: 0 : Build server control connection failed
+Mono.Android.VisualStudio.MonoAndroidPackage Error: 0 : Server 192.168.1.78 returned no data. Hanging up.)
+Mono.IOS.VisualStudio.MonoTouchPackage Error: 0 : Server 192.168.1.78 returned no data. Hanging up.)
+Mono.Android.VisualStudio.MonoAndroidPackage Error: 0 : Failed to contact the build server.
+System.ArgumentOutOfRangeException: port
+Parameter name: must be between 0 and 65535
+   at Mono.IOS.VisualStudio.Utilities.Helpers.RequestServerInfo(VSBuildServerClient server, Boolean suppressMacActivationDialog, Dictionary`2 queryVariables)
+Mono.IOS.VisualStudio.MonoTouchPackage Error: 0 : Failed to contact the build server.
+System.ArgumentOutOfRangeException: port
+Parameter name: must be between 0 and 65535
+   at Mono.IOS.VisualStudio.Utilities.Helpers.RequestServerInfo(VSBuildServerClient server, Boolean suppressMacActivationDialog, Dictionary`2 queryVariables)
