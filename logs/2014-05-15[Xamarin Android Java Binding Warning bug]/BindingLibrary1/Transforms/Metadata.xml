@@ -1,0 +1,86 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+
+  <!--
+  Errors
+  -->
+  <attr
+	path="/api/package[@name='com.samsung.android.sdk.accessory']"
+	name="managedName"
+	>
+	SamsungSDK.Accessory
+  </attr>
+  <attr
+	path="/api/package[@name='com.samsung.accessory.api']"
+	name="managedName"
+	>
+	SamsungSDK.Accessory.API
+  </attr>
+  <add-node
+	   path="/api/package[@name='com.samsung.accessory.api']">
+	<class abstract="false" deprecated="not deprecated" extends="java.lang.Object"
+	  extends-generic-aware="java.lang.Object" final="false" name="PeerAuthenticationReceiver"
+	  static="true" visibility="public">
+	</class>
+  </add-node>
+  <add-node
+	  path="/api/package[@name='com.samsung.accessory.api']">
+	<class abstract="false" deprecated="not deprecated" extends="java.lang.Object"
+	  extends-generic-aware="java.lang.Object" final="false" name="ISAFrameworkManager.Stub"
+	  static="true" visibility="public">
+	</class>
+  </add-node>
+
+  <!--
+  Warning BG8604: 
+  top ancestor SAAdapter not found for nested type SamsungSDK.Accessory.API.SAAdapter.PeerAuthenticationReceiver
+  -->
+  <add-node
+	  path="/api/package[@name='com.samsung.accessory.api']">
+	<class abstract="false" deprecated="not deprecated" extends="java.lang.Object"
+	  extends-generic-aware="java.lang.Object" final="false" name="SAAdapter"
+	  static="true" visibility="public">
+	</class>
+  </add-node>
+
+  <!--
+  Warning BG8800: 
+  Unknown parameter type com.samsung.accessory.api.SAServiceDescription.a in method SAServiceDescription in managed 
+  type SamsungSDK.Accessory.API.SAServiceDescription
+  -->
+  <add-node
+	  path="/api/package[@name='com.samsung.accessory.api']">
+	<class abstract="false" deprecated="not deprecated" extends="java.lang.Object"
+	  extends-generic-aware="java.lang.Object" final="false" name="SAServiceDescription.a"
+	  static="true" visibility="public">
+	</class>
+  </add-node>
+
+  <!--
+  Warning BG8800: 
+  Unknown parameter type com.samsung.accessory.api.SAAdapter.b in managed type 
+  SamsungSDK.Accessory.API.SAAdapter.PeerAuthenticationReceiver
+  -->
+  <add-node
+	  path="/api/package[@name='com.samsung.accessory.api']">
+	<class abstract="false" deprecated="not deprecated" extends="java.lang.Object"
+	  extends-generic-aware="java.lang.Object" final="false" name="SAAdapter.b"
+	  static="true" visibility="public">
+	</class>
+  </add-node>
+
+  <!--
+	BindingLibrary1/obj/Debug/generated/src/SamsungSDK.Accessory.API.IDeathCallback.cs(23,23): 
+	Warning CS0114: 
+	`SamsungSDK.Accessory.API.DeathCallbackStub.OnTransact(int, Android.OS.Parcel, Android.OS.Parcel, int)' 
+	hides inherited member `Android.OS.Binder.OnTransact(int, Android.OS.Parcel, Android.OS.Parcel, int)'. 
+	To make the current member override that implementation, add the override keyword. Otherwise add the new keyword 
+-->
+</metadata>
