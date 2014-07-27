@@ -19,7 +19,7 @@
 	Exception in thread "main" java.lang.ClassFormatError: StackMapTable format error: access beyond the end of attribute
   -->
   <remove-node
-	path="/api/package[@name='com.samsung.sdk']"
+	path="/api/package[@name='com.samsung.sdk']]"
 	/>
 
 </metadata>

@@ -1,0 +1,87 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+
+
+
+	<!--
+	====================================================================================================================
+	Problem:
+		Error CS0102: 
+			The type 
+				`Org.Codehaus.Jackson.Map.DeserializationConfig' 
+			already contains a definition for 
+				`cb_withClassIntrospector_Lorg_codehaus_jackson_map_ClassIntrospector_'
+
+			ArcGISAndroid/binding/obj/Debug/generated/src/Org.Codehaus.Jackson.Map.DeserializationConfig.cs(19,19): 
+
+	Analysis:
+			Line: 1495
+			Line: 1530
+				static Delegate cb_withClassIntrospector_Lorg_codehaus_jackson_map_ClassIntrospector_;
+
+			Line: 1549
+			// Metadata.xml XPath method reference: path="/api/package[@name='org.codehaus.jackson.map']/class[@name='DeserializationConfig']/method[@name='withClassIntrospector' and count(parameter)=1 and parameter[1][@type='org.codehaus.jackson.map.ClassIntrospector']]"
+			public override global::Org.Codehaus.Jackson.Map.MapperConfig WithClassIntrospector (global::Org.Codehaus.Jackson.Map.ClassIntrospector p0)
+
+			// Metadata.xml XPath method reference: path="/api/package[@name='org.codehaus.jackson.map']/class[@name='DeserializationConfig']/method[@name='withClassIntrospector' and count(parameter)=1 and parameter[1][@type='org.codehaus.jackson.map.ClassIntrospector']]"
+			public virtual global::Org.Codehaus.Jackson.Map.DeserializationConfig WithClassIntrospector (global::Org.Codehaus.Jackson.Map.ClassIntrospector p0)
+
+		api.xml:
+
+			<method abstract="false" deprecated="not deprecated" final="false" name="withClassIntrospector" native="false" return="org.codehaus.jackson.map.MapperConfig" static="false" synchronized="false" visibility="public">
+			<parameter name="p0" type="org.codehaus.jackson.map.ClassIntrospector">
+			</parameter>
+			</method>
+			<method abstract="false" deprecated="not deprecated" final="false" name="withClassIntrospector" native="false" return="org.codehaus.jackson.map.DeserializationConfig" static="false" synchronized="false" visibility="public">
+			<parameter name="p0" type="org.codehaus.jackson.map.ClassIntrospector&lt;? extends org.codehaus.jackson.map.BeanDescription&gt;">
+			</parameter>
+
+		javap -classpath:
+
+			public org.codehaus.jackson.map.DeserializationConfig withClassIntrospector(org.codehaus.jackson.map.ClassIntrospector<? extends org.codehaus.jackson.map.BeanDescription>);
+			public org.codehaus.jackson.map.MapperConfig withClassIntrospector(org.codehaus.jackson.map.ClassIntrospector);
+
+
+	Resolution
+		method with 
+			*	the same name and 
+			*	covariant return types
+				Org.Codehaus.Jackson.Map.DeserializationConfig
+				Org.Codehaus.Jackson.Map.MapperConfig
+			*	additional problem: 
+				both methods have 1 parameter with the same typename, but one has generic and the other doe not!
+			*	additional problem:
+				generator did not
+		1.	remove one method
+			recommendation to remove generic one
+			<remove-node>
+			Note: 
+				check XPath!
+				The one copied from generated cs file is wrong, so go to api.xml 
+				copy typeinfo for generic version and add it to XPath query!
+		2.	change return of the remaining method to be Java.Lang.Object
+
+	-->
+	<remove-node
+		path="/api/package[@name='org.codehaus.jackson.map']/class[@name='DeserializationConfig']/method[@name='withClassIntrospector' and count(parameter)=1 and parameter[1][@type='org.codehaus.jackson.map.ClassIntrospector']]"
+		>
+	</remove-node>
+	<remove-node
+		path="/api/package[@name='org.codehaus.jackson.map']/class[@name='DeserializationConfig']/method[@name='withClassIntrospector' and count(parameter)=1 and parameter[1][@type='org.codehaus.jackson.map.ClassIntrospector&lt;? extends org.codehaus.jackson.map.BeanDescription&gt;']]"
+		>
+	</remove-node>
+	<attr
+		path="/api/package[@name='org.codehaus.jackson.map']/class[@name='DeserializationConfig']/method[@name='withClassIntrospector' and count(parameter)=1 and parameter[1][@type='org.codehaus.jackson.map.ClassIntrospector']]"
+		name="managedReturn"
+		>
+		Java.Lang.Object
+	</attr>
+
+</metadata>
