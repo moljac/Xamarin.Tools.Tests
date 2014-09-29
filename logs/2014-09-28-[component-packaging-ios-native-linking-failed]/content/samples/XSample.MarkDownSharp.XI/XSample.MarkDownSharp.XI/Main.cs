@@ -21,7 +21,7 @@ using nint = global::System.Int32;
 using nuint = global::System.UInt32;
 #endif
 
-namespace XSample.MarkDownDeep.XI
+namespace XSample.MarkDownSharp.XI
 {
     public class Application
     {

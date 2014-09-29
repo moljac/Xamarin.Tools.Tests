@@ -10,7 +10,8 @@
 set -o errexit
 
 MONO=mono
-XAMARIN_COMPONENT=~/bin/xamarin-component.exe
+XAMARIN_COMPONENT=./sbin/xpkg/xamarin-component.exe
+#XAMARIN_COMPONENT=~/bin/xamarin-component.exe
 
 rm -fr *.xam *.xam.zip *.zip
 

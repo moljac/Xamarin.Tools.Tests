@@ -21,7 +21,7 @@ using nint = global::System.Int32;
 using nuint = global::System.UInt32;
 #endif
 
-namespace XSample.MarkDownDeep.XI
+namespace XSample.MarkDownSharp.XI
 {
     /// The UIApplicationDelegate for the application. This class is responsible for launching the 
     // User Interface of the application, as well as listening (and optionally responding) to 

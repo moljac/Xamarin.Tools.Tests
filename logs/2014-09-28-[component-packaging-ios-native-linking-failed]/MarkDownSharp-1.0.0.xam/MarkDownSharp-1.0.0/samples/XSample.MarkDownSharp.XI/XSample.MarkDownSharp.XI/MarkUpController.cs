@@ -23,7 +23,7 @@ using nuint = global::System.UInt32;
 
 using XSample.MarkDownSharp;
 
-namespace XSample.MarkDownDeep.XI
+namespace XSample.MarkDownSharp.XI
 {
 	public partial class MarkUpController : UIViewController
 	{
