@@ -21,7 +21,8 @@
     <MtouchDebug>true</MtouchDebug>
     <OutputPath>bin\unified\iPhoneSimulator\Debug</OutputPath>
     <IntermediateOutputPath>obj\unified\iPhoneSimulator\Debug</IntermediateOutputPath>
-    <MtouchI18n></MtouchI18n>
+    <MtouchI18n>
+    </MtouchI18n>
     <MtouchArch>i386</MtouchArch>
     <MtouchLink>None</MtouchLink>
   </PropertyGroup>
@@ -48,9 +49,12 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <OutputPath>bin\unified\iPhone\Debug</OutputPath>
     <IntermediateOutputPath>obj\unified\iPhone\Debug</IntermediateOutputPath>
-    <IpaPackageName></IpaPackageName>
-    <MtouchI18n></MtouchI18n>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
     <MtouchArch>ARMv7</MtouchArch>
+    <MtouchExtraArgs>-v</MtouchExtraArgs>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
