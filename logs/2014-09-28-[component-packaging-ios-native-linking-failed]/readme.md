@@ -11,6 +11,14 @@ user gets:
 			ld: symbol(s) not found for architecture armv7
 			clang: error: linker command failed with exit code 1 (use -v to see invocation)
 
+Or unified iOS (less frequent than classic samples)
+
+			Undefined symbols for architecture arm64:
+			  "_mono_aot_module_SOMENAME_info", referenced from:
+				  _monotouch_register_modules in main.arm64.o
+			ld: symbol(s) not found for architecture arm64
+			clang: error: linker command failed with exit code 1 (use -v to see invocation)
+						
 SOMENAME is
 
 *	MarkDownSharp_iOS		
