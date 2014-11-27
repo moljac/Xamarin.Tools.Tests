@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D7FA1DCE-005D-4A6F-80CB-72B6564846B8}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Xamarin.Themes</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>PodradioTheme.iOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;__UNIFIED__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <OutputPath>bin\unified\AnyCPU\Debug</OutputPath>
+    <BaseIntermediateOutputPath>obj\unified\</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>obj\unified\AnyCPU\Debug</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <OutputPath>bin\unified\AnyCPU\Release</OutputPath>
+    <BaseIntermediateOutputPath>obj\unified\</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>obj\unified\AnyCPU\Release</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Theme\ITheme.cs" />
+    <Compile Include="Theme\DefaultTheme.cs" />
+    <Compile Include="Common\ResourceManager.cs" />
+    <Compile Include="Common\DeviceInfo.cs" />
+    <Compile Include="Common\Attributes.cs" />
+    <Compile Include="PodradioTheme.cs" />
+    <Compile Include="Extensions\AppearanceExtensions.cs" />
+    <Compile Include="Extensions\UIViewExtensions.cs" />
+    <Compile Include="ColorScheme.cs" />
+    <Compile Include="ColorSwitcher.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Theme\" />
+    <Folder Include="Common\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="ThemeImages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="ThemeImages\back.png" />
+    <BundleResource Include="ThemeImages\back%402x.png" />
+    <BundleResource Include="ThemeImages\blue-button.png" />
+    <BundleResource Include="ThemeImages\blue-button%402x.png" />
+    <BundleResource Include="ThemeImages\green-button.png" />
+    <BundleResource Include="ThemeImages\green-button%402x.png" />
+    <BundleResource Include="ThemeImages\ipad-background.png" />
+    <BundleResource Include="ThemeImages\ipad-background%402x.png" />
+    <BundleResource Include="ThemeImages\ipad-menubar-left.png" />
+    <BundleResource Include="ThemeImages\ipad-menubar-left%402x.png" />
+    <BundleResource Include="ThemeImages\ipad-menubar-right.png" />
+    <BundleResource Include="ThemeImages\ipad-menubar-right%402x.png" />
+    <BundleResource Include="ThemeImages\ipad-tabbar-left.png" />
+    <BundleResource Include="ThemeImages\ipad-tabbar-left%402x.png" />
+    <BundleResource Include="ThemeImages\ipad-tabbar-right.png" />
+    <BundleResource Include="ThemeImages\ipad-tabbar-right%402x.png" />
+    <BundleResource Include="ThemeImages\menu-bar.png" />
+    <BundleResource Include="ThemeImages\menu-bar%402x.png" />
+    <BundleResource Include="ThemeImages\menubar-brn-stretch.png" />
+    <BundleResource Include="ThemeImages\menubar-brn-stretch%402x.png" />
+    <BundleResource Include="ThemeImages\menubar-brn.png" />
+    <BundleResource Include="ThemeImages\menubar-brn%402x.png" />
+    <BundleResource Include="ThemeImages\menubar-button.png" />
+    <BundleResource Include="ThemeImages\menubar-button%402x.png" />
+    <BundleResource Include="ThemeImages\off-switch-left.png" />
+    <BundleResource Include="ThemeImages\off-switch-left%402x.png" />
+    <BundleResource Include="ThemeImages\off-switch-right.png" />
+    <BundleResource Include="ThemeImages\off-switch-right%402x.png" />
+    <BundleResource Include="ThemeImages\off-switch.png" />
+    <BundleResource Include="ThemeImages\off-switch%402x.png" />
+    <BundleResource Include="ThemeImages\on-switch-left.png" />
+    <BundleResource Include="ThemeImages\on-switch-left%402x.png" />
+    <BundleResource Include="ThemeImages\on-switch-right.png" />
+    <BundleResource Include="ThemeImages\on-switch-right%402x.png" />
+    <BundleResource Include="ThemeImages\on-switch.png" />
+    <BundleResource Include="ThemeImages\on-switch%402x.png" />
+    <BundleResource Include="ThemeImages\progress-fill.png" />
+    <BundleResource Include="ThemeImages\progress-fill%402x.png" />
+    <BundleResource Include="ThemeImages\progress-track.png" />
+    <BundleResource Include="ThemeImages\progress-track%402x.png" />
+    <BundleResource Include="ThemeImages\red-button.png" />
+    <BundleResource Include="ThemeImages\red-button%402x.png" />
+    <BundleResource Include="ThemeImages\selection-tab.png" />
+    <BundleResource Include="ThemeImages\selection-tab%402x.png" />
+    <BundleResource Include="ThemeImages\slider-fill.png" />
+    <BundleResource Include="ThemeImages\slider-fill%402x.png" />
+    <BundleResource Include="ThemeImages\slider-handle.png" />
+    <BundleResource Include="ThemeImages\slider-handle%402x.png" />
+    <BundleResource Include="ThemeImages\slider-track.png" />
+    <BundleResource Include="ThemeImages\slider-track%402x.png" />
+    <BundleResource Include="ThemeImages\tabbar.png" />
+    <BundleResource Include="ThemeImages\tabbar%402x.png" />
+    <BundleResource Include="ThemeImages\text-input.png" />
+    <BundleResource Include="ThemeImages\text-input%402x.png" />
+    <BundleResource Include="ThemeImages\background-568h%402x.png" />
+    <BundleResource Include="ThemeImages\background.png" />
+    <BundleResource Include="ThemeImages\background%402x.png" />
+  </ItemGroup>
+</Project>

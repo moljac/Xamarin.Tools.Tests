@@ -1,0 +1,21 @@
+name: Podradio Theme
+id: podradiotheme
+version: 1.1
+summary: Simple application sample that demonstrates rich features of applications styling in iOS.
+publisher: Xamarin Inc
+publisher-url: http://www.xamarin.com/
+nobuild: true
+screenshots:
+  - component/screenshots/00.png
+  - component/screenshots/01.png
+  - component/screenshots/02.png
+libraries:
+  ios: lib/ios/PodradioTheme.iOs.dll
+  ios-unified: lib/ios-unified/PodradioTheme.iOs.dll
+samples:
+  "iOS Sample Unified": samples/PodradioTheme.iOs.Sample/PodradioTheme.iOs.Component-Sample.sln
+  "iOS Sample Classic": samples/PodradioTheme.iOs.Sample/PodradioTheme.iOs.Component-Sample-Classic.sln
+build:
+  - src/PodradioTheme.iOs.sln
+  - src/PodradioTheme.iOs/PodradioTheme.iOs.csproj
+  - src/PodradioTheme.iOs/PodradioTheme.iOs-Classic.csproj

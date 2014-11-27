@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PodradioTheme.iOs-Classic", "PodradioTheme.iOs\PodradioTheme.iOs-Classic.csproj", "{6861D250-F402-4FA7-9164-1E68A4DDDE6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PodradioTheme.iOs", "PodradioTheme.iOs\PodradioTheme.iOs.csproj", "{D7FA1DCE-005D-4A6F-80CB-72B6564846B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6861D250-F402-4FA7-9164-1E68A4DDDE6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6861D250-F402-4FA7-9164-1E68A4DDDE6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6861D250-F402-4FA7-9164-1E68A4DDDE6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6861D250-F402-4FA7-9164-1E68A4DDDE6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7FA1DCE-005D-4A6F-80CB-72B6564846B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7FA1DCE-005D-4A6F-80CB-72B6564846B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7FA1DCE-005D-4A6F-80CB-72B6564846B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7FA1DCE-005D-4A6F-80CB-72B6564846B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = PodradioTheme.iOs\PodradioTheme.iOs-Classic.csproj
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

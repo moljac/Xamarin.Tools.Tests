@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PodradioTheme.iOS.Component-Sample", "PodradioTheme.iOS.Component-Sample.csproj", "{C1F1FBCB-C401-42B0-BB11-33FF556526E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "original-transformed-PodradioTheme.iOS.Component-Sample", "original-transformed-PodradioTheme.iOS.Component-Sample.csproj", "{E9A364AD-E93F-48B8-A054-B35811ADE344}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1F1FBCB-C401-42B0-BB11-33FF556526E0}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{C1F1FBCB-C401-42B0-BB11-33FF556526E0}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{C1F1FBCB-C401-42B0-BB11-33FF556526E0}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{C1F1FBCB-C401-42B0-BB11-33FF556526E0}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{C1F1FBCB-C401-42B0-BB11-33FF556526E0}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{C1F1FBCB-C401-42B0-BB11-33FF556526E0}.Debug|iPhone.Build.0 = Debug|iPhone
+		{C1F1FBCB-C401-42B0-BB11-33FF556526E0}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{C1F1FBCB-C401-42B0-BB11-33FF556526E0}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{C1F1FBCB-C401-42B0-BB11-33FF556526E0}.Release|iPhone.ActiveCfg = Release|iPhone
+		{C1F1FBCB-C401-42B0-BB11-33FF556526E0}.Release|iPhone.Build.0 = Release|iPhone
+		{C1F1FBCB-C401-42B0-BB11-33FF556526E0}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{C1F1FBCB-C401-42B0-BB11-33FF556526E0}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{E9A364AD-E93F-48B8-A054-B35811ADE344}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{E9A364AD-E93F-48B8-A054-B35811ADE344}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{E9A364AD-E93F-48B8-A054-B35811ADE344}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{E9A364AD-E93F-48B8-A054-B35811ADE344}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{E9A364AD-E93F-48B8-A054-B35811ADE344}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{E9A364AD-E93F-48B8-A054-B35811ADE344}.Debug|iPhone.Build.0 = Debug|iPhone
+		{E9A364AD-E93F-48B8-A054-B35811ADE344}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{E9A364AD-E93F-48B8-A054-B35811ADE344}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{E9A364AD-E93F-48B8-A054-B35811ADE344}.Release|iPhone.ActiveCfg = Release|iPhone
+		{E9A364AD-E93F-48B8-A054-B35811ADE344}.Release|iPhone.Build.0 = Release|iPhone
+		{E9A364AD-E93F-48B8-A054-B35811ADE344}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{E9A364AD-E93F-48B8-A054-B35811ADE344}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = PodradioTheme.iOS.Component-Sample.csproj
+	EndGlobalSection
+EndGlobal
