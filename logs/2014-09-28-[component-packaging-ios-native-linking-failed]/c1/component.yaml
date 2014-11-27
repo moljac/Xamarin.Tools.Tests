@@ -9,19 +9,19 @@ license: content/LICENSE.md
 getting-started: content/GettingStarted.md
 no_build: true
 libraries:
-  ios:
-    - content/lib/ios/MarkDownSharp.iOS.dll
-  ios-unified: 
-    - content/lib/ios-unified/MarkDownSharp.iOS.dll
   android:
-    - content/lib/android/MarkDownSharp.Android.dll
+    - lib/android/MarkDownSharp.Android.dll
+  ios:
+    - lib/ios/MarkDownSharp.iOS.dll
+  ios-unified: 
+    - lib/ios-unified/MarkDownSharp.iOS.dll
 samples:
   - name: "Android Sample"
-    path: content/samples/XSample.MarkDownSharp.XA/XSample.MarkDownSharp.XA.sln
+    path: ./samples/XSample.MarkDownSharp.XA/XSample.MarkDownSharp.XA.sln
   - name: "iOS Unified Sample"
-    path: content/samples/XSample.MarkDownSharp.XI/XSample.MarkDownSharp.XI.sln
+    path: ./samples/XSample.MarkDownSharp.XI/XSample.MarkDownSharp.XI.sln
   - name: "iOS Classic Sample"
-    path: content/samples/XSample.MarkDownSharp.XI-Classic/XSample.MarkDownSharp.XI-Classic.sln
+    path: ./samples/XSample.MarkDownSharp.XI-Classic/XSample.MarkDownSharp.XI-Classic.sln
 icons:
   - content/icons/MarkDownSharp_128x128.png
   - content/icons/MarkDownSharp_512x512.png

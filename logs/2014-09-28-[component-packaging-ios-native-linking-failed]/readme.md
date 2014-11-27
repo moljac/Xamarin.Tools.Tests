@@ -2,10 +2,23 @@
 
 ## Descriptions:
 
-In Release (sometimes Debug) mode on the Device during component test (unpacking and testing) user gets:
+In Release (sometimes Debug) mode on the Device during component test (unpacking and testing) 
+user gets:
 
+			Undefined symbols for architecture armv7:
+			  "_mono_aot_module_SOMENAME_info", referenced from:
+				  _monotouch_register_modules in main.armv7.o
+			ld: symbol(s) not found for architecture armv7
+			clang: error: linker command failed with exit code 1 (use -v to see invocation)
 
+SOMENAME is
 
+*	MarkDownSharp_iOS		
+	in MarkDownSharp component		
+*	PodradioTheme_iOs			
+	in Podradio_Theme component
+
+	
 Before packaging everything works as expected.
 
 Samples containing "Component" are samples with references to dll (to reduce possibility errors in
@@ -15,6 +28,6 @@ xamarin-component.exe transformations)
 
 2 components 
 
-*	MarkDownSharp
-*	Podradio Theme
+*	c1 - MarkDownSharp
+*	c2 - Podradio Theme
 
