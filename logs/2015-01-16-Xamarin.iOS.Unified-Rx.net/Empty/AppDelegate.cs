@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using System.Reactive.Linq;
 
 namespace Empty
 {
@@ -44,7 +45,7 @@ namespace Empty
 				cannot be inferred from the usage. Try specifying the type arguments explicitly (CS0411) 
 				(Empty)
 			*/
-			var oddNumbers = System.Reactive.Linq.Observable.Range (0, 10)
+			var oddNumbers = Observable.Range (0, 10)
 			    .Where (i => i % 2 == 0)
 			    .Subscribe (
 			        Console.WriteLine, 
