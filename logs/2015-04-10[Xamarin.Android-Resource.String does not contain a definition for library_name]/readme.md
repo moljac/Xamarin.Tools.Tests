@@ -30,7 +30,7 @@ Visual Studio:
 
 	find . -type f | xargs grep "library_name" {} \;
 
-2.	results: [find-grep.log](find-grep.log)		
+2.	results: [find-grep.txt](find-grep.txt)		
 
 
 ## IDE Data
