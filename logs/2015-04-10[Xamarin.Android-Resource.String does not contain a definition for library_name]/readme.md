@@ -5,20 +5,35 @@
 
 
 
-## Error
+## Error: Resource.String does not contain a definition for library_name
+
 
 Xamarin.Studio:
 
+	XamarinAuth/XamarinAuth.Droid/Resources/Resource.Designer.cs(98,98): 
+	Error CS0117: 
+	`XamarinAuth.Droid.Resource.String' does not contain a definition for `library_name' 
+	(CS0117)
+	(XamarinAuth.Droid)
 
 Visual Studio:
-
 
     Error	9	
     'XamarinAuth.Droid.Resource.String' does not contain a definition for 'library_name'	
     HolisticWare.Auth\samples\XamarinAuth.XamarinForms\XamarinAuth.Droid\Resources\Resource.Designer.cs	31	98	
     XamarinAuth.Droid
 
-## Data
+
+## Analysis
+
+1.	searching for library_name 			
+
+	find . -type f | xargs grep "library_name" {} \;
+
+2.	results: [find-grep.log](find-grep.log)		
+
+
+## IDE Data
 
 ### Xamarin.Studio
 
