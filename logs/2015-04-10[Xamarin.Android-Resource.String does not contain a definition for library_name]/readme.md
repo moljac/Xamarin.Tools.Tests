@@ -37,6 +37,69 @@ Visual Studio:
 
 ### Xamarin.Studio
 
+		=== Xamarin Studio ===
+
+		Version 5.9 (build 388)
+		Installation UUID: 7f42cd6c-f6c2-47c4-960b-ba19ea98bebf
+		Runtime:
+			Mono 4.0.0 ((detached/21d849b)
+			GTK+ 2.24.23 (Raleigh theme)
+
+			Package version: 400000121
+
+		=== Apple Developer Tools ===
+
+		Xcode 6.3 (7569)
+		Build 6D570
+
+		=== Xamarin.iOS ===
+
+		Version: 8.10.0.197 (Business Edition)
+		Hash: 4dac6bf
+		Branch: master
+		Build date: 2015-04-01 21:55:11-0400
+
+		=== Xamarin.Android ===
+
+		Version: 5.1.0.100 (Business Edition)
+		Android SDK: /Users/moljac/Library/Developer/Xamarin/android-sdk-mac_x86
+			Supported Android versions:
+				2.3    (API level 10)
+				4.0.3  (API level 15)
+				4.1    (API level 16)
+				4.2    (API level 17)
+				4.3    (API level 18)
+				4.4    (API level 19)
+				4.4.87 (API level 20)
+				5.0    (API level 21)
+		Java SDK: /usr
+		java version "1.7.0_55"
+		Java(TM) SE Runtime Environment (build 1.7.0_55-b13)
+		Java HotSpot(TM) 64-Bit Server VM (build 24.55-b03, mixed mode)
+
+		=== Xamarin Android Player ===
+
+		Version: Unknown version
+		Location: /Applications/Xamarin Android Player.app
+
+		=== Xamarin.Mac ===
+
+		Not Installed
+
+		=== Build Information ===
+
+		Release ID: 509000388
+		Git revision: 027c5efa6f92249fd2e614535965159c0a7c0fe6
+		Build date: 2015-04-01 19:12:53-04
+		Xamarin addins: a6779639267bbe31df3fd6958be4ecae82665b7e
+
+		=== Operating System ===
+
+		Mac OS X 10.10.3
+		Darwin Miljenkos-MacBook-Pro.local 14.3.0 Darwin Kernel Version 14.3.0
+		    Mon Mar 23 11:59:05 PDT 2015
+		    root:xnu-2782.20.48~5/RELEASE_X86_64 x86_64
+
 
 
 
