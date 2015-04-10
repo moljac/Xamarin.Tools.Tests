@@ -1,0 +1,27 @@
+Binary file ./packages/Xamarin.Auth.0.0.1-alpha/lib/MonoAndroid10/Xamarin.Auth.dll matches
+./readme.md:# Resource.String does not contain a definition for 'library_name'
+./readme.md:    'XamarinAuth.Droid.Resource.String' does not contain a definition for 'library_name'	
+Binary file ./XamarinAuth/XamarinAuth/bin/Debug/XamarinAuth.dll.mdb matches
+./XamarinAuth/XamarinAuth/obj/Debug/XamarinAuth.csproj.FilesWrittenAbsolute.txt:/Users/moljac/Desktop/Xamarin.Test.Toolz/logs/2015-04-10[Xamarin.Android-library_name-Resources.String]/XamarinAuth/XamarinAuth/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+./XamarinAuth/XamarinAuth/obj/Debug/XamarinAuth.csproj.FilesWrittenAbsolute.txt:/Users/moljac/Desktop/Xamarin.Test.Toolz/logs/2015-04-10[Xamarin.Android-library_name-Resources.String]/XamarinAuth/XamarinAuth/obj/Debug/XamarinAuth.Views.PageMain.xaml
+./XamarinAuth/XamarinAuth/obj/Debug/XamarinAuth.csproj.FilesWrittenAbsolute.txt:/Users/moljac/Desktop/Xamarin.Test.Toolz/logs/2015-04-10[Xamarin.Android-library_name-Resources.String]/XamarinAuth/XamarinAuth/obj/Debug/PageMain.xaml.g.cs
+./XamarinAuth/XamarinAuth/obj/Debug/XamarinAuth.csproj.FilesWrittenAbsolute.txt:/Users/moljac/Desktop/Xamarin.Test.Toolz/logs/2015-04-10[Xamarin.Android-library_name-Resources.String]/XamarinAuth/XamarinAuth/bin/Debug/XamarinAuth.dll.mdb
+./XamarinAuth/XamarinAuth/obj/Debug/XamarinAuth.csproj.FilesWrittenAbsolute.txt:/Users/moljac/Desktop/Xamarin.Test.Toolz/logs/2015-04-10[Xamarin.Android-library_name-Resources.String]/XamarinAuth/XamarinAuth/bin/Debug/XamarinAuth.dll
+./XamarinAuth/XamarinAuth/obj/Debug/XamarinAuth.csproj.FilesWrittenAbsolute.txt:/Users/moljac/Desktop/Xamarin.Test.Toolz/logs/2015-04-10[Xamarin.Android-library_name-Resources.String]/XamarinAuth/XamarinAuth/obj/Debug/XamarinAuth.dll
+./XamarinAuth/XamarinAuth/obj/Debug/XamarinAuth.csproj.FilesWrittenAbsolute.txt:/Users/moljac/Desktop/Xamarin.Test.Toolz/logs/2015-04-10[Xamarin.Android-library_name-Resources.String]/XamarinAuth/XamarinAuth/obj/Debug/XamarinAuth.dll.mdb
+./XamarinAuth/XamarinAuth/obj/Debug/XamarinAuth.csproj.FilesWrittenAbsolute.txt:/Users/moljac/Desktop/Xamarin.Test.Toolz/logs/2015-04-10[Xamarin.Android-library_name-Resources.String]/XamarinAuth/XamarinAuth/bin/Debug/Xamarin.Auth.dll
+./XamarinAuth/XamarinAuth/obj/Debug/XamarinAuth.csproj.FilesWrittenAbsolute.txt:/Users/moljac/Desktop/Xamarin.Test.Toolz/logs/2015-04-10[Xamarin.Android-library_name-Resources.String]/XamarinAuth/XamarinAuth/bin/Debug/Xamarin.Forms.Core.dll
+./XamarinAuth/XamarinAuth/obj/Debug/XamarinAuth.csproj.FilesWrittenAbsolute.txt:/Users/moljac/Desktop/Xamarin.Test.Toolz/logs/2015-04-10[Xamarin.Android-library_name-Resources.String]/XamarinAuth/XamarinAuth/bin/Debug/Xamarin.Forms.Xaml.dll
+Binary file ./XamarinAuth/XamarinAuth/obj/Debug/XamarinAuth.dll.mdb matches
+Binary file ./XamarinAuth/XamarinAuth.Droid/bin/Debug/Xamarin.Auth.dll matches
+Binary file ./XamarinAuth/XamarinAuth.Droid/bin/Debug/XamarinAuth.dll.mdb matches
+./XamarinAuth/XamarinAuth.Droid/obj/Debug/XamarinAuth.Droid.csproj.FilesWrittenAbsolute.txt:/Users/moljac/Desktop/Xamarin.Test.Toolz/logs/2015-04-10[Xamarin.Android-library_name-Resources.String]/XamarinAuth/XamarinAuth.Droid/obj/Debug/MonoAndroid,Version=v5.0.AssemblyAttribute.cs
+./XamarinAuth/XamarinAuth.Droid/obj/Debug/XamarinAuth.Droid.csproj.FilesWrittenAbsolute.txt:/Users/moljac/Desktop/Xamarin.Test.Toolz/logs/2015-04-10[Xamarin.Android-library_name-Resources.String]/XamarinAuth/XamarinAuth.Droid/bin/Debug/Xamarin.Forms.Platform.Android.dll
+./XamarinAuth/XamarinAuth.Droid/obj/Debug/XamarinAuth.Droid.csproj.FilesWrittenAbsolute.txt:/Users/moljac/Desktop/Xamarin.Test.Toolz/logs/2015-04-10[Xamarin.Android-library_name-Resources.String]/XamarinAuth/XamarinAuth.Droid/bin/Debug/FormsViewGroup.dll
+./XamarinAuth/XamarinAuth.Droid/obj/Debug/XamarinAuth.Droid.csproj.FilesWrittenAbsolute.txt:/Users/moljac/Desktop/Xamarin.Test.Toolz/logs/2015-04-10[Xamarin.Android-library_name-Resources.String]/XamarinAuth/XamarinAuth.Droid/bin/Debug/Xamarin.Forms.Core.dll
+./XamarinAuth/XamarinAuth.Droid/obj/Debug/XamarinAuth.Droid.csproj.FilesWrittenAbsolute.txt:/Users/moljac/Desktop/Xamarin.Test.Toolz/logs/2015-04-10[Xamarin.Android-library_name-Resources.String]/XamarinAuth/XamarinAuth.Droid/bin/Debug/Xamarin.Forms.Xaml.dll
+./XamarinAuth/XamarinAuth.Droid/obj/Debug/XamarinAuth.Droid.csproj.FilesWrittenAbsolute.txt:/Users/moljac/Desktop/Xamarin.Test.Toolz/logs/2015-04-10[Xamarin.Android-library_name-Resources.String]/XamarinAuth/XamarinAuth.Droid/bin/Debug/Xamarin.Android.Support.v4.dll
+./XamarinAuth/XamarinAuth.Droid/obj/Debug/XamarinAuth.Droid.csproj.FilesWrittenAbsolute.txt:/Users/moljac/Desktop/Xamarin.Test.Toolz/logs/2015-04-10[Xamarin.Android-library_name-Resources.String]/XamarinAuth/XamarinAuth.Droid/bin/Debug/Xamarin.Auth.dll
+./XamarinAuth/XamarinAuth.Droid/obj/Debug/XamarinAuth.Droid.csproj.FilesWrittenAbsolute.txt:/Users/moljac/Desktop/Xamarin.Test.Toolz/logs/2015-04-10[Xamarin.Android-library_name-Resources.String]/XamarinAuth/XamarinAuth.Droid/bin/Debug/XamarinAuth.dll
+./XamarinAuth/XamarinAuth.Droid/obj/Debug/XamarinAuth.Droid.csproj.FilesWrittenAbsolute.txt:/Users/moljac/Desktop/Xamarin.Test.Toolz/logs/2015-04-10[Xamarin.Android-library_name-Resources.String]/XamarinAuth/XamarinAuth.Droid/bin/Debug/XamarinAuth.dll.mdb
+./XamarinAuth/XamarinAuth.Droid/Resources/Resource.Designer.cs:			global::Xamarin.Auth.Resource.String.library_name = global::XamarinAuth.Droid.Resource.String.library_name;
