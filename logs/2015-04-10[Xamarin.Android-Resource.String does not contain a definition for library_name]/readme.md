@@ -7,6 +7,9 @@
 
 ## Error: Resource.String does not contain a definition for library_name
 
+*	[https://github.com/moljac/Xamarin.Tools.Tests/blob/master/logs/2015-04-10%5BXamarin.Android-Resource.String%20does%20not%20contain%20a%20definition%20for%20library_name%5D/XamarinAuth/XamarinAuth.Droid/Resources/Resource.Designer.cs#L31](https://github.com/moljac/Xamarin.Tools.Tests/blob/master/logs/2015-04-10%5BXamarin.Android-Resource.String%20does%20not%20contain%20a%20definition%20for%20library_name%5D/XamarinAuth/XamarinAuth.Droid/Resources/Resource.Designer.cs#L31)
+
+
 
 Xamarin.Studio:
 
@@ -31,6 +34,22 @@ Visual Studio:
 	find . -type f | xargs grep "library_name" {} \;
 
 2.	results: [find-grep.txt](find-grep.txt)		
+
+## References
+
+*	[https://forums.xamarin.com/discussion/2592/android-class-libraries-and-string-resources](https://forums.xamarin.com/discussion/2592/android-class-libraries-and-string-resources)
+*	[http://forums.xamarin.com/discussion/16633/string-resources-in-library-project-raising-exception](http://forums.xamarin.com/discussion/16633/string-resources-in-library-project-raising-exception)
+*	[https://forums.xamarin.com/discussion/5757/namespace-collision-in-resource-designer-cs](https://forums.xamarin.com/discussion/5757/namespace-collision-in-resource-designer-cs)
+*	[http://forums.xamarin.com/discussion/2822/library-resources-building-issue](http://forums.xamarin.com/discussion/2822/library-resources-building-issue)
+*	[]()
+*	[]()
+*	[]()
+*	[]()
+*	[]()
+*	[]()
+*	[]()
+*	[]()
+
 
 
 ## IDE Data
