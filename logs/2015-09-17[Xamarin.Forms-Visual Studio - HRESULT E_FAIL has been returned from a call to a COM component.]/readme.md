@@ -1,4 +1,12 @@
+# Xamarin. Forms Visual Studio Error HRESULT E_FAIL has been returned from a call to a COM component
 
+Steps:
+
+1.	start Xamarin.Forms Windows Phone 8 application 
+2.	SplashScreen loads
+3.	Debugger breaks on Xamarin.Forms.Init()
+
+The code is from Croatian customer so I cannot share it w/o permission.
 
 
 ## Visual Studio 2013 Community
