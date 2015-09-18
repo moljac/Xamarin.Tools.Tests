@@ -1,14 +1,43 @@
 # Xamarin. Forms Visual Studio Error HRESULT E_FAIL has been returned from a call to a COM component
 
+*	Xamarin.Forms app 3 platform 20 pages/Views 		
+*	Xamarin.Forms app for Prototyping and Test of UX		
+*	minimal c# code (Business Logic) only POCOs for Databinding			
+*	heavy use of BoxView instead of images (artwork not finished yet)
+*	The code is from Croatian customer so I cannot share it w/o permission.		
+
 Steps:
 
 1.	start Xamarin.Forms Windows Phone 8 application 
 2.	SplashScreen loads
 3.	Debugger breaks on Xamarin.Forms.Init()
 
-The code is from Croatian customer so I cannot share it w/o permission.
+## References/Links
 
+*	[https://bugzilla.xamarin.com/show_bug.cgi?id=29662](https://bugzilla.xamarin.com/show_bug.cgi?id=29662)
 
+## NuGet Packages
+
+Potable:
+
+  <package id="Xamarin.Forms" version="1.5.0.6446" targetFramework="portable-net45+win+wp80+MonoTouch10+MonoAndroid10+xamarinmac20+xamarinios10" />
+
+Android:
+
+  <package id="Xamarin.Android.Support.v4" version="22.2.1.0" targetFramework="MonoAndroid51" />
+  <package id="Xamarin.Forms" version="1.5.0.6446" targetFramework="MonoAndroid51" />
+
+iOS:
+
+  <package id="Xamarin.Forms" version="1.5.0.6446" targetFramework="xamarinios10" />
+
+Windows Phone:
+
+  <package id="WPtoolkit" version="4.2013.08.16" targetFramework="wp80" />
+  <package id="Xamarin.Forms" version="1.5.0.6446" targetFramework="wp80" />
+
+  
+  
 ## Visual Studio 2013 Community
 
 Exception:
@@ -17,8 +46,7 @@ Exception:
 	but was not handled in user code
 
 	Additional information:
-	Error HRESULT E_FAIL has been returned from a 
-	call to a COM component.
+	Error HRESULT E_FAIL has been returned from a call to a COM component.
 
 Exception details:
 	
@@ -291,5 +319,8 @@ IDE info:
 	Xamarin.iOS   8.13.0.122 (2c6a530)
 	Visual Studio extension to enable development for Xamarin.iOS.
 	
+## Further Information
+
+*	[https://github.com/moljac/Xamarin.Tools.Tests/tree/master/logs/2015-09-17%5BXamarin.Forms-Visual%20Studio%20-%20HRESULT%20E_FAIL%20has%20been%20returned%20from%20a%20call%20to%20a%20COM%20component.%5D](https://github.com/moljac/Xamarin.Tools.Tests/tree/master/logs/2015-09-17%5BXamarin.Forms-Visual%20Studio%20-%20HRESULT%20E_FAIL%20has%20been%20returned%20from%20a%20call%20to%20a%20COM%20component.%5D)
 	
   
