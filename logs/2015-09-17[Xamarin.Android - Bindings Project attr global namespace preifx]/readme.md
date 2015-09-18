@@ -53,6 +53,6 @@ all
 *	sample
 	[https://github.com/moljac/Xamarin.Tools.Tests/tree/master/logs/2015-09-17%5BXamarin.Android%20-%20Bindings%20Project%20attr%20global%20namespace%20preifx%5D](https://github.com/moljac/Xamarin.Tools.Tests/tree/master/logs/2015-09-17%5BXamarin.Android%20-%20Bindings%20Project%20attr%20global%20namespace%20preifx%5D)
 *	minimal sample zipped
-	[]()
+	[https://github.com/moljac/Xamarin.Tools.Tests/blob/master/logs/2015-09-17%5BXamarin.Android%20-%20Bindings%20Project%20attr%20global%20namespace%20preifx%5D/Archive.zip](https://github.com/moljac/Xamarin.Tools.Tests/blob/master/logs/2015-09-17%5BXamarin.Android%20-%20Bindings%20Project%20attr%20global%20namespace%20preifx%5D/Archive.zip)
 	
 	
