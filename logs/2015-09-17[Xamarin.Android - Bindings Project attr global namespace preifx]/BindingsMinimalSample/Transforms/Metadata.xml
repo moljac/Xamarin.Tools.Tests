@@ -1,0 +1,75 @@
+﻿<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <!--
+  	Igonre errros in binding
+
+  -->
+
+  <!--
+  	Following 
+  -->
+  <attr
+  	path="/api/package[@name='com.brightcove.player.event']/class[@name='RegisteringEventEmitter']/method[@name='build']"
+  	name="managedReturn"
+  	>
+  	Java.Lang.Object
+  </attr>
+
+  <!--
+  	following code generates exception (below)
+
+  	Reason: global:: namespace prefix
+
+  	I actualy copied managed type  from generated code.
+
+  -->
+  <attr
+  	path="/api/package[@name='com.brightcove.player.event']/class[@name='RegisteringEventEmitter']/method[@name='build']"
+  	name="managedReturn"
+  	>
+  	global::Java.Lang.Object
+  </attr>
+  <!--
+		/Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Bindings.targets: Error: Tool exited with code: 1. Output: resolving assembly /Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/mscorlib.dll.
+		resolving assembly /Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/System.dll.
+		resolving assembly /Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/System.Xml.dll.
+		resolving assembly /Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v5.1/Mono.Android.dll.
+		resolving assembly /Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/System.Core.dll.
+		resolving assembly /Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/mscorlib.dll.
+		warning BG8900: Type com.brightcove.player.event.Event: FxDG naming violation: Type name 'Event' matches namespace part 'Event'.
+		warning BG8900: Type com.brightcove.player.analytics.Analytics: FxDG naming violation: Type name 'Analytics' matches namespace part 'Analytics'.
+		warning BG8900: Type com.brightcove.player.event.Event: FxDG naming violation: Type name 'Event' matches namespace part 'Event'.
+		warning BG8900: Type com.brightcove.player.analytics.Analytics: FxDG naming violation: Type name 'Analytics' matches namespace part 'Analytics'.
+		warning BG8401: Skipping Com.Brightcove.Player.Captioning.BrightcoveCaptionPropertiesFragment.Tag, due to a duplicate field, method or nested type name.
+		warning BG8401: Skipping Com.Brightcove.Player.Captioning.BrightcoveClosedCaptioningTextView.Tag, due to a duplicate field, method or nested type name.
+		warning BG8401: Skipping Com.Brightcove.Player.Display.VideoDisplayComponent.RenderView, due to a duplicate field, method or nested type name.
+		warning BG8401: Skipping Com.Brightcove.Player.Event.AbstractComponent.EventEmitter, due to a duplicate field, method or nested type name.
+
+		Unhandled Exception:
+		System.Exception: global::Java.Lang.Object
+		  at MonoDroid.Generation.CodeGenerationOptions.GetOutputName (System.String s) [0x00000] in <filename unknown>:0 
+		  at MonoDroid.Generation.Method.Generate (System.IO.StreamWriter sw, System.String indent, MonoDroid.Generation.CodeGenerationOptions opt, MonoDroid.Generation.GenBase type, Boolean generate_callbacks) [0x00000] in <filename unknown>:0 
+		  at MonoDroid.Generation.ClassGen.GenMethods (System.IO.StreamWriter sw, System.String indent, MonoDroid.Generation.CodeGenerationOptions opt) [0x00000] in <filename unknown>:0 
+		  at MonoDroid.Generation.ClassGen.Generate (System.IO.StreamWriter sw, System.String indent, MonoDroid.Generation.CodeGenerationOptions opt, MonoDroid.Generation.GenerationInfo gen_info) [0x00000] in <filename unknown>:0 
+		  at MonoDroid.Generation.ClassGen.Generate (MonoDroid.Generation.CodeGenerationOptions opt, MonoDroid.Generation.GenerationInfo gen_info) [0x00000] in <filename unknown>:0 
+		  at Xamarin.Android.Binder.CodeGenerator.Run (Xamarin.Android.Binder.CodeGeneratorOptions options) [0x00000] in <filename unknown>:0 
+		  at Xamarin.Android.Binder.CodeGenerator.Main (System.String[] args) [0x00000] in <filename unknown>:0 
+		[ERROR] FATAL UNHANDLED EXCEPTION: System.Exception: global::Java.Lang.Object
+		  at MonoDroid.Generation.CodeGenerationOptions.GetOutputName (System.String s) [0x00000] in <filename unknown>:0 
+		  at MonoDroid.Generation.Method.Generate (System.IO.StreamWriter sw, System.String indent, MonoDroid.Generation.CodeGenerationOptions opt, MonoDroid.Generation.GenBase type, Boolean generate_callbacks) [0x00000] in <filename unknown>:0 
+		  at MonoDroid.Generation.ClassGen.GenMethods (System.IO.StreamWriter sw, System.String indent, MonoDroid.Generation.CodeGenerationOptions opt) [0x00000] in <filename unknown>:0 
+		  at MonoDroid.Generation.ClassGen.Generate (System.IO.StreamWriter sw, System.String indent, MonoDroid.Generation.CodeGenerationOptions opt, MonoDroid.Generation.GenerationInfo gen_info) [0x00000] in <filename unknown>:0 
+		  at MonoDroid.Generation.ClassGen.Generate (MonoDroid.Generation.CodeGenerationOptions opt, MonoDroid.Generation.GenerationInfo gen_info) [0x00000] in <filename unknown>:0 
+		  at Xamarin.Android.Binder.CodeGenerator.Run (Xamarin.Android.Binder.CodeGeneratorOptions options) [0x00000] in <filename unknown>:0 
+		  at Xamarin.Android.Binder.CodeGenerator.Main (System.String[] args) [0x00000] in <filename unknown>:0 
+		 (BindingsMinimalSample)  
+	-->
+
+</metadata>
