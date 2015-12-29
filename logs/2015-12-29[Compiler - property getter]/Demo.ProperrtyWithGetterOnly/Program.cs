@@ -8,7 +8,7 @@ namespace Demo.ProperrtyWithGetterOnly
 {
     class Demo
     {
-        public string PropertWithGetterFail
+        public string PropertWithGetterOK01
         {
             get
             {
@@ -16,7 +16,13 @@ namespace Demo.ProperrtyWithGetterOnly
             }
         }
 
-        public string PropertWithGetterOK01
+        public string PropertWithGetterOK02
+        {
+            get;
+            private set;
+        }
+
+        public string PropertWithGetterNotOK01
         {
             /*
                 Visual Studio 2013:
@@ -32,11 +38,6 @@ namespace Demo.ProperrtyWithGetterOnly
             get;
         }
 
-        public string PropertWithGetterOK02
-        {
-            get;
-            private set;
-        }
     }
 
     class Program
