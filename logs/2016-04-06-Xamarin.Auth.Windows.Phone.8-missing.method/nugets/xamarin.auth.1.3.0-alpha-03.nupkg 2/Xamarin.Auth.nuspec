@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata minClientVersion="2.8.1">
+    <id>Xamarin.Auth</id>
+    <version>1.3.0-alpha-03</version>
+    <title>Xamarin.Auth</title>
+    <authors>Xamarin</authors>
+    <owners>Xamarin</owners>
+    <licenseUrl>https://github.com/xamarin/Xamarin.Auth/blob/master/License.md</licenseUrl>
+    <projectUrl>https://github.com/xamarin/Xamarin.Auth</projectUrl>
+    <iconUrl>https://xamarin-component-icons.s3.amazonaws.com/Xamarin.Auth.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A cross-platform API for authenticating users and storing their accounts.</description>
+    <summary>Xamarin.Auth helps you authenticate users via standard authentication
+			mechanisms (e.g. OAuth 1.0 and 2.0), and store user credentials.
+			It's also straightforward to add support for non-standard authentication schemes.
+			The library is cross-platform, so once you learn it on iOS, you're all set on
+			Android.</summary>
+    <copyright>Copyright 2013-2016</copyright>
+    <tags>xamarin,
+			pcl,
+			android, monoandroid, monodroid, xamarin.android,
+			ios, monotouch, xamarin.ios
+			
+			windows phone, winphone, wp8,
+			wp81
+			windows 8, winrt, windows, universal, platform, windows universal uwp</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Json" targetFramework="MonoTouch1.0" />
+      <frameworkAssembly assemblyName="System.Json" targetFramework="MonoAndroid1.0" />
+      <frameworkAssembly assemblyName="System.Json" targetFramework="Xamarin.iOS1.0" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
