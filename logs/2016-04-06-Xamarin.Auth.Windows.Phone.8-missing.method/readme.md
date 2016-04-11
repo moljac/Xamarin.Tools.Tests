@@ -28,7 +28,7 @@ Fullscreen Crash
 Fullscreen References And Object Browser
 
 ![Fullscreen References And Object Browser]
-((https://raw.githubusercontent.com/moljac/Xamarin.Tools.Tests/master/logs/2016-04-06-Xamarin.Auth.Windows.Phone.8-missing.method/screensshots/WindowsPhone8.Sample.02-Fullscreen-01.png "Fullscreen References And Object Browser")
+(https://raw.githubusercontent.com/moljac/Xamarin.Tools.Tests/master/logs/2016-04-06-Xamarin.Auth.Windows.Phone.8-missing.method/screensshots/WindowsPhone8.Sample.02-Fullscreen-01.png "Fullscreen References And Object Browser")
 
 
 Windows Phone 8 sample:
@@ -42,6 +42,6 @@ Windows Phone 8 sample:
 	NOTE!!
 	
 ![Fullscreen References And Object Browser with Steps]
-((https://raw.githubusercontent.com/moljac/Xamarin.Tools.Tests/master/logs/2016-04-06-Xamarin.Auth.Windows.Phone.8-missing.method/screensshots/WindowsPhone8.Sample.02-Fullscreen-01-Steps.png "Fullscreen References And Object Browser with Steps")
+(https://raw.githubusercontent.com/moljac/Xamarin.Tools.Tests/master/logs/2016-04-06-Xamarin.Auth.Windows.Phone.8-missing.method/screensshots/WindowsPhone8.Sample.02-Fullscreen-01-Steps.png "Fullscreen References And Object Browser with Steps")
 
 
