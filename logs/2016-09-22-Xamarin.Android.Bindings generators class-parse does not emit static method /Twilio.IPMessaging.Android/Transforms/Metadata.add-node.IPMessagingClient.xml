@@ -1,0 +1,407 @@
+﻿<metadata>
+	<!--
+	Compiled from "IPMessagingClient.java"
+	public class com.twilio.ipmessaging.IPMessagingClient 
+	{
+	-->
+	<add-node
+	path="/api/package[@name='com.twilio.ipmessaging']"
+	>
+		<class
+			abstract="true" static="false" visibility="public" name="IPMessagingClient"
+			deprecated="not deprecated" final="false"
+			extends="java.lang.Object" extends-generic-aware="java.lang.Object" 
+			>
+			<!--
+			public final java.util.Map<java.lang.String, com.twilio.ipmessaging.Channel> channelMap;
+			-->
+			<field 
+				visibility="public"  static="false" 
+				type="java.util.Map" 
+				type-generic-aware="java.util.Map&lt;java.lang.String, com.twilio.ipmessaging.Channel &gt;" 
+				name="channelMap"
+				deprecated="not deprecated" final="false" transient="false" volatile="false"
+				>
+			</field>
+			<!--
+			protected java.lang.String endpointPlatform;
+			-->
+			<field 
+				visibility="protected"  static="false" 
+				type="java.lang.String" 
+				type-generic-aware="java.lang.String" 
+				name="endpointPlatform"
+				deprecated="not deprecated" final="false" transient="false" volatile="false"
+				>
+			</field>
+			<!--
+			com.twilio.ipmessaging.IPMessagingClientListener ipMessagingListener;
+			-->
+			<field 
+				visibility="private"  static="false" 
+				type="com.twilio.ipmessaging.IPMessagingClientListener" 
+				type-generic-aware="com.twilio.ipmessaging.IPMessagingClientListener" 
+				name="ipMessagingListener"
+				deprecated="not deprecated" final="false" transient="false" volatile="false"
+				>
+			</field>
+			<!--
+			public final java.util.Map<java.lang.String, java.util.Map<com.twilio.ipmessaging.ChannelListener, android.os.Handler>> channelListenerMap;
+			-->
+			<field 
+				visibility="private"  static="false" 
+				type="java.util.Map" 
+				type-generic-aware="java.util.Map&lt;java.lang.String, java.util.Map&lt;com.twilio.ipmessaging.ChannelListener, android.os.Handler&gt; &gt;" 
+				name="ipMessagingListener"
+				deprecated="not deprecated" final="true" transient="false" volatile="false"
+				>
+			</field>
+			<!--
+			public static java.lang.String getSdkVersion();
+			-->
+			<method 
+				visibility="public" abstract="false" static="true" return="java.lang.String" name="getSdkVersion"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+			</method>
+			<!--
+			public static com.twilio.ipmessaging.IPMessagingClient create
+					(
+						android.content.Context, 
+						com.twilio.common.AccessManager, 
+						com.twilio.ipmessaging.IPMessagingClient$Properties, 
+						com.twilio.ipmessaging.Constants$CallbackListener<com.twilio.ipmessaging.IPMessagingClient>
+					);
+			-->
+			<method 
+				visibility="public" abstract="false" static="true" return="com.twilio.ipmessaging.IPMessagingClient" name="create"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+				<parameter 
+					type="android.content.Context"
+					name="context" 
+					>
+				</parameter>
+				<parameter 
+					type="com.twilio.common.AccessManager"
+					name="acess_manager" 
+					>
+				</parameter>
+				<!--
+					type="com.twilio.ipmessaging.IPMessagingClient$Properties"
+				-->
+				<parameter 
+					type="java.lang.Object"
+					name="properties" 
+					>
+				</parameter>
+				<!--
+					type="com.twilio.ipmessaging.Constants$CallbackListener&lt;com.twilio.ipmessaging.IPMessagingClient&gt;"
+				-->
+				<parameter 
+					type="java.lang.Object"
+					name="listener" 
+					>
+				</parameter>
+			</method>
+			<!--
+			public com.twilio.ipmessaging.IPMessagingClientListener getListener();
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="com.twilio.ipmessaging.IPMessagingClientListener" name="getListener"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+			</method>
+			<!--
+			public void setListener(com.twilio.ipmessaging.IPMessagingClientListener);
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="void" name="setListener"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+				<parameter 
+					type="com.twilio.ipmessaging.IPMessagingClientListener"
+					name="listener" 
+					>
+				</parameter>
+			</method>
+			<!--
+			public void removeListener();
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="void" name="removeListener"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+			</method>
+			<!--
+			public void updateToken(java.lang.String, com.twilio.ipmessaging.Constants$StatusListener);
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="void" name="updateToken"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+				<parameter 
+					type="java.lang.String"
+					name="s" 
+					>
+				</parameter>
+				<!--
+					type="com.twilio.ipmessaging.Constants$StatusListener"
+				-->
+				<parameter 
+					type="java.lang.Object"
+					name="listener" 
+					>
+				</parameter>
+			</method>
+			<!--
+			public com.twilio.ipmessaging.Channels getChannels();
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="com.twilio.ipmessaging.Channels" name="getChannels"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+			</method>
+			<!--
+			public void setIncomingIntent(android.app.PendingIntent);
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="void" name="setIncomingIntent"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+				<parameter 
+					type="android.app.PendingIntent"
+					name="intent" 
+					>
+				</parameter>
+			</method>
+			<!--
+			public void registerGCMToken(java.lang.String, com.twilio.ipmessaging.Constants$StatusListener);
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="void" name="registerGCMToken"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+				<parameter 
+					type="java.lang.String"
+					name="token" 
+					>
+				</parameter>
+				<!--
+					type="com.twilio.ipmessaging.Constants$StatusListener"
+				-->
+				<parameter 
+					type="java.lang.Object"
+					name="listener" 
+					>
+				</parameter>
+			</method>
+			<!--
+			public void unregisterGCMToken(java.lang.String, com.twilio.ipmessaging.Constants$StatusListener);
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="void" name="unregisterGCMToken"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+				<parameter 
+					type="java.lang.String"
+					name="token" 
+					>
+				</parameter>
+				<!--
+					type="com.twilio.ipmessaging.Constants$StatusListener"
+				-->
+				<parameter 
+					type="java.lang.Object"
+					name="listener" 
+					>
+				</parameter>
+			</method>
+			<!--
+			public void handleNotification(java.util.Map<java.lang.String, java.lang.String>);
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="void" name="handleNotification"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+				<parameter 
+					type="java.util.Map&lt;java.lang.String, java.lang.String&gt;"
+					name="map" 
+					>
+				</parameter>
+			</method>
+			<!--
+			public com.twilio.ipmessaging.IPMessagingClient$Properties getProperties();
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="java.lang.Object" name="getProperties"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+			</method>
+			<!--
+			public void shutdown();
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="void" name="shutdown"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+			</method>
+			<!--
+			public com.twilio.ipmessaging.UserInfo getMyUserInfo();
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="com.twilio.ipmessaging.UserInfo" name="getMyUserInfo"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+			</method>
+			<!--
+			public native boolean isReachabilityEnabled();
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="boolean" name="isReachabilityEnabled"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+			</method>
+			<!--
+			public android.content.Context getContext();
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="android.content.Context" name="getContext"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+			</method>
+			<!--
+			protected com.twilio.ipmessaging.internal.ClientListener getInternalListener();
+			-->
+			<method 
+				visibility="protected" abstract="false" static="false" return="com.twilio.ipmessaging.internal.ClientListener" name="getInternalListener"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+			</method>
+			<!--
+			public void handleIncomingInvite(com.twilio.ipmessaging.Channel);
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="void" name="handleIncomingInvite"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+				<parameter 
+					type="com.twilio.ipmessaging.Channel"
+					name="channel" 
+					>
+				</parameter>
+			</method>
+			<!--
+			public void handleChannelAddEvent(com.twilio.ipmessaging.Channel);
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="void" name="handleChannelAddEvent"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+				<parameter 
+					type="com.twilio.ipmessaging.Channel"
+					name="channel" 
+					>
+				</parameter>
+			</method>
+			<!--
+			public void handleChannelCreate(com.twilio.ipmessaging.Channel);
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="void" name="handleChannelCreate"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+				<parameter 
+					type="com.twilio.ipmessaging.Channel"
+					name="channel" 
+					>
+				</parameter>
+			</method>
+			<!--
+			public void handleChannelChanged(com.twilio.ipmessaging.Channel);
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="void" name="handleChannelChanged"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+				<parameter 
+					type="com.twilio.ipmessaging.Channel"
+					name="channel" 
+					>
+				</parameter>
+			</method>
+			<!--
+			public void handleChannelDeleted(com.twilio.ipmessaging.Channel);
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="void" name="handleChannelDeleted"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+				<parameter 
+					type="com.twilio.ipmessaging.Channel"
+					name="channel" 
+					>
+				</parameter>
+			</method>
+			<!--
+			public void handleOnChannelSync(com.twilio.ipmessaging.Channel);
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="void" name="handleOnChannelSync"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+				<parameter 
+					type="com.twilio.ipmessaging.Channel"
+					name="channel" 
+					>
+				</parameter>
+			</method>
+			<!--
+			public void handleOnError(com.twilio.ipmessaging.ErrorInfo);
+			-->
+			<method 
+				visibility="public" abstract="false" static="false" return="void" name="handleOnError"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+				<parameter 
+					type="com.twilio.ipmessaging.ErrorInfo"
+					name="error_info" 
+					>
+				</parameter>
+			</method>
+			<!--
+			public static void setLogLevel(int);
+			-->
+			<method 
+				visibility="public" abstract="false" static="true" return="void" name="setLogLevel"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+				<parameter 
+					type="int"
+					name="level" 
+					>
+				</parameter>
+			</method>
+			<!--
+			static com.twilio.ipmessaging.Constants$StatusListener access$000(com.twilio.ipmessaging.IPMessagingClient);
+			
+			<method 
+				visibility="private" abstract="false" static="true" return="java.lang.Object" name="access$000"
+				deprecated="not deprecated" final="false" native="false" synchronized="false" 
+				>
+				<parameter 
+					type="com.twilio.ipmessaging.IPMessagingClient"
+					name="client" 
+					>
+				</parameter>
+			</method>
+			-->
+			<!--
+			static {};
+			-->
+		<!--
+		}
+		-->
+		</class>
+	</add-node>
+</metadata>
