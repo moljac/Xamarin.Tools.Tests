@@ -1,0 +1,33 @@
+﻿<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <attr path="/api/package[@name='com.twilio.ipmessaging']" name="managedName">Twilio.IPMessaging</attr>
+  <!--
+		mc++ not available
+  <attr path="/api/package[@name='com.twilio.ipmessaging.impl']" name="managedName">Twilio.IPMessaging.Impl</attr>
+	
+  <attr path="/api/package[@name='com.twilio.ipmessaging']/interface[@name='IPMessagingClientListener']/method[@name='onAttributesChange']"
+        name="argsType">MessagingClientAttributesChangeEventArgs
+  </attr>
+  <attr path="/api/package[@name='com.twilio.ipmessaging']/interface[@name='IPMessagingClientListener']/method[@name='onChannelHistoryLoaded']"
+        name="argsType">MessagingClientChannelHistoryLoadedEventArgs
+  </attr>
+  -->
+  <attr path="/api/package[@name='com.twilio.ipmessaging']/interface[@name='IPMessagingClientListener']/method[@name='onError']"
+        name="argsType">MessagingClientErrorEventArgs
+  </attr>
+
+
+  <!--
+		mc++ not available
+  <attr
+path="/api/package[@name='com.twilio.ipmessaging.impl']/class[@name='ChannelImpl']/method[@name='setListener']"
+     name="eventName"
+   >Channel</attr>
+  -->
+</metadata>

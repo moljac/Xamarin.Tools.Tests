@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twilio.Common.Android", "Twilio.Common.Android\Twilio.Common.Android.csproj", "{F78E29B1-08F2-479B-88F0-2A9AEF0F79A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twilio.IPMessaging.Android", "Twilio.IPMessaging.Android\Twilio.IPMessaging.Android.csproj", "{113D21B8-63D9-4310-943F-CCF274EC2E1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F78E29B1-08F2-479B-88F0-2A9AEF0F79A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F78E29B1-08F2-479B-88F0-2A9AEF0F79A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F78E29B1-08F2-479B-88F0-2A9AEF0F79A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F78E29B1-08F2-479B-88F0-2A9AEF0F79A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{113D21B8-63D9-4310-943F-CCF274EC2E1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{113D21B8-63D9-4310-943F-CCF274EC2E1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{113D21B8-63D9-4310-943F-CCF274EC2E1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{113D21B8-63D9-4310-943F-CCF274EC2E1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
