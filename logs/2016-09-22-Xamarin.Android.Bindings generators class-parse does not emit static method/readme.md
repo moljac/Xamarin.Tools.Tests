@@ -1,4 +1,8 @@
-﻿# Xamarin.Android class-parse not generating [static] method[s]
+﻿# Xamarin.Android Bindings Generator class-parse not generating [static] method[s]
+
+Case where jar2xml does not generate output and class-parse generates C# class,
+but misses some [static] methods.
+
 
 *   jar2xml 
     *   does not surface class - IPMessagingClient
