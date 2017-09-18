@@ -1,0 +1,31 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MsBuildPreprocessorDefines.CoreShared", "MsBuildPreprocessorDefines.CoreShared\MsBuildPreprocessorDefines.CoreShared.shproj", "{DAF7D502-14AD-46A0-8A8B-25E46B19FBB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsBuildPreprocessorDefines.Portable", "MsBuildPreprocessorDefines.Portable\MsBuildPreprocessorDefines.Portable.csproj", "{0FD8BB03-780A-45EE-BAC9-845019A1E296}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsBuildPreprocessorDefines.XamarinIOS", "MsBuildPreprocessorDefines.XamarinIOS\MsBuildPreprocessorDefines.XamarinIOS.csproj", "{0BC6F183-5833-4D2F-B8A2-32D73BAE2207}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsBuildPreprocessorDefines.XamarinAndroid", "MsBuildPreprocessorDefines.XamarinAndroid\MsBuildPreprocessorDefines.XamarinAndroid.csproj", "{D62DF008-A888-4FE9-B33C-27332993789F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FD8BB03-780A-45EE-BAC9-845019A1E296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FD8BB03-780A-45EE-BAC9-845019A1E296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FD8BB03-780A-45EE-BAC9-845019A1E296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FD8BB03-780A-45EE-BAC9-845019A1E296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BC6F183-5833-4D2F-B8A2-32D73BAE2207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BC6F183-5833-4D2F-B8A2-32D73BAE2207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BC6F183-5833-4D2F-B8A2-32D73BAE2207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BC6F183-5833-4D2F-B8A2-32D73BAE2207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D62DF008-A888-4FE9-B33C-27332993789F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62DF008-A888-4FE9-B33C-27332993789F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62DF008-A888-4FE9-B33C-27332993789F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62DF008-A888-4FE9-B33C-27332993789F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
