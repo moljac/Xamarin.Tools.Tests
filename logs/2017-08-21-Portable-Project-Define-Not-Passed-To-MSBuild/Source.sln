@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCLProject", "PCLProject\PCLProject.csproj", "{D104071D-D5DE-482B-8C64-B3FBEB7A4CDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppPCLProject", "AppPCLProject\AppPCLProject.csproj", "{533D6960-126E-4E14-B35A-2C2A3677E46A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D104071D-D5DE-482B-8C64-B3FBEB7A4CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D104071D-D5DE-482B-8C64-B3FBEB7A4CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D104071D-D5DE-482B-8C64-B3FBEB7A4CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D104071D-D5DE-482B-8C64-B3FBEB7A4CDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{533D6960-126E-4E14-B35A-2C2A3677E46A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{533D6960-126E-4E14-B35A-2C2A3677E46A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{533D6960-126E-4E14-B35A-2C2A3677E46A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{533D6960-126E-4E14-B35A-2C2A3677E46A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
