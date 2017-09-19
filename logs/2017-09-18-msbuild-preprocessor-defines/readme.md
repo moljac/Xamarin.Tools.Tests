@@ -105,7 +105,7 @@ In IDE the most obvious difference between Release and Debug is in `DEFINE` cons
 Logically passing `Configuration=Default` parameter from command-line would be similar
 like switching Configuration in IDE, but this is not the case.
 
-   /Library/Frameworks/Mono.framework/Commands/msbuild \
+    /Library/Frameworks/Mono.framework/Commands/msbuild \
         /target:ReBuild \
         "/p:Configuration=Debug;DefineConstants=XAMARIN_AUTH_INTERNAL" \
         /verbosity:minimal \
@@ -114,7 +114,16 @@ like switching Configuration in IDE, but this is not the case.
 
 Commandline used by msbuld (shorened and formatted):
 
-    /Library/Frameworks/Mono.framework/Versions/5.2.0/lib/mono/4.5/csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:XAMARIN_AUTH_INTERNAL;__XAMARIN_ANDROID_v1_0__;__MOBILE__;__ANDROID__;__ANDROID_1__;__ANDROID_2__;__ANDROID_3__;__ANDROID_4__;__ANDROID_5__;__ANDROID_6__;__ANDROID_7__;__ANDROID_8__;__ANDROID_9__;__ANDROID_10__;__ANDROID_11__;__ANDROID_12__;__ANDROID_13__;__ANDROID_14__;__ANDROID_15__;__ANDROID_16__;__ANDROID_17__;__ANDROID_18__;__ANDROID_19__;__ANDROID_20__;__ANDROID_21__;__ANDROID_22__;__ANDROID_23__;__ANDROID_24__;__ANDROID_25__ 
+    /Library/Frameworks/Mono.framework/Versions/5.2.0/lib/mono/4.5/csc.exe /noconfig
+    /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 
+    /define:XAMARIN_AUTH_INTERNAL;__XAMARIN_ANDROID_v1_0__;__MOBILE__;__ANDROID__;
+    __ANDROID_1__;__ANDROID_2__;__ANDROID_3__;__ANDROID_4__;__ANDROID_5__;__ANDROID_6__;
+    __ANDROID_7__;__ANDROID_8__;__ANDROID_9__;__ANDROID_10__;__ANDROID_11__;__ANDROID_12__;
+    __ANDROID_13__;__ANDROID_14__;__ANDROID_15__;__ANDROID_16__;__ANDROID_17__;
+    __ANDROID_18__;__ANDROID_19__;__ANDROID_20__;__ANDROID_21__;__ANDROID_22__;
+    __ANDROID_23__;__ANDROID_24__;__ANDROID_25__ 
+
+    
         
 ## Windows
 
