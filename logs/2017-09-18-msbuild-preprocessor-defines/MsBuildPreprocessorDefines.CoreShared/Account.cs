@@ -28,11 +28,11 @@ namespace Xamarin.Auth
     /// <summary>
     /// An Account that represents an authenticated user of a social network.
     /// </summary>
-    #if XAMARIN_AUTH_INTERNAL
+#if XAMARIN_AUTH_INTERNAL
     internal class Account
-    #else
+#else
     public class Account
-    #endif
+#endif
     {
         /// <summary>
         /// The username used as a key when storing this account.
@@ -184,29 +184,29 @@ namespace Xamarin.Auth
 
         string SerializeCookies()
         {
-            #if !PORTABLE && !NETFX_CORE && !(WINDOWS_PHONE && SILVERLIGHT) && !NETSTANDARD1_6
+#if !PORTABLE && !NETFX_CORE && !(WINDOWS_PHONE && SILVERLIGHT) && !NETSTANDARD1_6
             var f = new BinaryFormatter();
             using (var s = new MemoryStream())
             {
                 f.Serialize(s, Cookies);
                 return Convert.ToBase64String(s.GetBuffer(), 0, (int)s.Length);
             }
-            #else
+#else
 			return String.Empty;
-            #endif
+#endif
         }
 
         static CookieContainer DeserializeCookies(string cookiesString)
         {
-            #if !PORTABLE && !NETFX_CORE && !(WINDOWS_PHONE && SILVERLIGHT) && !NETSTANDARD1_6
+#if !PORTABLE && !NETFX_CORE && !(WINDOWS_PHONE && SILVERLIGHT) && !NETSTANDARD1_6
             var f = new BinaryFormatter();
             using (var s = new MemoryStream(Convert.FromBase64String(cookiesString)))
             {
                 return (CookieContainer)f.Deserialize(s);
             }
-            #else
+#else
             return new CookieContainer();
-            #endif
+#endif
         }
 
         /// <summary>
@@ -219,6 +219,8 @@ namespace Xamarin.Auth
         {
             return Serialize();
         }
+                
+
     }
 }
 
