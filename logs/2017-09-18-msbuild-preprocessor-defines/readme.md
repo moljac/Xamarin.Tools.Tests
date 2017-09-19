@@ -45,7 +45,7 @@ project.
 
 Next sample is for Xamarin.iOS (`XAMARIN_AUTH_INTERNAL` passed):
 
-   /Library/Frameworks/Mono.framework/Commands/msbuild \
+    /Library/Frameworks/Mono.framework/Commands/msbuild \
         /target:ReBuild \
         "/p:DefineConstants=XAMARIN_AUTH_INTERNAL" \
         /verbosity:minimal \
