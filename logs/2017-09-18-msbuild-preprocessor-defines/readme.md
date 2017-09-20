@@ -123,8 +123,8 @@ Commandline used by msbuld (shorened and formatted):
     __ANDROID_18__;__ANDROID_19__;__ANDROID_20__;__ANDROID_21__;__ANDROID_22__;
     __ANDROID_23__;__ANDROID_24__;__ANDROID_25__ 
 
-    
-        
+
+
 ## Windows
 
     msbuild ^
@@ -200,18 +200,18 @@ Some `#defines` for xplat development
 
 TargetConditionals.h
 
-TARGET_OS_TV
-TARGET_OS_WATCH
-#define TARGET_OS_MAC               1
-#define TARGET_OS_WIN32             0
-#define TARGET_OS_UNIX              0
-#define TARGET_OS_OSX               0
-#define TARGET_OS_IPHONE            1
-#define TARGET_OS_IOS               1
-#define TARGET_OS_WATCH             0
-#define TARGET_OS_BRIDGE            0
-#define TARGET_OS_TV                0
-#define TARGET_OS_SIMULATOR         0
-#define TARGET_OS_EMBEDDED          1 
-#define TARGET_IPHONE_SIMULATOR     TARGET_OS_SIMULATOR /* deprecated */
-#define TARGET_OS_NANO              TARGET_OS_WATCH /* deprecated */
+    TARGET_OS_TV
+    TARGET_OS_WATCH
+    #define TARGET_OS_MAC               1
+    #define TARGET_OS_WIN32             0
+    #define TARGET_OS_UNIX              0
+    #define TARGET_OS_OSX               0
+    #define TARGET_OS_IPHONE            1
+    #define TARGET_OS_IOS               1
+    #define TARGET_OS_WATCH             0
+    #define TARGET_OS_BRIDGE            0
+    #define TARGET_OS_TV                0
+    #define TARGET_OS_SIMULATOR         0
+    #define TARGET_OS_EMBEDDED          1 
+    #define TARGET_IPHONE_SIMULATOR     TARGET_OS_SIMULATOR /* deprecated */
+    #define TARGET_OS_NANO              TARGET_OS_WATCH /* deprecated */
